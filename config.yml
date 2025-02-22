@@ -49,6 +49,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/lowsound42"
+    - name: email
+      url: 'mailto:omar@lowsound.dev'
     - name: pixelfed
       url: "https://pet.tax/gobi_ni"
     - name: mastodon
