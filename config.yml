@@ -47,10 +47,12 @@ params:
         url: tags
 
   socialIcons:
-    - name: mastodon
-      url: "https://mastodon.sdf.org/@pxplowsound/"
     - name: github
       url: "https://github.com/lowsound42"
+    - name: pixelfed
+      url: "https://pet.tax/gobi_ni"
+    - name: mastodon
+      url: "https://mastodon.sdf.org/@pxplowsound/"
 
 menu:
   main:
