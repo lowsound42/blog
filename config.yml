@@ -39,7 +39,7 @@ params:
     imageUrl: "/gobiandmewhite.jpg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: portrait of Gobi and me, by Lisa Guo
     buttons:
       - name: Posts
         url: posts
