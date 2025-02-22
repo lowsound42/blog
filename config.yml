@@ -1,0 +1,68 @@
+baseURL: "https://lowsound.dev/"
+title: "I do business"
+paginate: 5
+theme: PaperMod
+
+params:
+  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: "Place for Things"
+  description: "Things and Stuff"
+  keywords: [Blog]
+  author: Me
+  # author: ["Me", "You"] # multiple authors
+  images: ["/gobiandmewhite.jpg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+ # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "Omar speaks in the third person"
+    subtitle: "but I'm not so good at it"
+    imageUrl: "/gobiandmewhite.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  socialIcons:
+    - name: mastodon
+      url: "https://mastodon.sdf.org/@pxplowsound/"
+    - name: github
+      url: "https://github.com/lowsound42"
+
+menu:
+  main:
+  - identifier: posts
+    name: posts
+    url: /posts/
+    weight: 10
+  - identifier: tags
+    name: tags
+    url: /tags/
+    weight: 20
+  - identifier: real
+    name: the real world
+    url: /geo/
+    weight: 30

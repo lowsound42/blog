@@ -1,0 +1,4 @@
+---
+title: "Geo"
+layout: easter
+---

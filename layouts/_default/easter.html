@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    {{ with resources.Get "css/easter.css" }}
+      <link href="{{ .RelPermalink }}" rel="stylesheet" />
+    {{ end }}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Delicious+Handrawn&effect=3d"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <main class="geomain">
+    <a class="geoback" href="javascript:history.back()"
+      ><img src="/hand.gif"
+    /></a>
+    <h1 class="font-effect-3d">Welcome</h1>
+    <p class="font-effect-3d">to the desert of the real</p>
+    <img class="geowelcome" src="/welcomesign.gif" />
+  </main>
+</body>
+</html>
