@@ -1,8 +1,7 @@
-baseURL: "https://lowsound.dev/"
+baseURL: "https://lowsound42.github.io/blog/"
 title: "I do business"
 paginate: 5
 theme: PaperMod
-canonifyURLs: true
 
 params:
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -11,7 +10,7 @@ params:
   keywords: [Blog]
   author: Me
   # author: ["Me", "You"] # multiple authors
-  images: ["/gobiandmewhite.jpg"]
+  images: ["./assets/images/gobiandmewhite.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
