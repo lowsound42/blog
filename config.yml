@@ -2,6 +2,7 @@ baseURL: "https://lowsound.dev/"
 title: "I do business"
 paginate: 5
 theme: PaperMod
+canonifyURLs: true
 
 params:
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
