@@ -6,14 +6,13 @@
   
   main {
     color: white;
-    font-family: 'Delicious Handrawn', cursive;
     font-weight: 400;
     font-style: normal;
     width: 100vw;
-    height: 100vh;
     background-image: url('/cyber.jpg');
   }
-  
+
+
   h1 {
     margin-top: 5rem;
     font-size: 6rem;
@@ -38,9 +37,79 @@
   .geomain {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   
   .geowelcome {
     margin-top: 2rem;
+  }
+
+  p:not(.easter-intro) {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  .loader{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden {
+    display: none
+  }
+
+  .easter-intro {
+    font-family: 'Delicious Handrawn', cursive;
+  }
+  
+  .word-vomit {
+    margin: 2rem 0rem;
+    background: rgba(0,0,0,0.5);    
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .easter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #sfslink {
+    margin-bottom: 4rem;
+  }
+
+  .gif-left, .gif-right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .easter-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .word-vomit {
+      margin: 2rem 0rem;
+      background: rgba(0,0,0,0.5);    
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
   }

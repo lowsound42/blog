@@ -1,27 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     {{ with resources.Get "css/easter.css" }}
-      <link href="{{ .RelPermalink }}" rel="stylesheet" />
-    {{ end }}
+    <link href="{{ .RelPermalink }}" rel="stylesheet" />
+    {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict "minify"
+    hugo.IsProduction "sourceMap" (cond hugo.IsProduction "" "external")
+    "targetPath" "js/main.js" }} {{ with . | js.Build $opts }} {{ if
+    hugo.IsProduction }} {{ with . | fingerprint }}
+    <script
+      src="{{ .RelPermalink }}"
+      integrity="{{ .Data.Integrity }}"
+      crossorigin="anonymous"
+    ></script>
+    {{ end }} {{ else }}
+    <script src="{{ .RelPermalink }}"></script>
+    {{ end }} {{ end }} {{ end }}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css?family=Delicious+Handrawn&effect=3d"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-  <main class="geomain">
-    <a class="geoback" href="javascript:history.back()"
-      ><img src="/hand.gif"
-    /></a>
-    <h1 class="font-effect-3d">Welcome</h1>
-    <p class="font-effect-3d">to the desert of the real</p>
-    <img class="geowelcome" src="/welcomesign.gif" />
-  </main>
-</body>
+    <main>
+      <div class="hidden geomain">
+        <a class="geoback" href="javascript:history.back()"
+          ><img src="/hand.gif"
+        /></a>
+        <h1 class="font-effect-3d easter-intro">Welcome</h1>
+        <p class="font-effect-3d easter-intro">to the desert of the real</p>
+        <img class="geowelcome" src="/welcomesign.gif" />
+        <div class="easter-container">
+          <div class="gif-left"><img src="/skelly.gif"/></div>
+          <div class="word-vomit">
+            <div>
+              <p>Reject the corpo-fascist tech bro idiots.</p>
+              <p>
+                They're definitely lying about freedom and liberty and all that.
+              </p>
+              <p>
+                They want to take away the institutions that form the foundation
+                of our societies.
+              </p>
+              <p>
+                They're creating walled gardens to trap us and steal information
+                from us.
+              </p>
+              <p>
+                They want us to act like their weird cyberlibertarian bullshit
+                is good and kind of cool.
+              </p>
+            </div>
+          </div>
+          <div class="gif-right"><img src="/skellytoo.gif"/></div>
+        </div>
+        <p>Background sprite from:</p>
+        <a id="sfslink" href="https://www.geocities.ws/sfsgraphx/indexmain.html">
+          <img src="/sfsgraphx.jpg"/>
+        </a>
+      </div>
+      <div class="loader">
+        <p class="vt323-regular">Loading...</p>
+        <img height="150px" width="100px" src="/loading.gif" />
+        <p>This is a fake loader lol</p>
+      </div>
+    </main>
+  </body>
 </html>

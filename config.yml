@@ -67,6 +67,6 @@ menu:
     url: /tags/
     weight: 20
   - identifier: real
-    name: the real world
+    name: old internet
     url: /geo/
     weight: 30
