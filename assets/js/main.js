@@ -8,4 +8,4 @@ function clearLoader() {
     hiddenElement[0].classList.remove("hidden");
 }
 
-const loaderTimeout = setTimeout(clearLoader, 2000);
+const loaderTimeout = setTimeout(clearLoader, 1500);
