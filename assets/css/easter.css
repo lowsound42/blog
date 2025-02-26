@@ -25,12 +25,16 @@
   .geoback {
     margin-top: 2rem;
     margin-left: 2rem;
-    width: 100px;
+    width: 125px;
     align-self: self-start;
+    background-image: url('/cyber.jpg');
+    outline: none;
+    border: none;
   }
   
   .geoback > img {
     width: 125px;
+    cursor: pointer;
   }
   
   p {

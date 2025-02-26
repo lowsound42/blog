@@ -18,6 +18,11 @@
     {{ end }} {{ else }}
     <script src="{{ .RelPermalink }}"></script>
     {{ end }} {{ end }} {{ end }}
+    <script>
+      const goBack = function(){
+       history.back();
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,8 +37,8 @@
   <body>
     <main class="content">
       <div class="hidden geomain">
-        <a class="geoback" href="/"
-        ><img src="/hand.gif"/></a>        
+        <button class="geoback" onclick="goBack()"
+        ><img src="/hand.gif"/></button>        
         <h1 class="font-effect-3d easter-intro">Welcome</h1>
         <p class="font-effect-3d easter-intro">to the desert of the real</p>
         <img class="geowelcome" src="/welcomesign.gif" />
