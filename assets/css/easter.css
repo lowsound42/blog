@@ -27,7 +27,7 @@
     margin-left: 2rem;
     width: 125px;
     align-self: self-start;
-    background-image: url('/cyber.jpg');
+    background: transparent;
     outline: none;
     border: none;
   }
