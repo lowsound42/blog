@@ -32,7 +32,7 @@ in the traffic. I pedal to catch up and Gobi looks satisfied when we're
 riding in a tighter formation. The little lady likes when the pack is
 together.
 
-One of the places we like riding to together in the spring, summer, and fall, is the [Brick Works](https://www.evergreen.ca/evergreen-brick-works/). There's
+One of the places we like riding to together in the spring, summer, and fall, is the [Evergreen Brick Works](https://www.evergreen.ca/evergreen-brick-works/). There's
 a great open air market on the weekend and the paths in and out of the
 quarry make for great walks for humans and dogs alike. Before hitting up
 the market, it's a good idea to go for a walk so that the lil' miss can
