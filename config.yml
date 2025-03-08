@@ -46,6 +46,8 @@ params:
       url: "https://pet.tax/gobi_ni"
     - name: mastodon
       url: "https://mastodon.sdf.org/@pxplowsound/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/omar42/"
 
 menu:
   main:

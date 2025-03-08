@@ -1,0 +1,20 @@
+
+.post-header, .post-footer, .footer, .header, .entry-header, .entry-footer, .page-header{
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.post-content, .entry-content {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.entry-content {
+  font-size: 1rem;
+}
+
+.first-entry .entry-content{
+  font-size: 1.4rem;
+}
