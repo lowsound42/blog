@@ -13,7 +13,7 @@ weight: 1
 I live with a dog named Gobi. She's a delightfully energetic and
 affectionate miniature schnauzer. As I write this she's lazing
 peacefully on the couch, flanked by me and Geetha. The three of us
-are watching the Strade Bianchi. The season has begun (for us), Tadej Pogačar is the favourite of course and we're itching to see where he starts his attack this time.
+are watching the Strade Bianche. The season has begun (for us), Tadej Pogačar is the favourite of course and we're itching to see where he starts his attack this time.
 
 Back to Gobi. She's not really interested in the race, at least I don't
 think she is. That's not to say that she doesn't like or enjoy cycling,
