@@ -24,12 +24,12 @@ seat on the top tube of my bike. She occasionally turns back to me to give
 me a quick lick, or voice a teeny little *ruff* to assure me that things
 are still good. It's one of the great joys of my life.
 
-![Gobi in her helmet and googles on my back](/buddyrider.jpg)
-
 Geetha bikes ahead of us and Gobi zeroes in on her. She can't lose her
 in the traffic. I pedal to catch up and Gobi looks satisfied when we're
 riding in a tighter formation. The little lady likes when the pack is
 together.
+
+![Gobi in her helmet and googles on my back](/buddyrider.jpg)
 
 One of the places we like riding to together when the weather is nice is the [Evergreen Brick Works](https://www.evergreen.ca/evergreen-brick-works/). There's
 a great open air market on the weekend and the paths in and out of the
