@@ -5,7 +5,6 @@ tags: ["dogs"]
 draft: false
 author: "Omar"
 description: "The little miss"
-weight: 1
 ---
 
 ![Gobi in her helmet and googles on my bike](/gobike.webp)

@@ -5,7 +5,6 @@ tags: ["stream of consciousness"]
 draft: false
 author: "Omar"
 description: "The end of the analysis paralysis"
-weight: 1
 ---
 
 I've built this website so many times. 

@@ -32,19 +32,10 @@ params:
   tocopen: false
 
  # profile-mode
-  profileMode:
+  homeInfoParams:
     enabled: true # needs to be explicitly set
     title: "Omar speaks in the third person"
-    subtitle: "but I'm not so good at it"
-    imageUrl: "/gobiandmewhite.jpg"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: portrait of Gobi and me, by Lisa Guo
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+    content: "but I'm not so good at it"
 
   socialIcons:
     - name: github

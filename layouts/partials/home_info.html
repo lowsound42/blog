@@ -1,0 +1,21 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="/gobiandmewhite.jpg" width="120" height="120" 
+    style="border-radius: 50%; margin-right: 1rem;"
+    />
+        <div>
+            <header class="entry-header">
+                <h1>{{ .Title | markdownify }}</h1>
+            </header>
+            <div class="entry-content" style="margin-left: 0.25rem;">
+                {{ .Content | markdownify }}
+            </div>
+            <footer class="entry-footer" style="margin-left: -0.5rem;">
+                {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+            </footer>
+        </div>
+    </div>
+
+</article>
+{{- end -}}
