@@ -18,16 +18,14 @@ Back to Gobi. She's not really interested in the race, at least I don't
 think she is. That's not to say that she doesn't like or enjoy cycling,
 the activity. She's spent plenty of time on a bike. Her two modes of
 bike travel are on a buddy rider (a bike mounted seat for dogs) in front
-of me or in a dog carrier backpack behind me. Imagine a little bearded
-schnauzer, squinting as the wind blows in her face, perched on a little
-seat on the top tube of my bike. She occasionally turns back to me to give
-me a quick lick, or voice a teeny little *ruff* to assure me that things
-are still good. It's one of the great joys of my life.
+of me or in a dog carrier backpack behind me. 
 
-Geetha bikes ahead of us and Gobi zeroes in on her. She can't lose her
+Imagine a little bearded schnauzer, squinting as the wind blows in her face, perched on a little seat on the top tube of my bike. She occasionally turns back to me to give
+me a quick lick, or voice a teeny little *ruff* to assure me that things
+are still good. Geetha bikes ahead of us and Gobi zeroes in on her. She can't lose her
 in the traffic. I pedal to catch up and Gobi looks satisfied when we're
 riding in a tighter formation. The little lady likes when the pack is
-together.
+together. Rides like this are one of the great joys of my life.
 
 ![Gobi in her helmet and googles on my back](/buddyrider.jpg)
 
