@@ -7,11 +7,11 @@ author: "Omar"
 description: "The end of the analysis paralysis"
 ---
 
-I've built this website so many times. 
+This website has been through so much.
 
 Once upon a time it was all hand coded HTML, CSS, and JS. As I built that out, I essentially built out my own little framework to get things done effectively. That was fun but also pretty inefficient (and tedious) after a while.
 
-Then it became an over-engineered Next/React SSR thing because I kind of just wanted to try out the hot new thing. Personally, I enjoyed very little about brushing up on React after a while of not having used it at all.
+Then it became an over-engineered Next/React SSR thing because I kind of just wanted to try out the hot new stack. Personally, I enjoyed very little about brushing up on React after a while of not having used it at all.
 
 More recently I've been playing around with Go and htmx on the side so I figured maybe that would be a cool thing to do. And it was. But again, so much unnecessary work to do...what exactly? 
 
