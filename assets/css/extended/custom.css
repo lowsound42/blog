@@ -22,6 +22,10 @@
   font-size: 1.4rem;
 }
 
+.post-entry .entry-content {
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 400px) {
   .home-info {
     margin-top: 2rem;
