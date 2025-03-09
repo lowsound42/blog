@@ -21,3 +21,10 @@
   font-style: normal;
   font-size: 1.4rem;
 }
+
+@media only screen and (max-width: 400px) {
+  .home-info {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}
