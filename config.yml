@@ -60,6 +60,6 @@ menu:
     url: /tags/
     weight: 20
   - identifier: geo
-    name: ✊🏽
+    name: "?"
     url: /geo/
     weight: 30

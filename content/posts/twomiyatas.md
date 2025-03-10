@@ -1,5 +1,5 @@
 ---
-title: "Two Miyatas: The Beginning"
+title: "Two Miyatas: The Idea"
 date: 2025-03-09
 tags: ["cycling"]
 draft: true

@@ -1,7 +1,7 @@
 ---
 title: "Gobi"
 date: 2025-03-08
-tags: ["dogs", "stream of consciousness"]
+tags: ["dogs", "pets", "cycling"]
 draft: false
 author: "Omar"
 description: "The little miss"
