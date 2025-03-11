@@ -22,4 +22,3 @@ And that's what it's come down to. What do I want from this? If I think about wh
 I've now decided to just go with Hugo (kind of the obvious choice for a personal blog in retrospect). The hardest decision to make was what theme to use. Now I just have to start writing.
 
 Here goes.
-

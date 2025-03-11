@@ -7,7 +7,7 @@ author: "Omar"
 description: "My little man"
 ---
 
-These posts are turning out very "pet forward." That's what I want to write about right now though, so 🤷
+These posts are turning out to be very "pet forward." That's what I want to write about right now though, so 🤷
 
 This is Max.
 
