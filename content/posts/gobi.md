@@ -7,7 +7,7 @@ author: "Omar"
 description: "The little miss"
 ---
 
-![Gobi in her helmet and googles on my bike](/gobike.webp)
+![Gobi in her helmet and googles on my bike](https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/gobike.webp)
 
 I live with a dog named Gobi. She's a delightfully energetic and
 affectionate miniature schnauzer. As I write this she's lazing
@@ -27,7 +27,7 @@ in the traffic. I pedal to catch up and Gobi looks satisfied when we're
 riding in a tighter formation. The little lady likes when the pack is
 together. Rides like this are one of the great joys of my life.
 
-![Gobi in her helmet and googles on my back](/buddyrider.jpg)
+![Gobi in her helmet and googles on my back](https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/buddyrider.jpg)
 
 One of the places we like riding to together when the weather is nice is the [Evergreen Brick Works](https://www.evergreen.ca/evergreen-brick-works/). There's
 a great open air market on the weekend and the paths in and out of the
