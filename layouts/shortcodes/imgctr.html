@@ -1,0 +1,7 @@
+{{ $imageCdn := .Site.Params.imageCdn }}
+{{ $imageName := .Get 0 }}
+{{ $alt := .Get 1 }}
+
+<div class="small-image-flex">
+<img src="{{ $imageCdn }}{{ $imageName }}" alt="{{ $alt }}" class="small-image-centre" width="400">
+</div> 
