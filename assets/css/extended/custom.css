@@ -18,6 +18,19 @@
   align-items: center;
 }
 
+.small-video-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.video-shortcode {
+  width: 80%;
+}
+
 .entry-content {
   font-size: 1rem;
 }

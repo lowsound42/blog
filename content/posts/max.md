@@ -75,7 +75,11 @@ A bathroom selfie of the three of us.
 
 {{<img maxandusconv.jpg "Selfie of the three of us">}}
 
-Me starting my self learning journey to becoming a web developer with CS50 and Max supervising on the side.
+Here's a video of geetha doing some work and Max politely asking for a pat on the head.
+
+{{< video src="VHS_20190323_18524200.MP4" type="video/mp4" preload="auto" >}}
+
+Bonus picture of me starting my self learning journey to becoming a web developer with Max supervising on the side.
 
 {{<img maxandmelearningconv.jpg "Me trying to work with Max sleeping on the desk">}}
 
