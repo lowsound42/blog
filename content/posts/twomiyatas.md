@@ -25,7 +25,11 @@ We decided that it would be fun and more interesting to bike to work instead of 
 
 The ride to work was about 25km each way and at the time I remember thinking that was a wild thing to do. The last time I had biked at all was when I was in high school and I never really went anywhere, I just biked around my neighbourhood. But it wasn't that big a deal and we'd bike over in the morning and then coordinate our departure to bike back home together as well. This was our routine for almost a year and a half and it turned into less of a thing we did to commute and more into a way of life.
 
-We started talking about cycling more and more, and doing bigger rides. In the summer of 2015 we did a ride to Niagara falls with our friend, Guido. Here's us at the end of that.
+I wanted to be on my bike all the time. There was a company called Favour that was one of the first delivery app services that came up from the US that contracted people to deliver stuff on their bikes; Exploitation of Labour as a Service or ELaaS. I joined up and started do deliveries after my day job. It was a shitty gig if that was your only gig but for me at the time it was just a way to be biking and doing something after work.
+
+{{<imgctr omaraboutus.jpg "At Udai's office after a delivery shift">}}
+
+After about a year and a bit of cycling to and from work, Udai and I started talking about  doing bigger rides. In the summer of 2015 we did a ride to Niagara falls with our friend, Guido. Here's us at the end of that.
 
 {{<imgctr niagarabike.jpeg "Ride to Niagara falls">}}
 
@@ -46,8 +50,10 @@ Eventually I found them. Two different sellers, both located in North York. Coin
 
 {{<img loadedbikes.jpg "Our bikes, loaded and ready to go">}}
 
-The next few weeks we spent all our free time learning how to service these bikes. In fact, I replaced my crankset with a new one. The original one was incredibly cool from a bike history perspective, it was a Shimano biopace set; a non-round, ellipse shaped piece of hardware that was supposed to make power transfer more efficient. I hated how it felt. I replaced it with a standard set that just felt more natural to me. We cleaned up the bottom brackets, the bearings in the wheels, replaced brake pads and handlebar tape, and cleaned the hell out of them. They were also slightly small for us, both of them. So we both got extended quill stems and tall seat posts. It was such a great summer of biking and being bike mechanics and drinking beer and just hanging out in the city.
+The next few weeks we spent all our free time learning how to service these bikes. I replaced my crankset with a new one. The original one was incredibly cool from a bike history perspective, it was a Shimano biopace set; a non-round, ellipse shaped piece of hardware that was supposed to make power transfer more efficient. I hated how it felt. I replaced it with a standard set that just felt more natural to me. We cleaned up the bottom brackets, the bearings in the wheels, replaced brake pads and handlebar tape, and cleaned the hell out of them. They were also slightly small for us, both of them. So we both got extended quill stems and tall seat posts. It was such a great summer of biking and being bike mechanics and drinking beer and just hanging out in the city.
 
-![Working at Udai's place](/udaisroom.jpg)
+{{<img udaisroom.jpg "Working at Udai's place">}}
 
 We also spent a LOT of time at MEC scoping out camping equipment. Neither of us had ever camped before and we would be doing it a lot out on the road. We talked to the staff there about our plans, asked them what we may need, did tons of research online, and spent a lot of money 😬
+
+We bought panniers for our bikes (front and back), tents, sleeping bags, mats, a little portable stove, a little pot, water purification tablets, and a whole lot more stuff that we thought we needed for a trip like this. It took months of planning and repeated trips to MEC to build up our stash of equipment for this journey. We rode our bikes a lot to train, the biggest bit being the commute to and from Mississauga, and just got comfortable with the idea of this trip.
