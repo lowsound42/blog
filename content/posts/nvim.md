@@ -99,7 +99,7 @@ vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 ```
 
-I have a habit of defaulting to the arrow keys by habit and I want to reaaaallly immerse myself in Vim-land now. So arrow keys are turned off and I have to navigate the 'right' way. I'm getting better at it.
+I have a habit of defaulting to the arrow keys and I want to reaaaallly immerse myself in Vim-land now. So arrow keys are turned off and I have to navigate the 'right' way. I'm getting better at it.
 
 In general I like it so far. Is it WAY more work to set this up than vscode or vscodium? Yes, 100%, for sure. But it's a lot of fun, I know more about what is going on, and I have total control over it. If you know me, then you know that I like that even if it's a little inconvenient. So I will keep going down this path and building this out. As I said before, this Neovim journey is just starting now, there's a lot to do with the LSP config, more searching around for cool themes, and most importantly **getting good at Vim**!
 
