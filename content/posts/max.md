@@ -13,7 +13,7 @@ This is Max.
 
 {{<img maxprofileconv.jpg "Max, my cat">}}
 
-Max lived to the age of 16, and 10 of his years were spent with me. A friend of mine adopted Max from the Humane Society when he was looking for cats on their website and he fell in love with this 5 year old, grey haired gentle giant. Max was a big boy, very long end to end, and he had a lot of fur. I still ended up calling him the little man. 
+Max lived to the age of 16, and 10 of his years were spent with me. A friend of mine adopted Max from the Humane Society. He was looking for cats on their website and he fell in love with this 5 year old, grey haired gentle giant. Max was a big boy, very long end to end, and he had a lot of fur. I still ended up calling him the little man. 
 
 Those days I'd spend a lot of time hanging out at their apartment, and Max and I also became good friends. A year after Tike got Max though, he had to make some big decisions for his career and one of those decisions meant that he'd be leaving the country, so he started looking for someone to adopt Max. It wasn't really something I needed to think about a lot.
 
@@ -93,7 +93,7 @@ I still think about him all the time. In fact, I got a tattoo of Max to make sur
 
 {{<img maxtattooconv.jpg "Max tattoo">}}
 
-I loved Max. I wish that everyone gets to have that with a pet at some point in their life; it's such a lovely friendship. Of course it hurts so horribly when they have to go but Tupperware Remix Party said it best in their song "[Pets](https://www.youtube.com/watch?v=vQJ0TBIAMXI)"
+I loved Max. I wish that everyone gets to have that with a pet at some point in their lives; it's such a lovely friendship. Of course it hurts so horribly when they have to go but Tupperware Remix Party said it best in their song "[Pets](https://www.youtube.com/watch?v=vQJ0TBIAMXI)"
 
 > You brought us closer together
 >
