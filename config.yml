@@ -1,7 +1,9 @@
 baseURL: "https://www.lowsound.dev"
 title: "I do business"
-paginate: 5
 theme: PaperMod
+pagination:
+  pagerSize: 5
+  path: page
 
 params:
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
