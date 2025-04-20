@@ -15,9 +15,7 @@ Example of an inline \(a^*=x-b^*\) equation.
 
 Examples of block equations:
 
-\[a^*=x-b^*\]
-
-\[ a^*=x-b^* \]
+\[a^{(\frac{3}{2})}=x-b^8\]
 
 \[
 3 \times a = 23 - a
