@@ -2,7 +2,7 @@
 title: "Mathematics for fun"
 date: 2025-04-19
 tags: ["maths", "learning", "programming", "tools"]
-author: "omar"
+author: "Omar"
 draft: false
 math: true
 ---
