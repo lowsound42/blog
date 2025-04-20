@@ -5,7 +5,23 @@ pagination:
   pagerSize: 5
   path: page
 
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
+
 params:
+  math: false
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Place for Things"
   description: "Things and Stuff"
