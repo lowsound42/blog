@@ -4,6 +4,7 @@ theme: PaperMod
 pagination:
   pagerSize: 5
   path: page
+googleAnalytics: "G-7CZL2B5L4Y"
 
 markup:
   goldmark:
