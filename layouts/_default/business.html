@@ -38,7 +38,7 @@
           updated any time I'm bored and can remember to do this.
         </p>
         {{ range $business }}
-        <li class="businessPost">
+        <li class="businessPost" id="{{.tag}}">
           <div class="businessInnerContainer">
             <img class="businessProfile" src="{{.image}}" />
             <div class="businessUserContainer">
