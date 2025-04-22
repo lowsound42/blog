@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      {{- partial "head.html" . }}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" href="/ok.ico" />
+      {{ with resources.Get "css/business.css" }}
+      <link href="{{ .RelPermalink }}" rel="stylesheet" />
+      {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict "minify"
+      hugo.IsProduction "sourceMap" (cond hugo.IsProduction "" "external")
+      "targetPath" "js/main.js" }} {{ with . | js.Build $opts }} {{ if
+      hugo.IsProduction }} {{ with . | fingerprint }}
+      <script
+        src="{{ .RelPermalink }}"
+        integrity="{{ .Data.Integrity }}"
+        crossorigin="anonymous"
+      ></script>
+      {{ end }} {{ else }}
+      <script src="{{ .RelPermalink }}"></script>
+      {{ end }} {{ end }} {{ end }}
+    </head>
+  </head>
+  <body>
+    <main class="content" id="top">
+      <header>{{- partialCached "header.html" . .Page -}}</header>
+      {{ range $business := .Site.Data.business }}
+      <ul class="businessContainer">
+        <p class="businessIntro">
+          LinkedIn is such an amazing website that I just had to have my own
+          feed of amazing, brilliant, genius entrepreneurs and techbros high
+          fiving each other and smelling their own farts. This is going to be
+          updated any time I'm bored and can remember to do this.
+        </p>
+        {{ range $business }}
+        <li class="businessPost">
+          <div class="businessInnerContainer">
+            <img class="businessProfile" src="{{.image}}" />
+            <div class="businessUserContainer">
+              <h2 class="businessName">{{.name}}</h2>
+              <p class="businessTitle">{{.title}}</p>
+            </div>
+          </div>
+          {{range .content}}
+          <p class="businessContent">{{.}}</p>
+          {{end}} {{ if .comments}}
+          <h4 class="postComments">Comments</h4>
+          {{range .comments}}
+          <div class="businessComment">
+            <div class="commenterProfile">
+              <img class="commenterImage" src="{{.image}}" />
+              <p class="commenterName">{{.name}}</p>
+            </div>
+            {{range .comment}}
+            <p class="comment">{{.}}</p>
+            <hr />
+            {{end}}
+          </div>
+          {{end}}{{else}}
+          <div class="businessNoComment">
+            <p>No comments yet</p>
+          </div>
+          {{end}}
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </main>
+    {{ partialCached "businessFooter.html" . .Layout .Kind (.Param "hideFooter")
+    (.Param "ShowCodeCopyButtons") -}}
+  </body>
+</html>

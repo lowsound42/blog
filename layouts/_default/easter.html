@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gobimax</title>
-    <link rel="icon" href="/ok.ico">
+    <link rel="icon" href="/ok.ico" />
     {{ with resources.Get "css/easter.css" }}
     <link href="{{ .RelPermalink }}" rel="stylesheet" />
     {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict "minify"
@@ -20,9 +20,9 @@
     <script src="{{ .RelPermalink }}"></script>
     {{ end }} {{ end }} {{ end }}
     <script>
-      const goBack = function(){
-       history.back();
-      }
+      const goBack = function () {
+        history.back();
+      };
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,13 +38,14 @@
   <body>
     <main class="content">
       <div class="hidden geomain">
-        <button class="geoback" onclick="goBack()"
-        ><img src="/hand.gif"/></button>        
+        <button class="geoback" onclick="goBack()">
+          <img src="/hand.gif" />
+        </button>
         <h1 class="font-effect-3d easter-intro">Welcome</h1>
         <p class="font-effect-3d easter-intro">to the desert of the real</p>
         <img class="geowelcome" src="/welcomesign.gif" />
         <div class="easter-container">
-          <div class="gif-left"><img src="/skelly.gif"/></div>
+          <div class="gif-left"><img src="/skelly.gif" /></div>
           <div class="word-vomit">
             <div>
               <p>Reject the corpo-fascist, VC funded, tech bro idiots.</p>
@@ -65,7 +66,7 @@
               </p>
             </div>
           </div>
-          <div class="gif-right"><img src="/skellytoo.gif"/></div>
+          <div class="gif-right"><img src="/skellytoo.gif" /></div>
         </div>
       </div>
       <div class="loader">

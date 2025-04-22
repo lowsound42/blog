@@ -1,0 +1,138 @@
+
+body {
+    background-color: #F4F2EE;
+}
+
+body.dark {
+    background-color: #1D1E20;
+    height: 100%;
+}
+
+
+main {
+    height: 100%;
+}
+
+.businessContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.businessContent {
+    font-size: 0.9rem;
+}
+
+.businessIntro {
+    width: 60%;
+    margin-bottom: 4rem;
+    text-justify: inter-word;
+}
+
+@media screen and (max-width: 600px) {
+    .businessIntro {
+        width: 90%;
+    }
+}
+
+.businessPost {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(124, 121, 121, 0.5);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+@media screen and ((min-width:751px ) and (max-width: 950px)) {
+    .businessPost {
+        width: 60%;
+    }
+}
+
+@media screen and ((min-width:651px ) and (max-width: 750px)) {
+    .businessPost {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .businessPost {
+        width: 90%;
+    }
+}
+
+.businessPost.dark {
+    background-color: #2E2E33;
+}
+
+.businessPost:hover {
+    box-shadow: 5px 8px 16px 3px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 5px 8px 16px 3px rgba(0,0,0,0.63);
+    -moz-box-shadow: 5px 8px 16px 3px rgba(0,0,0,0.63);
+}
+
+.businessPost:hover.dark {
+    box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.63);
+    -webkit-box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.63);
+    -moz-box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.63);
+}
+
+.businessInnerContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.businessUserContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.businessProfile {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.businessTitle {
+    font-size: 0.8rem;
+}
+
+.commenterProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+.commenterImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+.comment {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.businessNoComment {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+p {
+    font-family: 'Inconsolata';
+}
+
+.postComments {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}

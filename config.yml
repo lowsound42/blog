@@ -78,6 +78,10 @@ menu:
   - identifier: tags
     name: tags
     url: /tags/
+    weight: 40
+  - identifier: business
+    name: "business"
+    url: /business/
     weight: 20
   - identifier: geo
     name: "?"

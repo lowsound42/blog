@@ -1,0 +1,42 @@
+{
+  "1": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessgobiconv.jpg",
+    "name": "Gobi Van Aert",
+    "title": "Crypto | AI | Sales Rockstar",
+    "content": [
+      "If you're not doing using AI to boost your productivity, you've already fallen behind. Here are my tips to get you back on track.",
+      "⚽ Chasing balls",
+      "🍜 Stealing food",
+      "💩 pooping",
+      "If you want to keep up with the market, reply with a 'HIT ME' to get my newsletter."
+    ],
+    "comments": [
+      {
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesstoby.png",
+        "name": "Toby Flanderson",
+        "comment": ["HIT ME"]
+      },
+      {
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesskimchi.png",
+        "name": "Kimchi Kimcherson",
+        "comment": ["HIT ME"]
+      },
+      {
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessnash.png",
+        "name": "Nash Nasherson",
+        "comment": ["HIT ME"]
+      }
+    ]
+  },
+  "2": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesstoby.png",
+    "name": "Toby Flanderson",
+    "title": "Ex PetValu | Ex Petsmart | Ex Wellesley Animal Hospital",
+    "content": [
+      "Today on my way to work I bumped into a young lady on the sidewalk. She gave me a dirty look, and told me to go to hell. I had to go conduct an interview at work so I brushed it off and kept moving.",
+      "When I got to work my interviewee arrived and lo and behold, it was none other than the young lady with whom I had the interaction.",
+      "Suffice to say, she did not get the job.",
+      "Let this be a lesson to you all, you never know who your next hiring manager is going to be. Be polite."
+    ]
+  }
+}
