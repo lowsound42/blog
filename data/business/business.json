@@ -22,8 +22,8 @@
         "comment": ["HIT ME"]
       },
       {
-        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessnash.png",
-        "name": "Nash Nasherson",
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessnashconv.jpg",
+        "name": "Nash Gnasherson",
         "comment": ["HIT ME"]
       }
     ]
@@ -34,8 +34,40 @@
     "title": "Ex PetValu | Ex Petsmart | Ex Wellesley Animal Hospital",
     "content": [
       "Today on my way to work I bumped into a young lady on the sidewalk. She gave me a dirty look, and told me to go to hell. I had to go conduct an interview at work so I brushed it off and kept moving.",
-      "When I got to work my interviewee arrived and lo and behold, it was none other than the young lady with whom I had the interaction. Suffice to say, she did not get the job.",
-      "Let this be a lesson to you all, you never know who your next hiring manager is going to be. Be polite."
+      "When I got to work my interviewee arrived and lo and behold, it was none other than the young lady with whom I had the interaction. With a sheepish look on her face she began the interview, but we were obviously off to a bad start!",
+      "Fortunately for her I am a magnanimous and incredible person and I hold no grudges. I only care if you can do your job. She got lucky, most leaders are not like me. I am fantastic.",
+      "Let this be a lesson to you all, you never know who your next hiring manager is going to be. Be polite, be kind, be humble.",
+      "She got the job."
+    ]
+  },
+  "3": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessnashconv.jpg",
+    "name": "Nash Gnasherson",
+    "title": "Partner at Pupper Funds | Angel Investor",
+    "content": [
+      "I wake up at 330am everyday",
+      "Why do I do this? The better question is why aren't you doing the same? We are here to create value, to be productive. While you're asleep I'm already on my third coffee of the day. I've done a yoga session, some rock climbing, and my daily long run.",
+      "Your alarm is just starting to go off and I've already used AI to automate my entire workflow. I use AI because I am very smart and I understand AI and so I use AI for all the things that you are not using AI for. AI.",
+      "When you're having breakfast, I'm wrapping up my first meeting of the day. I meet so many people and I meet so hard. You're chilling and I'm meeting the fuck out of people.",
+      "Your lunchtime is when I hit the weightroom. I'm jacked and you're jackshit.",
+      "If you want to get on my level, drop a 'I WANT TO BE YOU' in my comments."
+    ],
+    "comments": [
+      {
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesstoby.png",
+        "name": "Toby Flanderson",
+        "comment": ["I WANT TO BE YOU"]
+      },
+      {
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesskimchi.png",
+        "name": "Kimchi Kimcherson",
+        "comment": ["I WANT TO BE YOU"]
+      },
+      {
+        "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessgobiconv.jpg",
+        "name": "Gobi Van Aert",
+        "comment": ["Nash, respond to my email."]
+      }
     ]
   }
 }
