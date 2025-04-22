@@ -81,6 +81,7 @@
 {{- if (not site.Params.disableThemeToggle) }}
 <script>
     if(localStorage.getItem('pref-theme') === 'dark'){
+        // document.body.classList.add('dark');
         const posts = document.getElementsByClassName('businessPost');
             for(let element of posts){
                 element.classList.add('dark');
