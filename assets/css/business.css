@@ -8,7 +8,6 @@ body.dark {
     height: 100%;
 }
 
-
 main {
     height: 100%;
 }
@@ -134,4 +133,21 @@ p {
 
 .postComments {
     margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.businessCommentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.businessComment {
+    border: 1px solid rgba(110, 105, 105, 0.35);
+    padding: 10px;
+    margin-bottom: 10px;
 }

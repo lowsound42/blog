@@ -50,18 +50,20 @@
           <p class="businessContent">{{.}}</p>
           &ensp; {{end}} {{ if .comments}}
           <h4 class="postComments">Comments</h4>
-          {{range .comments}}
-          <div class="businessComment">
-            <div class="commenterProfile">
-              <img class="commenterImage" src="{{.image}}" />
-              <p class="commenterName">{{.name}}</p>
+          <div class="businessCommentContainer">
+            {{range .comments}}
+            <div class="businessComment">
+              <div class="commenterProfile">
+                <img class="commenterImage" src="{{.image}}" />
+                <p class="commenterName">{{.name}}</p>
+              </div>
+              {{range .comment}}
+              <p class="comment">{{.}}</p>
+              {{end}}
             </div>
-            {{range .comment}}
-            <p class="comment">{{.}}</p>
-            <hr />
             {{end}}
           </div>
-          {{end}}{{else}}
+          {{else}}
           <div class="businessNoComment">
             <p>No comments yet</p>
           </div>
