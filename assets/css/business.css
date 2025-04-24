@@ -21,12 +21,13 @@ main {
 }
 
 .businessContent {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .businessIntro {
     width: 60%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-justify: inter-word;
 }
 
@@ -125,10 +126,12 @@ main {
 .businessNoComment {
     font-size: 0.9rem;
     margin-top: 0.5rem;
+    font-weight: 500;
 }
 
 p {
     font-family: 'Inconsolata';
+    font-weight: 500;
 }
 
 .postComments {
