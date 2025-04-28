@@ -64,7 +64,11 @@
             <div>🦴 <span class="businessLikes">{{.bones}}</span></div>
             {{end}}
           </div>
-          &ensp; {{ if .comments}}
+          &ensp;
+          {{if .postImage}}
+          <img class="postImage" src="{{.postImage}}" alt="the image associated with this post"/>
+          {{end}} 
+          {{ if .comments}}
           <h3 class="postComments">Comments</h4>
           <div class="businessCommentContainer">
             {{range .comments}}
