@@ -48,7 +48,17 @@
           </div>
           {{range .content}}
           <p class="businessContent">{{.}}</p>
-          &ensp; {{end}} {{ if .comments}}
+          &ensp; {{end}}
+          <div class="businessReactions">
+            {{if .likes}}
+            <div>✅ <span class="businessLikes">{{.likes}}</span></div>
+            {{end}} {{if .paws}}
+            <div>🐾 <span class="businessLikes">{{.paws}}</span></div>
+            {{end}} {{if .bones}}
+            <div>🦴 <span class="businessLikes">{{.bones}}</span></div>
+            {{end}}
+          </div>
+          &ensp; {{ if .comments}}
           <h4 class="postComments">Comments</h4>
           <div class="businessCommentContainer">
             {{range .comments}}

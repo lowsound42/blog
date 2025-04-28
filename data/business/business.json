@@ -27,7 +27,10 @@
         "name": "Nash Gnasherson",
         "comment": ["HIT ME"]
       }
-    ]
+    ],
+    "likes": 25,
+    "paws": 123,
+    "bones": 9
   },
   "2": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesstoby.png",
@@ -40,7 +43,10 @@
       "Fortunately for her I am a magnanimous and incredible person and I hold no grudges. I only care if you can do your job. She got lucky, most leaders are not like me. I am fantastic.",
       "Let this be a lesson to you all, you never know who your next hiring manager is going to be. Be polite, be kind, be humble.",
       "She got the job."
-    ]
+    ],
+    "likes": 250,
+    "paws": 12,
+    "bones": 1
   },
   "3": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businessnashconv.jpg",
@@ -71,6 +77,25 @@
         "name": "Gobi Van Aert",
         "comment": ["Nash, respond to my email."]
       }
-    ]
+    ],
+    "likes": 250,
+    "paws": 100,
+    "bones": 299
+  },
+  "4": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/businesskimchi.png",
+    "name": "Kimchi Kimcherson",
+    "tag": "4",
+    "title": "SHE-E-O | Intrepid Entrepreneur",
+    "content": [
+      "I spent this weekend hanging out with my family and this is what it taught me about business development.",
+      "🍞 We baked all Saturday morning and it reminded me that you have to be out there, hustling, and trying to get dat bread.",
+      "🧗🏼 My cousin and I went rock climbing and I learned the value of diligently attacking every obstacle.",
+      "🚲 Sunday afternoon was all about riding our bikes outside and it was a great reminder that no matter what, keep those sales wheels turning. The funnel doesn't build itself.",
+      "For more posts like this follow me and give this post a like."
+    ],
+    "likes": "25k",
+    "paws": "100k",
+    "bones": "312k"
   }
 }

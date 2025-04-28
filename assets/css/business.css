@@ -154,3 +154,16 @@ p {
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.businessLikes {
+    font-size: 0.8rem;
+}
+
+.businessReactions {
+    display: flex;
+    flex-direction: row;
+}
+
+.businessLikes {
+    margin-right: 0.5rem;
+}
