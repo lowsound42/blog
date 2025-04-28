@@ -27,7 +27,7 @@ main {
 
 .businessIntro {
     width: 60%;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     text-justify: inter-word;
 }
 
@@ -166,4 +166,9 @@ p {
 
 .businessLikes {
     margin-right: 0.5rem;
+}
+
+.businessHeading {
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }

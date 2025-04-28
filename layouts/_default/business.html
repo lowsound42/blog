@@ -30,17 +30,23 @@
     <main class="content" id="top">
       <header>{{- partialCached "header.html" . .Page -}}</header>
       {{ range $business := .Site.Data.business }}
-      <ul class="businessContainer">
+      <div class="businessContainer">
+        <h1 class="businessHeading">💼</h1>
         <p class="businessIntro">
           LinkedIn is such an amazing website that I just had to have my own
           feed of amazing, brilliant, genius entrepreneurs and techbros high
           fiving each other and smelling their own farts. This is going to be
           updated any time I'm bored and can remember to do this.
         </p>
+        <ul class="businessContainer">
         {{ range $business }}
         <li class="businessPost" id="{{.tag}}">
           <div class="businessInnerContainer">
-            <img class="businessProfile" src="{{.image}}" />
+            <img
+              class="businessProfile"
+              src="{{.image}}"
+              alt="profile picture of poster"
+            />
             <div class="businessUserContainer">
               <h2 class="businessName">{{.name}}</h2>
               <p class="businessTitle">{{.title}}</p>
@@ -59,12 +65,16 @@
             {{end}}
           </div>
           &ensp; {{ if .comments}}
-          <h4 class="postComments">Comments</h4>
+          <h3 class="postComments">Comments</h4>
           <div class="businessCommentContainer">
             {{range .comments}}
             <div class="businessComment">
               <div class="commenterProfile">
-                <img class="commenterImage" src="{{.image}}" />
+                <img
+                  class="commenterImage"
+                  src="{{.image}}"
+                  alt="profile picture of a commenter"
+                />
                 <p class="commenterName">{{.name}}</p>
               </div>
               {{range .comment}}
@@ -81,6 +91,7 @@
         </li>
         {{ end }}
       </ul>
+      </div>
       {{ end }}
     </main>
     {{ partialCached "businessFooter.html" . .Layout .Kind (.Param "hideFooter")
