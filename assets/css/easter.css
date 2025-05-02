@@ -23,7 +23,7 @@
   }
 
   h1 {
-    margin-top: 5rem;
+    margin-top: 1rem;
     font-size: 6rem;
   }
   
@@ -36,12 +36,20 @@
     outline: none;
     border: none;
   }
+
+  .geonav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
   
   .geoback > img {
     width: 125px;
     cursor: pointer;
   }
   
+
   p {
     padding: 1rem;
     font-size: 4rem;
@@ -65,6 +73,23 @@
     font-size: 2rem;
   }
 
+  .geohome {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 125px;
+    align-self: self-start;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: blinker 1s ease-in infinite;
+  }
+
+  .geohome > p {
+    font-size: 3rem;
+  }
+  
   .loader{
     height: 100vh;
     display: flex;
