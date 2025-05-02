@@ -7,13 +7,11 @@ author: "Omar"
 description: "The beginning"
 ---
 
-<!-- ![My life with Max, circa 2015](https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/666balcony.jpg) -->
-
 {{<img 666balcony.jpg "My life with Max, circa 2015">}}
 
 In the mid-2010's my life was lived in small spaces that I filled with bikes, tools, and bike parts. But I wasn't always a person on a bike, it took me some time to get there and then I went all in.
 
-I lived in Toronto and worked in Mississauga, which sucked. Besides the mind-numbing boringness of the Mississauga corporate park with its endless parking lots and architecturally brain dead office buildings, the commute was pretty shitty. For a brief moment I did consider buying a car but besides the commute I really wouldn't have used it that much; I took transit everywhere and if I needed to leave town for whatever, I could rent a car; moving to Sauga was not even really a consideration. The only real option (I thought at the time) was to start taking transit to work. This was my route:
+I lived in Toronto and worked in Mississauga, which sucked. Besides the mind-numbing boringness of the Mississauga corporate park with its endless parking lots and dull office buildings, the commute was pretty shitty. For a brief moment I did consider buying a car but besides the commute I really wouldn't have used it that much. I took transit everywhere and if I needed to leave town for whatever, I could rent a car. Moving to Sauga was not even really a consideration. The only real option (I thought at the time) was to start taking transit to work. This was my route:
 - Line 1 from Wellesley station to Bloor/Yonge
 - Line 2 from Bloor/Yonge to Kipling station OR Islington station if I wanted a beef patty
 - A bus from Kipling or Islington to a stop about a kilometre from the office
@@ -21,11 +19,13 @@ I lived in Toronto and worked in Mississauga, which sucked. Besides the mind-num
 
 That whole process took about an hour and forty minutes. It was okay, I'd shut my brain off, listen to something and just autopilot my way to work.
 
-We decided that it would be fun and more interesting to bike to work instead of sit on the TTC (and also Miway) everyday for who knows how long. Buying a car was out of the question because it was too expensive for one but also we were both pretty anti-car. So we decided to do the biking thing. We walked over to Uncle Jacob's on Spadina and bought two Raleigh road bikes for ~$200 each. They were not great bikes but I still remember mine fondly. 
+A few weeks into this new job I realized that my friend Udai also did pretty much exactly the same commute everyday to his job. He lived in Kensington Market so he started there but he ended up at the same place I did. We began doing the commute together. He'd get out of the train at Bathurst station and I'd meet him there. This was amazing because we could now go to Fahmee bakery and get breakfast there. This was fun for a bit and the morning commute was okay but I think it was the way back that started getting painful. It was just too tiring to end the day with an hour and a half on a couple of buses and the train, often with no sitting room.
+
+We decided that it would be fun and more interesting to bike to work. Udai was kind of into biking at the time and he brought it up first. We talked about it for a bit and then just committed to it. We walked over to Uncle Jacob's on Spadina and bought two Raleigh road bikes for ~$200 each. They were not great bikes but I still remember mine fondly. 
 
 The ride to work was about 25km each way and at the time I remember thinking that was a wild thing to do. The last time I had biked at all was when I was in high school and I never really went anywhere, I just biked around my neighbourhood. But it wasn't that big a deal and we'd bike over in the morning and then coordinate our departure to bike back home together as well. This was our routine for almost a year and a half and it turned into less of a thing we did to commute and more into a way of life.
 
-I wanted to be on my bike all the time. There was a company called Favour that was one of the first delivery app services that came up from the US that contracted people to deliver stuff on their bikes; Exploitation of Labour as a Service or ELaaS. I joined up and started do deliveries after my day job. It was a shitty gig if that was your only gig but for me at the time it was just a way to be biking and doing something after work.
+I wanted to be on my bike all the time. There was a company called Favour that was one of the first delivery app services that came up from the US that contracted people to deliver stuff on their bikes; Exploitation of Labour as a Service! I joined up and started do deliveries after my day job. It was a shitty gig if that was your only gig but for me at the time it was just a way to be biking and doing something after work.
 
 {{<imgctr omaraboutus.jpg "At Udai's office after a delivery shift">}}
 
