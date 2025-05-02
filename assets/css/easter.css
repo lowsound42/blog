@@ -14,7 +14,7 @@
     font-weight: 400;
     font-style: normal;
     width: 100vw;
-    background-image: url('https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/cyber.jpg');
+    background-image: url('https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/stars-w.bmp');
   }
 
   .content {
@@ -83,12 +83,13 @@
   
   .word-vomit {
     margin: 2rem 0rem;
-    background: rgba(0,0,0,0.5);    
     width: 40%;
     display: flex;
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
+    background-color: black;
+    color: rgb(255, 255, 255);
   }
 
   .easter-container {
@@ -112,7 +113,21 @@
   .music-title {
     font-family: "VT323", serif;
     color: white;
-    font-size: 4rem;
+    font-size: 2rem;
+    margin: 1rem 0rem;
+  }
+
+  .resources {
+    font-family: "VT323", serif;
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color:mediumseagreen;
+    display: flex;
+    flex-direction: column;
   }
   
   .music-link {
@@ -128,6 +143,30 @@
     0px -6px 12px #F90, /* Middle layer - body of flame (orange) */
     0px -10px 20px #C33; /* Outermost layer - edges of flame (red) */
 
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  h3 {
+    animation: blinker 2s ease-in infinite;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: white;
   }
   
 
@@ -146,7 +185,6 @@
 
     .word-vomit {
       margin: 2rem 0rem;
-      background: rgba(0,0,0,0.5);    
       width: 80%;
       display: flex;
       justify-content: center;
