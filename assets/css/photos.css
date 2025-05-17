@@ -40,6 +40,6 @@ p {
 
 @media screen and (max-width: 600px) {
   .photoContainer {
-    width: 100%;
+    width: 90%;
   }
 }
