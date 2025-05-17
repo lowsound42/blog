@@ -79,11 +79,15 @@ menu:
     name: tags
     url: /tags/
     weight: 40
+  - identifier: photos
+    name: photos
+    url: /photos/
+    weight: 20
   - identifier: business
     name: "business"
     url: /business/
-    weight: 20
+    weight: 30
   - identifier: geo
     name: "?"
     url: /geo/
-    weight: 30
+    weight: 50
