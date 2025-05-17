@@ -1,0 +1,39 @@
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img-block {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Inconsolata";
+  font-weight: 500;
+}
+
+.photoContainer {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}

@@ -1,0 +1,30 @@
+{
+  "walk": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photoggrwalk.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoggrwalk.gif"
+  },
+  "gobigeetha": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobigeetha.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobigeetha.gif"
+  },
+  "wild": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobiwild.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobiwild.gif"
+  },
+  "tongue": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobitongue.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobitongue.gif"
+  },
+  "pidgeon": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photopidgeon.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photopidgeon.gif"
+  },
+  "run": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobirun.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobirun.gif"
+  },
+  "protest": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photoprotest.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoprotest.gif"
+  }
+}

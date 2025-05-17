@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <head>
       {{- partial "head.html" . }}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,11 +23,10 @@
       {{ end }} {{ else }}
       <script src="{{ .RelPermalink }}"></script>
       {{ end }} {{ end }} {{ end }}
-    </head>
   </head>
   <body>
+          <header>{{- partialCached "header.html" . .Page -}}</header>
     <main class="content" id="top">
-      <header>{{- partialCached "header.html" . .Page -}}</header>
       {{ range $business := .Site.Data.business }}
       <div class="businessContainer">
         <h1 class="businessHeading">💼</h1>

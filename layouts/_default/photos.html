@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{- partial "head.html" . }}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/ok.ico" />
+    {{ with resources.Get "css/photos.css" }}
+    <link href="{{ .RelPermalink }}" rel="stylesheet" />
+    {{ end }} {{ with resources.Get "css/fancy.css" }}
+    <link href="{{ .RelPermalink }}" rel="stylesheet" />
+    {{ end }} {{ with resources.Get "css/photos.css" }}
+    <link href="{{ .RelPermalink }}" rel="stylesheet" />
+    {{ end }}
+  </head>
+  <body>
+    <header>{{- partialCached "header.html" . .Page -}}</header>
+    <main class="content" id="top">
+      <div class="photoContainer">
+        <p class="intro">
+          I've recently bought myself a camera and am enjoying walking around
+          taking pictures. I am not good at it but I think it's fun and I'm
+          enjoying learning about photography in general.
+        </p>
+        <div class="gallery">
+          {{ range $photos := .Site.Data.photos }} {{ range $photos }}
+          <a class="img-block" data-fancybox="gallery" data-src="{{.image}}">
+            <img src="{{.thumbnail}}" />
+          </a>
+          {{end}} {{end}}
+        </div>
+      </div>
+    </main>
+    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param
+    "ShowCodeCopyButtons") -}} {{ with resources.Get "js/main.js" }} {{ $opts :=
+    dict "minify" hugo.IsProduction "sourceMap" (cond hugo.IsProduction ""
+    "external") "targetPath" "js/main.js" }} {{ with . | js.Build $opts }} {{ if
+    hugo.IsProduction }} {{ with . | fingerprint }}
+    <script
+      src="{{ .RelPermalink }}"
+      integrity="{{ .Data.Integrity }}"
+      crossorigin="anonymous"
+    ></script>
+    {{ end }} {{ else }}
+    <script src="{{ .RelPermalink }}"></script>
+    {{ end }} {{ end }} {{ end }}
+  </body>
+</html>
