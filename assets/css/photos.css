@@ -37,3 +37,9 @@ p {
   align-items: center;
   min-height: 100vh;
 }
+
+@media screen and (max-width: 600px) {
+  .photoContainer {
+    width: 100%;
+  }
+}
