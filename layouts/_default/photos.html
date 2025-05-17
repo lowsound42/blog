@@ -28,8 +28,19 @@
         </p>
         <div class="gallery">
           {{ range $photos := .Site.Data.photos }} {{ range $photos }}
-          <a class="img-block" data-fancybox="gallery" data-src="{{.image}}">
-            <img src="{{.thumbnail}}" />
+          <a
+            class="img-block big"
+            data-fancybox="gallery"
+            data-src="{{.image}}"
+          >
+            <img src="{{.thumbnailBig}}" />
+          </a>
+          <a
+            class="img-block small"
+            data-fancybox="gallery"
+            data-src="{{.image}}"
+          >
+            <img src="{{.thumbnailSmall}}" />
           </a>
           {{end}} {{end}}
         </div>

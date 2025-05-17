@@ -15,6 +15,10 @@ p {
   font-weight: 500;
 }
 
+.small {
+  display: none;
+}
+
 .photoContainer {
   display: flex;
   width: 70%;
@@ -39,6 +43,12 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+  .big {
+    display: none;
+  }
+  .small {
+    display: block;
+  }
   .photoContainer {
     width: 90%;
   }
