@@ -1,37 +1,30 @@
 {
   "walk": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photoggrwalk.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoggrwalk.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photoggrwalk.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoggrwalk.gif"
   },
   "gobigeetha": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobigeetha.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobigeetha.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photogobigeetha.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobigeetha.gif"
   },
   "wild": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobiwild.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobiwild.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photogobiwild.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobiwild.gif"
   },
   "tongue": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobitongue.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobitongue.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photogobitongue.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobitongue.gif"
   },
   "pidgeon": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photopidgeon.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photopidgeon.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photopidgeon.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photopidgeon.gif"
   },
   "run": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobirun.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobirun.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photogobirun.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobirun.gif"
   },
   "protest": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photoprotest.jpg",
-    "thumbnailBig": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoprotest.gif",
-    "thumbnailSmall": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mobile/photoprotest.gif"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoprotest.gif"
   }
 }
