@@ -57,3 +57,5 @@ The next few weeks we spent all our free time learning how to service these bike
 We also spent a LOT of time at MEC scoping out camping equipment. Neither of us had ever camped before and we would be doing it a lot out on the road. We talked to the staff there about our plans, asked them what we may need, did tons of research online, and spent a lot of money 😬
 
 We bought panniers for our bikes (front and back), tents, sleeping bags, mats, a little portable stove, a little pot, water purification tablets, and a whole lot more stuff that we thought we needed for a trip like this. It took months of planning and repeated trips to MEC to build up our stash of equipment for this journey. We rode our bikes a lot to train, the biggest bit being the commute to and from Mississauga, and just got comfortable with the idea of this trip.
+
+this requires a lot of planning before I write it out -_-
