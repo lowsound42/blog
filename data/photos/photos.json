@@ -26,5 +26,9 @@
   "protest": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photoprotest.jpg",
     "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoprotest.gif"
+  },
+  "cow": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photocow.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photocow.gif"
   }
 }
