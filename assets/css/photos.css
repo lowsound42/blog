@@ -59,6 +59,11 @@ p {
 }
 
 @media screen and (max-width: 600px) {
+
+  .img-block{
+    padding: 0.2rem;
+  }
+
   .photoContainer {
     width: 90%;
   }
