@@ -26,7 +26,7 @@ main {
 }
 
 .businessIntro {
-    width: 60%;
+    width: 50%;
     margin-bottom: 1rem;
     text-justify: inter-word;
 }
@@ -49,18 +49,34 @@ main {
 }
 
 @media screen and ((min-width:751px ) and (max-width: 950px)) {
+    .businessIntro {
+    width: 60%;
+    margin-bottom: 1rem;
+    text-justify: inter-word;
+    }
+
     .businessPost {
         width: 60%;
     }
 }
 
 @media screen and ((min-width:651px ) and (max-width: 750px)) {
+    .businessIntro {
+    width: 70%;
+    margin-bottom: 1rem;
+    text-justify: inter-word;
+    }
     .businessPost {
         width: 70%;
     }
 }
 
 @media screen and (max-width: 650px) {
+    .businessIntro {
+    width: 80%;
+    margin-bottom: 1rem;
+    text-justify: inter-word;
+    }
     .businessPost {
         width: 90%;
     }
