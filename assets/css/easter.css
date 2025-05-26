@@ -182,6 +182,7 @@
   h3 {
     animation: blinker 2s ease-in infinite;
     margin-bottom: 1rem;
+    color: white;
   }
 
   ul {
