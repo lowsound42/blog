@@ -48,18 +48,18 @@ p {
 }
 
 .fancythumb {
-  width: 400px;
+  width: 300px;
 }
 
 @media (min-width: 1391px) and (max-width: 1580px) {
   .gallery {
-    width: 150%;
+    width: 100%;
   }
 }
 
 @media (min-width: 1027px) and (max-width: 1390px) {
   .gallery {
-    width: 150%;
+    width: 100%;
   }
   .intro {
     width: 70%;
@@ -71,13 +71,13 @@ p {
 
 @media (min-width: 601px) and (max-width: 1026px) {
   .gallery {
-    width: 150%;
+    width: 100%;
   }
   .intro {
     width: 100%;
   }
   .fancythumb {
-    width: 250px;
+    width: 150px;
   }
 }
 
