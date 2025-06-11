@@ -61,3 +61,4 @@ We bought panniers for our bikes (front and back), tents, sleeping bags, mats, a
 this requires a lot of planning before I write it out -_-
 
 still havent done this 
+im struggling :sob:
