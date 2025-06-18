@@ -21,7 +21,7 @@ That whole process took about an hour and forty minutes. It was okay, I'd shut m
 
 A few weeks into this new job I realized that my friend Udai also did pretty much exactly the same commute everyday to his job. He lived in Kensington Market so he started there but he ended up at the same place I did. We began doing the commute together. He'd get out of the train at Bathurst station and I'd meet him there. This was amazing because we could now go to Fahmee bakery and get breakfast there. This was fun for a bit and the morning commute was okay but I think it was the way back that started getting painful. It was just too tiring to end the day with an hour and a half on a couple of buses and the train, often with no sitting room.
 
-We decided that it would be fun and more interesting to bike to work. Udai was kind of into biking at the time and he brought it up first. We talked about it for a bit and then just committed to it. We walked over to Uncle Jacob's on Spadina and bought two Raleigh road bikes for ~$200 each. They were not great bikes but I still remember mine fondly. 
+We decided that it would be fun and more interesting to bike to work. Udai was kind of into biking at the time and he brought it up first. We talked about it for a bit and then just committed to it. We walked over to Uncle Jacob's on Spadina and bought two Raleigh road bikes for ~$200 each. They were not great bikes but I still remember mine fondly.
 
 The ride to work was about 25km each way and at the time I remember thinking that was a wild thing to do. The last time I had biked at all was when I was in high school and I never really went anywhere, I just biked around my neighbourhood. But it wasn't that big a deal and we'd bike over in the morning and then coordinate our departure to bike back home together as well. This was our routine for almost a year and a half and it turned into less of a thing we did to commute and more into a way of life.
 
@@ -39,7 +39,7 @@ I can't remember who brought it up first, probably Udai. Eventually we were regu
 
 {{<img worksucksshot.png "The difference between me and Udai">}}
 
-At some point we committed. We just said okay, we're doing this. After buying our train tickets to Vancouver (on The Canadian, the Via Rail train that goes all the way), it started feeling real. This was in 2015, and almost 6 months ahead of time, I requested all my measly 2 weeks of vacation for the summer of 2016 as well as an additional 2 months of unpaid leave 😅. We were pushing the limits of how much time we could take off at work, unpaid leave included. In fact the majority of our time off was going to be unpaid but we still had a hard limit before we really had to go back to our jobs. 
+At some point we committed. We just said okay, we're doing this. After buying our train tickets to Vancouver (on The Canadian, the Via Rail train that goes all the way), it started feeling real. This was in 2015, and almost 6 months ahead of time, I requested all my measly 2 weeks of vacation for the summer of 2016 as well as an additional 2 months of unpaid leave 😅. We were pushing the limits of how much time we could take off at work, unpaid leave included. In fact the majority of our time off was going to be unpaid but we still had a hard limit before we really had to go back to our jobs.
 
 At this point we had the time off, the train tickets, and the commitment. We needed bikes. I scoured craigslist for weeks. My criteria were:
 - Steel frames
@@ -60,5 +60,6 @@ We bought panniers for our bikes (front and back), tents, sleeping bags, mats, a
 
 this requires a lot of planning before I write it out -_-
 
-still havent done this 
+still havent done this
 im struggling :sob:
+still still
