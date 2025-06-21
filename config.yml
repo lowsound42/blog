@@ -21,6 +21,7 @@ markup:
         enable: true
 
 params:
+  cdnUrl: "https://lowsound.tor1.cdn.digitaloceanspaces.com"
   math: false
   # env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: "Place for Things"
