@@ -3,6 +3,10 @@
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photoggrwalk.jpg",
     "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photoggrwalk.gif"
   },
+  "zed": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/zed.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/zed.jpg"
+  },
   "gobigeetha": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/photos/photogobigeetha.jpg",
     "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/photogobigeetha.gif"

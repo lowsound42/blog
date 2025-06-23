@@ -50,10 +50,18 @@ p {
 .fancythumb {
   width: 300px;
 }
+.thumbDiv {
+  max-height: 200px;
+  overflow: hidden;
+}
 
 @media (min-width: 1391px) and (max-width: 1580px) {
   .gallery {
     width: 100%;
+  }
+  .thumbDiv {
+    max-height: 200px;
+    overflow: hidden;
   }
 }
 
@@ -67,6 +75,10 @@ p {
   .fancythumb {
     width: 250px;
   }
+  .thumbDiv {
+    max-height: 150px;
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1026px) {
@@ -78,6 +90,10 @@ p {
   }
   .fancythumb {
     width: 150px;
+  }
+  .thumbDiv {
+    max-height: 100px;
+    overflow: hidden;
   }
 }
 
@@ -91,6 +107,10 @@ p {
   }
   .fancythumb {
     width: 150px;
+  }
+  .thumbDiv {
+    max-height: 100px;
+    overflow: hidden;
   }
 }
 
@@ -112,5 +132,9 @@ p {
   }
   .fancythumb {
     width: 150px;
+  }
+  .thumbDiv {
+    max-height: 100px;
+    overflow: hidden;
   }
 }
