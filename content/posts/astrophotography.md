@@ -13,7 +13,7 @@ This past weekend Geetha, Gobi, and I went camping up in Algonquin with our neig
 
 The trail was harder than we expected, it goes into a climb almost immediately and then continues to climb for a bit. Also there was a closure on the path that added a 2.7km detour. This was okay becauase the detour was actually kind of flat :D
 
-We didn't actually plan to do the entire Highlander trail because we haven't done backcountry camping as a group before so this was a bit of a shakedown run. Also, since this was a long weekend, most of the sites were booked and the one we got was the only one we could get; and it was only for Sunday and Monday. So we decided to hike out to our site and then just relax there and do a day trip out to find a good swimming spot.
+We didn't actually plan to do the entire Highlander trail because we haven't done backcountry camping as a group before so this was a bit of a shakedown run. Also, since this was a long weekend, most of the sites were booked and the one we got was the only one available all weekend. So we decided to hike out to our site and then just relax there and do a day trip out to find a good swimming spot.
 
 Setting up camp was great, the swimming was glorious, etc etc. But what I was really excited about was to try to do some astrophotography with my new camera.
 
