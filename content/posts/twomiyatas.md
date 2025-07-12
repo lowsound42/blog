@@ -1,6 +1,7 @@
 ---
 title: "Two Miyatas - Part 1 of ?"
 date: 2025-03-15
+lastmod: 2025-02-22
 tags: ["cycling"]
 draft: true
 author: "Omar"

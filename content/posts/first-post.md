@@ -1,6 +1,7 @@
 ---
 title: "Initial Commit"
 date: 2025-02-22
+lastmod: 2025-02-22
 tags: ["stream of consciousness"]
 draft: false
 author: "Omar"

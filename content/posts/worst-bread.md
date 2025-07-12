@@ -1,6 +1,7 @@
 ---
 title: "Public Service Announcement"
 date: 2025-04-10
+lastmod: 2025-04-10
 tags: ["food", "stream of consciousness"]
 draft: false
 author: "Omar"

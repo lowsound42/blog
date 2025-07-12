@@ -1,6 +1,7 @@
 ---
 title: "Max"
 date: 2025-03-10
+lastmod: 2025-03-10
 tags: ["cats", "pets"]
 draft: false
 author: "Omar"

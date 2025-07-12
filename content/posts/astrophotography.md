@@ -1,6 +1,7 @@
 ---
 title: "I Need Some Space"
 date: 2025-07-03
+lastmod: 2025-07-03
 tags: ["photography", "camping"]
 draft: false
 author: "Omar"

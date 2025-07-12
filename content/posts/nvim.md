@@ -1,6 +1,7 @@
 ---
 title: "IDE Adventure"
 date: 2025-03-30
+lastmod: 2025-03-30
 tags: ["programming", "tools"]
 draft: false
 author: "Omar"

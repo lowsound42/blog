@@ -1,6 +1,7 @@
 ---
 title: "Gobi"
 date: 2025-03-08
+lastmod: 2025-03-08
 tags: ["dogs", "pets", "cycling"]
 draft: false
 author: "Omar"
