@@ -94,7 +94,7 @@ I still think about him all the time. In fact, I got a tattoo of Max to make sur
 
 {{<img maxtattooconv.jpg "Max tattoo">}}
 
-I loved Max. I wish that everyone gets to have that with a pet at some point in their lives; it's such a lovely friendship. Of course it hurts so horribly when they have to go but Tupperware Remix Party said it best in their song "[Pets](https://www.youtube.com/watch?v=vQJ0TBIAMXI)"
+I loved Max. I wish that everyone gets to have that with a pet at some point in their lives; it's such a lovely friendship. Yes, it hurts so much when they have to go but Tupperware Remix Party said it best in their song "[Pets](https://www.youtube.com/watch?v=vQJ0TBIAMXI)"
 
 > You brought us closer together
 >
@@ -106,4 +106,12 @@ I loved Max. I wish that everyone gets to have that with a pet at some point in 
 >
 > And even though that sucks
 >
->I wouldn’t have it any other way
+> I wouldn’t have it any other way
+>
+> Good bye
+>
+> My friend
+>
+> See You
+>
+> Again
