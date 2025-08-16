@@ -93,6 +93,6 @@ This is scary, fucked up shit. And it is directly related to the stupid fucking 
 
 - [DAIR](https://www.dair-institute.org/). Timnit Gebru was fired from Google for doing her job well. i.e. researching the ethical implications of AI (specifically for co-authoring [this](https://dl.acm.org/doi/10.1145/3442188.3445922) paper on LLM's). She is one of the great researchers that went on to found DAIR, an independent institute that explores a better vision for technology.
 
-- [Where's Your Ed At](https://www.wheresyoured.at/). Ed Zitron's very funny blog. His piece on [business idiots](https://www.wheresyoured.at/) is just fantastic.
+- [Where's Your Ed At](https://www.wheresyoured.at/). Ed Zitron's very funny blog. His piece on [business idiots](https://www.wheresyoured.at/the-era-of-the-business-idiot/) is just fantastic.
 
 - [Nik Suresh](https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/?ref=wheresyoured.at). I've linked to a specific post that killed me the first time I read it, but Nikhil's blog is amazing in general.
