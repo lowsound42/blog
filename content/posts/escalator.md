@@ -83,4 +83,12 @@ And then there's the next level of evil tech assholes. Personally I think that t
 
 This is scary, fucked up shit. And it is directly related to the stupid fucking studio Ghibli stealing image generator machines. These are the same thing, they come from the same place, from the same minds, from the same venture capital money.
 
-Krist Novoselic tried to warn us.
+**Krist Novoselic tried to warn us.**
+
+### Recommended brain reset tools
+
+- [Empire of AI](https://karendhao.com/). Brilliant. The first time I heard the story about Te Hiku Media was actually on the podcast, Tech Won't Save Us (Paris Marx), but reading about it again in Empire of AI recently made me think about how this stuff can be wonderful. And how like many technologies, it is being co-opted by lunatics.
+
+- [Tech Won't Save Us](https://www.techwontsave.us/). My favourite podcast. Always fantastic guests, and always great conversation about what is happening. It's not an "oh shit things are hopeless" vibe either. It's always presenting a hopeful vision.
+
+- [DAIR](https://www.dair-institute.org/). Timnit Gebru was fired from Google for doing her job well. i.e. researching the ethical implications of AI (specifically for co-authoring [this](https://dl.acm.org/doi/10.1145/3442188.3445922) paper on LLM's). She is one of the great researchers that went on to found DAIR, an independent institute that explores a better vision for technology.
