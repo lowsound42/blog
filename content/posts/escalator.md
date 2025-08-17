@@ -20,7 +20,7 @@ Things that I love about the video:
 - How Kurt and Dave immediately groan as he begins the rant. This is obviously a recurring theme.
 - Kurt butts in with a solution. Stand to the side so that people can walk up the left. Krist ignores him and continues the rant.
 
-I found this on YouTube years ago, I watched it, and then forgot about it. The stupid AI bullshit in the air these days reminded me of this video.
+I found this on YouTube years ago, I watched it, and then forgot about it. The stupid AI bullshit in the air these days reminded me that it existed.
 
 ### Excuse me, whatever the fuck do you mean?
 
@@ -46,7 +46,7 @@ There's a lot of this going around right now. Posts where people try to convince
 
 Shut. The. Fuck. Up.
 
-None of this is inevitable. Megacorps (run by loser finance guys posing as scientists) have been given the keys to our societies and are engaging in wildly unethical, unsustainable extractivism. These posts about inevitability and people having to adapt are just attempts to manufacture consent. We don't have to accept anything or adapt to anything if we don't want to. If it's wrong.
+None of this is inevitable. Megacorps (run by loser finance guys posing as scientists) have been given the keys to our societies and are engaging in wildly unethical, unsustainable extractivism. These posts about inevitability and people having to adapt are just attempts to manufacture consent. We don't have to accept anything or adapt to anything if we don't want to, especially if it is harmful to people. 
 
 And sure, call me a Luddite. I don't mind. In fact I consider it a badge of honour.
 
@@ -54,9 +54,9 @@ And sure, call me a Luddite. I don't mind. In fact I consider it a badge of hono
 
 I actually happen to think this stuff _is_ interesting. LLM's are cool. Computer Vision is cool. Machine Learning is cool. But the CEO's, VP's of Sales, Heads of Marketing, etc are hell-bent on pushing this shit on us as a foRcE mULtIpLIeR.
 
-There _are_ great applications for these kinds of technologies. [Here's](https://tehiku.nz/te-hiku-tech/papa-reo/) an incredible example. The indigenous Māori language, te reo Māori, is dying. The goal of 'te hiku media' is to collect all the recorded te reo Māori that they can find and build a model for the language. They are currently able to translate between te reo Māori and English with 82% accuracy.
+There _are_ great applications for these kinds of technologies. [Here's](https://tehiku.nz/te-hiku-tech/papa-reo/) an incredible example. The indigenous Māori language, te reo Māori, is dying. The goal of Te Hiku Media is to collect all the recorded te reo Māori that they can find and build a model for the language. They are currently able to translate between te reo Māori and English with 82% accuracy.
 
-All of this was done _with_ the Māori peoples' consent and participation. They used **two** GPU's to get the model trained. And the tool has been built to do something specific. When these tools use data that makes sense for a specific job, not only can they produce amazing results, but they can be trained to do so without chugging fresh water, producing noise pollution, emanating waves of heat, and crashing global supply chains because of chip hoarding. Te Hiku Media exists in opposition to the fucking Silicon Valley ethos which seems to involve taking whatever they want from whomever they want without asking for permission. 
+All of this was done _with_ the Māori peoples' consent and participation. They used **two** GPU's to get the model trained. And the tool has been built to do something specific. When these tools use data that makes sense for a specific job, not only can they produce amazing results, but they can be trained to do so without chugging infinite amounts of fresh water, producing noise pollution, emanating waves of heat, and crashing global supply chains because of chip hoarding. Te Hiku Media exists in opposition to the fucking Silicon Valley ethos which seems to involve taking whatever they want from whomever they want without asking for permission. 
 
 And the problems they claim they are trying to solve are...¯\\_(ツ)_/¯ 
 
