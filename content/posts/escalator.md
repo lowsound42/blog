@@ -24,7 +24,7 @@ I found this on YouTube years ago, I watched it, and then forgot about it. The s
 
 ### Excuse me, whatever the fuck do you mean?
 
-What I mean is that so called "AI" is the Escalator. I'm just going to ignore the fact that what is referred to as a monolithic AI is actually a myriad set of technologies. LLM's have taken over the concept and when people say AI now they kind of just mean one of these LLM's. Whatever, I'm just going to say AI and you, the reader, can substitute whatever you want in there, it doesn't matter.
+What I mean is that so called "AI" is the Escalator. I'm just going to ignore the fact that what is referred to as a monolithic AI is actually a myriad set of technologies. LLM's have taken over the concept and when people say AI now they kind of just mean one of these LLM's. Whatever, I'm just going to say AI and you, the reader, can substitute whatever you want in there.
 
 What matters is the idea. AI is supposed to make us better and quicker but people are standing on the escalator. Instead of being better and quicker, we're feeding things into the machine and regurgitating what it tells us.
 
@@ -36,9 +36,11 @@ I'm talking about:
 - The 'grok, is this true?' morons on twitter
 - Other similar people doing similarly idiotic things
 
-People don't care about being better, they just care about quicker. In fact, quicker and shittier is fine. 
+People don't care about being better, they just care about quicker. In fact, quicker and shittier is fine.
 
-Krist's rant sounds almost prophetic to me, like he was possessed by someone from the future. You want to stand on the escalator? Fine, just move to the side please (i.e. stand to the right and please just leave me/us alone). Which leads me to the next point.
+I'll admit, after having gotten this far into writing this, the analogy does seem to break down a bit. We're not all trying to go to the same place and so we're not all standing on the same escalator. Some people are all about the hustle and grind and other people are normal. My point is that the way so called AI is being marketed to us is the same way the escalator was probably sold to people, i.e. "wow, we are about to accelerate into the future!" But we actually end up going slower. I'm also aware that part of the benefit of an escalator is to be able to rest your legs. And if that's what you want to do, rest your brain, that's cool.
+
+To me, Krist's rant sounds almost prophetic, like he was possessed by someone from the future. You want to stand on the escalator? Fine, let me take the stairs or go some other way. I don't have to stand on this thing with you. Which leads me to the next point.
 
 ### The "AI is inevitable" bullshit
 
