@@ -8,7 +8,6 @@
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet"
       />
-      <link rel="icon" href="/ok.ico" />
       {{ with resources.Get "css/business.css" }}
       <link href="{{ .RelPermalink }}" rel="stylesheet" />
       {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict "minify"
