@@ -1,4 +1,3 @@
 ---
-title: "Geo"
 layout: easter
 ---

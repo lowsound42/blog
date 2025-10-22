@@ -1,4 +1,3 @@
 ---
-title: "business"
 layout: business
 ---

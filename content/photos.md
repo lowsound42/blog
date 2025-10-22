@@ -1,4 +1,3 @@
 ---
-title: "Photos"
 layout: photos
 ---
