@@ -83,7 +83,7 @@ Similarly Google has 'Project Nimbus', which provides cloud storage and compute 
 
 And then there's the next level of evil tech assholes. Personally I think that the New York Times is a neo-liberal rag but [here's something that they wrote that should be read](https://www.nytimes.com/2025/05/30/technology/trump-palantir-data-americans.html). Peter Thiel backed Palantir is building a domestic panopticon, the elusive surveillance state that the Republicans have been trying to create since the early 2000's.
 
-This is scary, fucked up shit. And it is directly related to the stupid fucking studio Ghibli stealing image generator machines. These are the same thing, they come from the same place, from the same minds, from the same venture capital money.
+This is scary, fucked up shit. And it is directly related to the stupid fucking `Studio-Ghibli-stealing-image-generator-machines`. These are the same thing, they come from the same place, from the same minds, from the same venture capital money.
 
 **Krist Novoselic tried to warn us.**
 
