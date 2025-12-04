@@ -11,19 +11,19 @@ markup:
       passthrough:
         delimiters:
           block:
-          - - \[
-            - \]
-          - - $$
-            - $$
+            - - \[
+              - \]
+            - - $$
+              - $$
           inline:
-          - - \(
-            - \)
+            - - \(
+              - \)
         enable: true
 
 params:
   cdnUrl: "https://lowsound.tor1.cdn.digitaloceanspaces.com"
   math: false
-  # env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: "Place for Things"
   description: "Things and Stuff"
   keywords: [Blog]
@@ -50,7 +50,7 @@ params:
   showtoc: false
   tocopen: false
 
- # profile-mode
+  # profile-mode
   homeInfoParams:
     enabled: true # needs to be explicitly set
     title: "Omar speaks in the third person"
@@ -60,7 +60,7 @@ params:
     - name: github
       url: "https://github.com/lowsound42"
     - name: email
-      url: 'mailto:omar@lowsound.dev'
+      url: "mailto:omar@lowsound.dev"
     - name: pixelfed
       url: "https://pet.tax/gobi_ni"
     - name: mastodon
@@ -72,23 +72,23 @@ params:
 
 menu:
   main:
-  - identifier: posts
-    name: posts
-    url: /posts/
-    weight: 10
-  - identifier: tags
-    name: tags
-    url: /tags/
-    weight: 40
-  - identifier: photos
-    name: photos
-    url: /photos/
-    weight: 20
-  - identifier: business
-    name: "business"
-    url: /business/
-    weight: 30
-  - identifier: geo
-    name: "?"
-    url: /geo/
-    weight: 50
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 40
+    - identifier: photos
+      name: photos
+      url: /photos/
+      weight: 20
+    - identifier: business
+      name: "business"
+      url: /business/
+      weight: 30
+    - identifier: geo
+      name: "?"
+      url: /geo/
+      weight: 50
