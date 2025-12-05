@@ -2,7 +2,7 @@
 title: "Scream"
 date: 2025-12-03
 modified: 2025-12-03
-tags: ["stream of consciousness"]
+tags: ["art"]
 draft: false
 author: "Omar"
 description: "Shaking it off"

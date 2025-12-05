@@ -2,7 +2,7 @@
 title: "This is the Rant that Never Ends"
 date: 2025-07-12
 modified: 2025-09-21
-tags: ["stream of consciousness"]
+tags: ["thoughts", "blog", "rant"]
 draft: false
 author: "Omar"
 description: "I will keep updating this with things that piss me off."

@@ -2,7 +2,7 @@
 title: "Initial Commit"
 date: 2025-02-22
 lastmod: 2025-02-22
-tags: ["stream of consciousness"]
+tags: ["thoughts", "blog"]
 draft: false
 author: "Omar"
 description: "The end of the analysis paralysis"

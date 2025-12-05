@@ -2,7 +2,7 @@
 title: "Mathematics for fun"
 date: 2025-04-19
 lastmod: 2025-04-19
-tags: ["maths", "learning", "programming", "tools"]
+tags: ["maths", "learning", "programming", "tools", "math"]
 author: "Omar"
 draft: false
 math: true

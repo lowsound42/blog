@@ -2,7 +2,7 @@
 title: "Public Service Announcement"
 date: 2025-04-10
 lastmod: 2025-04-10
-tags: ["food", "stream of consciousness"]
+tags: ["food", "thoughts", "blog", "rant"]
 draft: false
 author: "Omar"
 description: "This bread sucks."

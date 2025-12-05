@@ -2,7 +2,7 @@
 title: "Adrift Together"
 date: 2025-10-30
 lastmod: 2025-10-30
-tags: ["stream of consciousness"]
+tags: ["art"]
 draft: false
 author: "Omar"
 description: "An Attempt at ASCII Art"

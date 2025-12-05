@@ -2,7 +2,7 @@
 title: "Escalators"
 date: 2025-08-16
 modified: 2025-08-16
-tags: ["stream of consciousness"]
+tags: ["thoughts", "blog", "rant", "AI", "Artificial Intelligence", "Programming"]
 draft: false
 author: "Omar"
 description: "Krist Novoselic on the AI brainrot"
