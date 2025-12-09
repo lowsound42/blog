@@ -1,139 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    {{- partial "head.html" . }}
-    <meta charset="UTF-8" />
-    <meta name="fediverse:creator" content="@pxplowsound@mastodon.sdf.org" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gobimax</title>
-    {{ with resources.Get "css/easter.css" }}
-    <link href="{{ .RelPermalink }}" rel="stylesheet" />
-    {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict "minify"
-    hugo.IsProduction "sourceMap" (cond hugo.IsProduction "" "external")
-    "targetPath" "js/main.js" }} {{ with . | js.Build $opts }} {{ if
-    hugo.IsProduction }} {{ with . | fingerprint }}
-    <script
-      src="{{ .RelPermalink }}"
-      integrity="{{ .Data.Integrity }}"
-      crossorigin="anonymous"
-    ></script>
-    {{ end }} {{ else }}
-    <script src="{{ .RelPermalink }}"></script>
-    {{ end }} {{ end }} {{ end }}
-    <script>
-      const goBack = function () {
-        history.back();
-      };
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css?family=Delicious+Handrawn&effect=3d"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main class="content">
-      <div class="geomain">
-        {{- if hugo.IsProduction }}
-        <a class="geohome" href="https://lowsound.dev">
-          <p>HOME</p>
-        </a>
-        > {{- else }}
-        <a class="geohome" href="http://localhost:1313">
-          <p>HOME</p>
-        </a>
-        {{- end }}
-        <h1 class="font-effect-3d easter-intro">Welcome</h1>
-        <p class="font-effect-3d easter-intro">to the desert of the real</p>
-        <img class="geowelcome" src="/welcomesign.gif" />
-        <div>
-          <audio title="music by the amazing Ali Khan" controls loop>
-            <source
-              src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/punk.wav"
-              type="audio/wav"
-            />
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-        <h2 class="music-title">Press play and keep scrolling.</h2>
-        <p></p>
-          Click
-          <a href="https://ancientmariner.ca" class="music-link">here</a> to
-          check out the artist
-        </p>
-        <div class="easter-container">
-          <div class="gif-left"><img src="/skelly.gif" /></div>
-          <div class="word-vomit">
-            <div>
-              <p>Reject the corpo-fascist, VC funded, tech bro idiots.</p>
-              <p>
-                They're definitely lying about freedom and liberty and all that.
-              </p>
-              <p>
-                They want to take away the institutions that form the foundation
-                of our societies.
-              </p>
-              <p>
-                They're creating walled gardens to trap us and steal information
-                from us.
-              </p>
-              <p>
-                They want us to act like their weird cyberlibertarian bullshit
-                is good and kind of cool.
-              </p>
+    <head>
+        {{- partial "head.html" . }}
+        <meta charset="UTF-8" />
+        <meta
+            name="fediverse:creator"
+            content="@pxplowsound@mastodon.sdf.org"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Gobimax</title>
+        {{ with resources.Get "css/easter.css" }}
+        <link href="{{ .RelPermalink }}" rel="stylesheet" />
+        {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict
+        "minify" hugo.IsProduction "sourceMap" (cond hugo.IsProduction ""
+        "external") "targetPath" "js/main.js" }} {{ with . | js.Build $opts }}
+        {{ if hugo.IsProduction }} {{ with . | fingerprint }}
+        <script
+            src="{{ .RelPermalink }}"
+            integrity="{{ .Data.Integrity }}"
+            crossorigin="anonymous"
+        ></script>
+        {{ end }} {{ else }}
+        <script src="{{ .RelPermalink }}"></script>
+        {{ end }} {{ end }} {{ end }}
+        <script>
+            const goBack = function () {
+                history.back();
+            };
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css?family=Delicious+Handrawn&effect=3d"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="content">
+            <div class="geomain">
+                {{- if hugo.IsProduction }}
+                <a class="geohome" href="https://lowsound.dev">
+                    <p>HOME</p>
+                </a>
+                > {{- else }}
+                <a class="geohome" href="http://localhost:1313">
+                    <p>HOME</p>
+                </a>
+                {{- end }}
+                <h1 class="font-effect-3d easter-intro">Welcome</h1>
+                <p class="font-effect-3d easter-intro">
+                    to the desert of the real
+                </p>
+                <img class="geowelcome" src="/welcomesign.gif" />
+                <div>
+                    <audio title="music by the amazing Ali Khan" controls loop>
+                        <source
+                            src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/punk.wav"
+                            type="audio/wav"
+                        />
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <h2 class="music-title">Press play and keep scrolling.</h2>
+                <p>
+                    Click
+                    <a href="https://ancientmariner.ca" class="music-link"
+                        >here</a
+                    >
+                    to check out the artist
+                </p>
+                <div class="easter-container">
+                    <div class="gif-left"><img src="/skelly.gif" /></div>
+                    <div class="word-vomit">
+                        <div>
+                            <p>
+                                Reject the corpo-fascist, VC funded, tech bro
+                                idiots.
+                            </p>
+                            <p>
+                                They're definitely lying about freedom and
+                                liberty and all that.
+                            </p>
+                            <p>
+                                They want to take away the institutions that
+                                form the foundation of our societies.
+                            </p>
+                            <p>
+                                They're creating walled gardens to trap us and
+                                steal information from us.
+                            </p>
+                            <p>
+                                They want us to act like their weird
+                                cyberlibertarian bullshit is good and kind of
+                                cool.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gif-right"><img src="/skellytoo.gif" /></div>
+                </div>
+                <div class="resources">
+                    <h3 class="blinkHeader">
+                        Here are some good places on the internet
+                    </h3>
+                    <ul>
+                        <li>
+                            Show Up TO
+                            <a href="https://showuptoronto.ca/">click me</a>
+                        </li>
+                        <li>
+                            Tech Won't Save Us (Paris Marx)
+                            <a href="https://www.techwontsave.us/">click me</a>
+                        </li>
+                        <li>
+                            Distributed AI Research Institute (Timnit Gebru et
+                            al)
+                            <a href="https://www.dair-institute.org/"
+                                >click me</a
+                            >
+                        </li>
+                        <li>
+                            Pluralistic (Cory Doctorow)
+                            <a href="https://pluralistic.net/">click me</a>
+                        </li>
+                        <li>
+                            Elena Rossini
+                            <a href="https://news.elenarossini.com/"
+                                >click me</a
+                            >
+                        </li>
+                        <li>
+                            Eyes Left Podcast
+                            <a href="https://www.patreon.com/EyesLeft"
+                                >click me</a
+                            >
+                        </li>
+                        <li>
+                            If Books Could Kill
+                            <a href="https://www.patreon.com/cw/IfBooksPod"
+                                >click me</a
+                            >
+                        </li>
+                        <li>
+                            Briarpatch
+                            <a href="https://briarpatchmagazine.com/"
+                                >click me</a
+                            >
+                        </li>
+                        <li>
+                            +972 Magazine
+                            <a href="https://www.972mag.com/">click me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div class="gif-right"><img src="/skellytoo.gif" /></div>
-        </div>
-        <div class="resources">
-          <h3 class="blinkHeader">Here are some good places on the internet</h3>
-          <ul>
-            <li>
-              Show Up TO
-              <a href="https://showuptoronto.ca/">click me</a>
-            </li>
-            <li>
-              Tech Won't Save Us (Paris Marx)
-              <a href="https://www.techwontsave.us/">click me</a>
-            </li>
-            <li>
-              Distributed AI Research Institute (Timnit Gebru et al)
-              <a href="https://www.dair-institute.org/">click me</a>
-            </li>
-            <li>
-              Pluralistic (Cory Doctorow)
-              <a href="https://pluralistic.net/">click me</a>
-            </li>
-            <li>
-              Elena Rossini
-              <a href="https://news.elenarossini.com/">click me</a>
-            </li>
-            <li>
-              Eyes Left Podcast
-              <a href="https://www.patreon.com/EyesLeft">click me</a>
-            </li>
-            <li>
-              If Books Could Kill
-              <a href="https://www.patreon.com/cw/IfBooksPod">click me</a>
-            </li>
-            <li>
-              Briarpatch
-              <a href="https://briarpatchmagazine.com/">click me</a>
-            </li>
-            <li>
-              +972 Magazine
-              <a href="https://www.972mag.com/">click me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
-        {{ partialCached "easterFooter.html" . .Layout .Kind (.Param "hideFooter")
-        (.Param "ShowCodeCopyButtons") -}}
-  </body>
+        </main>
+        {{ partialCached "easterFooter.html" . .Layout .Kind (.Param
+        "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    </body>
 </html>
