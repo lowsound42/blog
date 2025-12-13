@@ -103,36 +103,33 @@
 
 {{- if (not site.Params.disableThemeToggle) }}
 <script>
-    if(localStorage.getItem('pref-theme') === 'dark'){
-        document.body.classList.add('dark');
-        const posts = document.getElementsByClassName('businessPost');
-            for(let element of posts){
-                element.classList.add('dark');
+function setupThemeToggle() {
+    const toggleButton = document.getElementById("theme-toggle");
+
+    if (toggleButton) {
+        toggleButton.addEventListener("click", () => {
+            const html = document.querySelector("html");
+            const currentTheme = html.dataset.theme;
+            // Simple theme detection - only check the actual theme attribute
+            const isDark = currentTheme === "dark";
+            if (isDark) {
+                html.dataset.theme = 'light';
+                localStorage.setItem("pref-theme", 'light');
+            } else {
+                html.dataset.theme = 'dark';
+                localStorage.setItem("pref-theme", 'dark');
             }
+        });
     } else {
-        document.body.classList.remove('dark');
-        const posts = document.getElementsByClassName('businessPost');
-            for(let element of posts){
-                element.classList.remove('dark');
-            }
+        console.log("Theme toggle button not found in business footer");
     }
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            const posts = document.getElementsByClassName('businessPost');
-            for(let element of posts){
-                element.classList.remove('dark');
-            }            
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            const posts = document.getElementsByClassName('businessPost');
-            for(let element of posts){
-                element.classList.add('dark');
-            }
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupThemeToggle);
+} else {
+    setupThemeToggle();
+}
 
 </script>
 {{- end }}

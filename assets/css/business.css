@@ -1,10 +1,10 @@
-
 body {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
 
-body.dark {
-    background-color: #1D1E20;
+html[data-theme="dark"] body {
+    background-color: #1d1e20;
+    color: #ffffff;
     height: 100%;
 }
 
@@ -43,16 +43,16 @@ main {
     border: 1px solid rgb(124, 121, 121, 0.5);
     border-radius: 10px;
     padding: 1.5rem;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin-bottom: 2rem;
     width: 50%;
 }
 
-@media screen and ((min-width:751px ) and (max-width: 950px)) {
+@media screen and ((min-width: 751px ) and (max-width: 950px)) {
     .businessIntro {
-    width: 60%;
-    margin-bottom: 1rem;
-    text-justify: inter-word;
+        width: 60%;
+        margin-bottom: 1rem;
+        text-justify: inter-word;
     }
 
     .businessPost {
@@ -60,11 +60,11 @@ main {
     }
 }
 
-@media screen and ((min-width:651px ) and (max-width: 750px)) {
+@media screen and ((min-width: 651px ) and (max-width: 750px)) {
     .businessIntro {
-    width: 70%;
-    margin-bottom: 1rem;
-    text-justify: inter-word;
+        width: 70%;
+        margin-bottom: 1rem;
+        text-justify: inter-word;
     }
     .businessPost {
         width: 70%;
@@ -73,26 +73,28 @@ main {
 
 @media screen and (max-width: 650px) {
     .businessIntro {
-    width: 80%;
-    margin-bottom: 1rem;
-    text-justify: inter-word;
+        width: 80%;
+        margin-bottom: 1rem;
+        text-justify: inter-word;
     }
     .businessPost {
         width: 90%;
     }
 }
 
-.businessPost.dark {
-    background-color: #2E2E33;
+html[data-theme="dark"] .businessPost {
+    background-color: #2e2e33;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .businessPost:hover {
-    box-shadow: 5px 8px 16px 3px rgba(0,0,0,0.63);
-    -webkit-box-shadow: 5px 8px 16px 3px rgba(0,0,0,0.63);
-    -moz-box-shadow: 5px 8px 16px 3px rgba(0,0,0,0.63);
+    box-shadow: 5px 8px 16px 3px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 5px 8px 16px 3px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 5px 8px 16px 3px rgba(0, 0, 0, 0.63);
 }
 
-.businessPost:hover.dark {
+html[data-theme="dark"] .businessPost:hover {
     box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.13);
     -webkit-box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.13);
     -moz-box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.13);
@@ -146,8 +148,24 @@ main {
 }
 
 p {
-    font-family: 'Inconsolata';
+    font-family: "Inconsolata";
     font-weight: 500;
+}
+
+html[data-theme="dark"] p {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .businessComment {
+    background-color: #2a2a2e;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
 }
 
 .postComments {
@@ -156,7 +174,7 @@ p {
     justify-content: center;
 }
 
-.businessCommentContainer{
+.businessCommentContainer {
     display: flex;
     flex-direction: column;
     width: 90%;
