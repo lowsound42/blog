@@ -103,33 +103,21 @@
 
 {{- if (not site.Params.disableThemeToggle) }}
 <script>
-function setupThemeToggle() {
     const toggleButton = document.getElementById("theme-toggle");
 
-    if (toggleButton) {
-        toggleButton.addEventListener("click", () => {
-            const html = document.querySelector("html");
-            const currentTheme = html.dataset.theme;
-            // Simple theme detection - only check the actual theme attribute
-            const isDark = currentTheme === "dark";
-            if (isDark) {
-                html.dataset.theme = 'light';
-                localStorage.setItem("pref-theme", 'light');
-            } else {
-                html.dataset.theme = 'dark';
-                localStorage.setItem("pref-theme", 'dark');
-            }
-        });
-    } else {
-        console.log("Theme toggle button not found in business footer");
-    }
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupThemeToggle);
-} else {
-    setupThemeToggle();
-}
+    toggleButton.addEventListener("click", () => {
+        const html = document.querySelector("html");
+        const currentTheme = html.dataset.theme;
+        // Simple theme detection - only check the actual theme attribute
+        const isDark = currentTheme === "dark";
+        if (isDark) {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
 
 </script>
 {{- end }}

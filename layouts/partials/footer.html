@@ -103,28 +103,20 @@
 
 {{- if (not site.Params.disableThemeToggle) }}
 <script>
-    function setupThemeToggle() {
-        const toggleButton = document.getElementById("theme-toggle");
+    const toggleButton = document.getElementById("theme-toggle");
 
-            toggleButton.addEventListener("click", () => {
-                const html = document.querySelector("html");
-                const currentTheme = html.dataset.theme;
-                const isDark = currentTheme === "dark";
-                if (isDark) {
-                    html.dataset.theme = 'light';
-                    localStorage.setItem("pref-theme", 'light');
-                } else {
-                    html.dataset.theme = 'dark';
-                    localStorage.setItem("pref-theme", 'dark');
-                }
-            });
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', setupThemeToggle);
-    } else {
-        setupThemeToggle();
-    }
+    toggleButton.addEventListener("click", () => {
+        const html = document.querySelector("html");
+        const currentTheme = html.dataset.theme;
+        const isDark = currentTheme === "dark";
+        if (isDark) {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    });
 </script>
 {{- end }}
 
