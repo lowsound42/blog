@@ -10,7 +10,7 @@ description: "It Follows"
 
 There's this thing. It is everwhere, all of the time. It is one of a few things that seem all consuming, but *this* thing, it is the worst.
 
-Most people have some version of the thing but no one likes to think or talk about it. Even though there's all these dumb corporate slogans that tell you it's important to do that. If I'm being more kind and less angry, I think it's because people do not actually understand it and so it's very hard to speak about it and it is less awkward to just pretend like it isn't there.
+Most people have some version of the thing but no one likes to think or talk about it even though there's all these dumb corporate slogans that tell you it's important to do that. If I'm being more kind and less angry, I think it's because people do not actually understand it and so it's very hard to speak about it and it is less awkward to just pretend like it isn't there.
 
 The accepted wisdom seems to be to just not think about the thing. I've been ruminating over this for sometime, specifically the idea of *just not thinking about it.* 
 
