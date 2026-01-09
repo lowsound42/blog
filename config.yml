@@ -67,6 +67,8 @@ params:
       url: "https://mastodon.sdf.org/@pxplowsound/"
     - name: linkedin
       url: "https://www.linkedin.com/in/omar42/"
+    - name: link
+      url: "http://pxplowsound.freeshell.org/"
     - name: rss
       url: "https://lowsound.dev/posts/index.xml"
 
