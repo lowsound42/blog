@@ -1,7 +1,7 @@
 ---
 title: "This is the Rant that Never Ends"
 date: 2025-07-12
-modified: 2025-09-21
+modified: 2026-02-24
 tags: ["thoughts", "blog", "rant"]
 draft: false
 author: "Omar"
@@ -28,4 +28,4 @@ There's a lot in this world that makes me mad. When something like this is activ
 
 ### February 24, 2026
 
-- People fawning over LLMs. Sorry, this is kind of the same as the one from July but it really fucking annoys me. There's so much trash on LinkedIn about "WOW THE AI DID AN AMAZING THING" with very little substance behind it. I have connections that are constantly commenting on posts about how useful the LLM they love is, but there's no github repos, no deployed applications, no ideas being discussed, no nothing. Just a bunch of circle-jerking, self-aggrandizing posts that mean next to nothing. I actualy think that the stupid AI tools are kind of useful sometimes, but in the same way as many other tools that I've used. I'm not fucking slithering around LinkedIn commenting on various posts about how AMAZING my calculator is because it SAVED ME SO MUCH TIME or whatever. I don't fucking care that a fucking language model saved you 4 minutes you fucking weirdos. SoFTwArE iS CoOKEd, this is that, that is this. Fucking stupid assholes.
+- People fawning over LLMs. Sorry, this is kind of the same as the one from July but it really fucking annoys me. There's so much trash on LinkedIn about "WOW THE AI DID AN AMAZING THING" with very little substance behind it. I have connections that are constantly commenting on posts about how useful the LLM they love is, but there's no github repos, no deployed applications, no ideas being discussed, no nothing. Just a bunch of circle-jerking, self-aggrandizing posts that mean next to nothing. I actually think that the stupid AI tools are kind of useful sometimes, but in the same way as many other tools that I've used. I'm not fucking slithering around LinkedIn commenting on various posts about how AMAZING my calculator is because it SAVED ME SO MUCH TIME or whatever. I don't fucking care that a fucking language model saved you 4 minutes you fucking weirdos. SoFTwArE iS CoOKEd, this is that, that is this. Fucking stupid assholes.

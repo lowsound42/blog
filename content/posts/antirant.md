@@ -1,7 +1,7 @@
 ---
 title: "This is the Anti-Rant that Never Ends"
 date: 2025-07-12
-modified: 2025-07-12
+modified: 2026-02-23
 tags: ["thoughts", "blog", "rant"]
 draft: false
 author: "Omar"
