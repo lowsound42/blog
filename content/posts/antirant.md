@@ -19,7 +19,7 @@ After hearing about my rant post, Geetha suggested I do one for things that deli
 
 ### February 23, 2026
 - PROPAGANDHI!!!!! Best. Canadian. Band. Ever. They have dethroned Rush (for me) and my biggest regret is getting into them so late. There are so many things that I love about them:
-  - Their politics are proggressive, inclusive, radical, and 100% aligned with mine.
+  - Their politics are proggressive, inclusive, radical, and energizing. Especially today when everything seems so milquetoast and subsumed by corporate enshittification.
   - They have evolved with every album and even though I do like that old 90's punk sound, I love the thrashy metal sound they've grown into. That's actually more my speed.
   - The songs aren't conventional at all. They're not verse-chorus-verse-chorus-bridge-verse or whatever. They're full of time changes, poetic streams of consciousness, and stank-face riffage.
   - They are just fucking awesome.
