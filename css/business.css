@@ -1,0 +1,212 @@
+body {
+    background-color: #f5f5f5;
+}
+
+html[data-theme="dark"] body {
+    background-color: #1d1e20;
+    color: #ffffff;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.businessContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.businessContent {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.businessIntro {
+    width: 50%;
+    margin-bottom: 1rem;
+    text-justify: inter-word;
+}
+
+@media screen and (max-width: 600px) {
+    .businessIntro {
+        width: 90%;
+    }
+}
+
+.businessPost {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(124, 121, 121, 0.5);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+
+@media screen and ((min-width: 751px ) and (max-width: 950px)) {
+    .businessIntro {
+        width: 60%;
+        margin-bottom: 1rem;
+        text-justify: inter-word;
+    }
+
+    .businessPost {
+        width: 60%;
+    }
+}
+
+@media screen and ((min-width: 651px ) and (max-width: 750px)) {
+    .businessIntro {
+        width: 70%;
+        margin-bottom: 1rem;
+        text-justify: inter-word;
+    }
+    .businessPost {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .businessIntro {
+        width: 80%;
+        margin-bottom: 1rem;
+        text-justify: inter-word;
+    }
+    .businessPost {
+        width: 90%;
+    }
+}
+
+html[data-theme="dark"] .businessPost {
+    background-color: #2e2e33;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.businessPost:hover {
+    box-shadow: 5px 8px 16px 3px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 5px 8px 16px 3px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 5px 8px 16px 3px rgba(0, 0, 0, 0.63);
+}
+
+html[data-theme="dark"] .businessPost:hover {
+    box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.13);
+    -webkit-box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.13);
+    -moz-box-shadow: 5px 8px 16px 3px rgba(255, 255, 255, 0.13);
+}
+
+.businessInnerContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.businessUserContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.businessProfile {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.businessTitle {
+    font-size: 0.8rem;
+}
+
+.commenterProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+.commenterImage {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+}
+
+.comment {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.businessNoComment {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Inconsolata";
+    font-weight: 500;
+}
+
+html[data-theme="dark"] p {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3 {
+    color: #ffffff;
+}
+
+html[data-theme="dark"] .businessComment {
+    background-color: #2a2a2e;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.postComments {
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.businessCommentContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.businessComment {
+    border: 1px solid rgba(110, 105, 105, 0.35);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.businessLikes {
+    font-size: 0.8rem;
+}
+
+.businessReactions {
+    display: flex;
+    flex-direction: row;
+}
+
+.businessLikes {
+    margin-right: 0.5rem;
+}
+
+.businessHeading {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.postImage {
+    margin-bottom: 1rem;
+}

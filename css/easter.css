@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .music-link{
+    color: white;
+    text-decoration: none;
+  }
+  
+  main {
+    color: white;
+    font-weight: 400;
+    font-style: normal;
+    width: 100vw;
+    background-image: url('https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/stars-w.bmp');
+  }
+
+  .content {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  h1 {
+    margin-top: 1rem;
+    font-size: 6rem;
+  }
+  
+  .geoback {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 125px;
+    align-self: self-start;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+
+  .geonav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .geoback > img {
+    width: 125px;
+    cursor: pointer;
+  }
+  
+
+  p {
+    padding: 1rem;
+    font-size: 4rem;
+  }
+  
+  .geomain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .geowelcome {
+    margin: 2rem 0rem;
+  }
+
+  p:not(.easter-intro) {
+    font-family: "VT323", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+  }
+
+  .geohome {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 125px;
+    align-self: self-start;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    animation: blinker 1s ease-in infinite;
+  }
+
+  .geohome > p {
+    font-size: 3rem;
+  }
+  
+  .loader{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hidden {
+    display: none
+  }
+
+  .easter-intro {
+    font-family: 'Delicious Handrawn', cursive;
+    text-align: center;
+  }
+  
+  .word-vomit {
+    margin: 2rem 0rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: black;
+    color: rgb(255, 255, 255);
+  }
+
+  .easter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #sfslink {
+    margin-bottom: 4rem;
+  }
+
+  .gif-left, .gif-right{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .music-title {
+    font-family: "VT323", serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0rem;
+  }
+
+  .resources {
+    font-family: "VT323", serif;
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color:mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .music-link {
+    font-family: "VT323", serif;
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    color: #f5f5f5; /* Light text color */
+    text-align:center; /* Center alignment of text */
+    /* Multi-layered text-shadow for fire effect */
+    text-shadow:
+    0px -1px 3px #fff, /* Innermost layer - intense heat (white) */
+    0px -2px 6px rgb(255, 255, 0), /* Second layer - core of flame (yellow) */
+    0px -6px 12px #F90, /* Middle layer - body of flame (orange) */
+    0px -10px 20px #C33; /* Outermost layer - edges of flame (red) */
+
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  h3 {
+    animation: blinker 2s ease-in infinite;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  li > a {
+    text-decoration: none;
+    color: white;
+  }
+  
+
+  @media only screen and (max-width: 800px) {
+
+    .music-link {
+      left: 0%;
+      transform: rotate(0deg);
+    }
+    .easter-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .word-vomit {
+      margin: 2rem 0rem;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
