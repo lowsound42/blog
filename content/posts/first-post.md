@@ -20,6 +20,6 @@ Did I really need to set up a database to store my posts? Oh and also authentica
 
 And that's what it's come down to. What do I want from this? If I think about why I'm looking to put this up here at all, it's pretty simple. I want to write about things and I want this website to be a place for the things I write. That's it. Going down these paths has complicated the process and really detracted from the whole point of having this space. I've learned a lot but I've written nothing because I was always using the tools and techniques I was reading about to plan a rebuild of the page.
 
-I've now decided to just go with Hugo (kind of the obvious choice for a personal blog in retrospect). The hardest decision to make was what theme to use. Now I just have to start writing.
+I've now decided to just go with Hugo (kind of the obvious choice for a personal blog in retrospect). The hardest decision to make was what theme to use. Now I just have to start writing. The part that's still open to experimentation is the devops side of things, but that's further down the line.
 
 Here goes.
