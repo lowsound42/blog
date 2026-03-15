@@ -1,0 +1,54 @@
+name: Deploy Hugo to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: https://github.com/actions/checkout@v4
+
+      - name: Run Semgrep
+        run: |
+          docker run --rm \
+            -v $PWD:/src \
+            semgrep/semgrep \
+            semgrep scan --config=auto --no-git-ignore /src
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.149.0
+    steps:
+      - name: Install Hugo
+        run: |
+          wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i /tmp/hugo.deb
+
+      - uses: https://github.com/actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: /tmp/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/Toronto
+        run: |
+          hugo --gc --minify --baseURL "https://lowsound.dev"
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email "gitea_runner@gobimax.com"
+          git config --global user.name "Gitea CI"
+          git clone --branch gh-pages --single-branch \
+            https://${{ secrets.REPO_PAT }}@github.com/lowsound42/blog.git gh-pages-deploy
+          cp -r public/* gh-pages-deploy/
+          cd gh-pages-deploy
+          git add -A
+          git commit -m "deploy: ${{ gitea.sha }}" || echo "nothing to commit"
+          git push
