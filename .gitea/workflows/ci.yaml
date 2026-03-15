@@ -44,6 +44,9 @@ jobs:
           git config --global user.name "Gitea CI"
           git clone --branch gh-pages --single-branch \
             https://${{ secrets.REPO_PAT }}@github.com/lowsound42/blog.git gh-pages-deploy
+          cd gh-pages-deploy
+          git rm -rf .
+          cd ..
           cp -r public/* gh-pages-deploy/
           cd gh-pages-deploy
           git add -A
