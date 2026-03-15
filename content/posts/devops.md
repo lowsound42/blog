@@ -23,7 +23,7 @@ I wanted to do more with my home server. Here's what I did.
 
 ### Gitea
 
-Run a gitea instance and use that as my source of truth. I've got a bunch of docker containers running all kinds of things, Gitea is the newest service I'm running (via docker compose). Here's what the compose file looks like:
+Run a [gitea](https://about.gitea.com) instance and use that as my source of truth. I've got a bunch of docker containers running all kinds of things, Gitea is the newest service I'm running (via docker compose). Here's what the compose file looks like:
 
 ```version: "3"
 
