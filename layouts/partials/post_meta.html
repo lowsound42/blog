@@ -8,6 +8,9 @@
 {{- $scratch.Add "meta" (slice (printf "<span title=\"%s\">Modified %s</span>" (.Lastmod) (.Lastmod | time.Format (default ":date_long" site.Params.DateFormat)))) }}
 {{- end }}
 
+{{- with .Params.author -}}
+{{- $scratch.Add "meta" (slice (printf "<span>By %s</span>" .)) }}
+{{- end }}
 
 {{- with ($scratch.Get "meta") }}
 {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
