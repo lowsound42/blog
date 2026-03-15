@@ -36,7 +36,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Toronto
         run: |
-          hugo --gc --minify --baseURL "https://www.lowsound.dev"
+          hugo --gc --minify --baseURL "https://lowsound.dev/"
 
       - name: Deploy to GitHub Pages
         run: |
