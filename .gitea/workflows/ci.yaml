@@ -10,13 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: https://github.com/actions/checkout@v4
-
       - name: Run Semgrep
         run: |
-          docker run --rm \
-            -v $PWD:/src \
-            semgrep/semgrep \
-            semgrep scan --config=auto --no-git-ignore /src
+          pip install --break-system-packages semgrep
+          semgrep scan --config=auto --no-git-ignore .
 
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -39,7 +36,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           TZ: America/Toronto
         run: |
-          hugo --gc --minify --baseURL "https://lowsound.dev"
+          hugo --gc --minify --baseURL "https://www.lowsound.dev"
 
       - name: Deploy to GitHub Pages
         run: |
