@@ -1,0 +1,23 @@
+{{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- $pages := sort $allPages "Lastmod" "desc" }} {{- if and (gt (len $pages) 1)
+(in $pages . ) }} {{- $cur := . }} {{- $idx := -1 }} {{- range $i, $p := $pages
+}} {{- if eq $p.Permalink $cur.Permalink }} {{- $idx = $i }} {{- end }} {{- end
+}}
+
+<nav class="paginav">
+    {{- if gt $idx 0 }} {{- with index $pages (sub $idx 1) }}
+    <a class="prev" href="{{ .Permalink }}">
+        <span class="title">« {{ i18n "prev_page" }}</span>
+        <br />
+        <span>{{- .Name -}}</span>
+    </a>
+    {{- end }} {{- end }} {{- if lt $idx (sub (len $pages) 1) }} {{- with index
+    $pages (add $idx 1) }}
+    <a class="next" href="{{ .Permalink }}">
+        <span class="title">{{ i18n "next_page" }} »</span>
+        <br />
+        <span>{{- .Name -}}</span>
+    </a>
+    {{- end }} {{- end }}
+</nav>
+{{- end }}
