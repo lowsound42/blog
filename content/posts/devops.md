@@ -11,7 +11,7 @@ description: "No, we have CI/CD at home"
 I've been wanting to setup some sort of CI/CD pipeline on my home server. Oh yeah, I have a home server and I shoehorn it into every conversation I have IRL. It runs a bunch of services and I'll get into the whole thing in another post I'm sure. This one is focused on the most recent addition.
 
 ## How it's been getting done
-This website is built using [Hugo](https://gohugo.io), a static site generator that's easy to use and super lightweight. This theme is [Papermod](https://github.com/adityatelange/hugo-PaperMod/). 
+This website is built using [Hugo](https://gohugo.io), a static site generator that's easy to use and super lightweight. The theme I'm using is [Papermod](https://github.com/adityatelange/hugo-PaperMod/). 
 
 I work on the site on my machine by adding markdown files for the posts, custom js and css when required, and maybe some tweaks to the theme. It then gets commited and pushed to github where the github workflow file triggers actions that build the site and then deploy the built assets to github pages, pretty simple. All I did was follow this guide [here](https://gohugo.io/host-and-deploy/host-on-github-pages/) to set it up.
 
