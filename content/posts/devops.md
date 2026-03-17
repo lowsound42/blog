@@ -93,7 +93,7 @@ There's also the `runner` service. This is essentially a docker container that s
 
 Here's what it looks like in the Gitea UI
 
-{{<img runner.png "My Gitea runner">}}
+{{<img runner.png "My Gitea runner's UI">}}
 
 This UI is accessible via the port I defined in the compose file (3001). I use nginx to proxy the request from a domain I own to the service (https://gitea.gobimax.com). Sorry, you won't be able to access it because the server that this is pointing to is hiding behind tailscale so only my devices can hit it.
 
