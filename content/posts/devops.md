@@ -95,7 +95,7 @@ Here's what it looks like in the Gitea UI
 
 {{<img runner.png "My Gitea runner">}}
 
-This UI is accessible via the port I defined in the compose file (3001). I use nginx to proxy request from a domain I own to the service (https://gitea.gobimax.com). Sorry, you won't be able to access it because the server that this is pointing to is hiding behind tailscale so only my devices can hit it.
+This UI is accessible via the port I defined in the compose file (3001). I use nginx to proxy the request from a domain I own to the service (https://gitea.gobimax.com). Sorry, you won't be able to access it because the server that this is pointing to is hiding behind tailscale so only my devices can hit it.
 
 ### Build and Deploy
 
