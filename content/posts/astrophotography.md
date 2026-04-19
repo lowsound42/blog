@@ -2,7 +2,7 @@
 title: "I Need Some Space"
 date: 2025-07-03
 lastmod: 2025-07-03
-tags: ["photography", "camping"]
+tags: ["photography", "camping", "blog"]
 draft: false
 author: "Omar"
 description: "Stargazing in Algonquin"
