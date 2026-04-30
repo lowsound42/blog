@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      {{- partial "head.html" . }}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet"
+      />
+      {{ with resources.Get "css/about.css" }}
+      <link href="{{ .RelPermalink }}" rel="stylesheet" />
+      {{ end }} {{ with resources.Get "js/main.js" }} {{ $opts := dict "minify"
+      hugo.IsProduction "sourceMap" (cond hugo.IsProduction "" "external")
+      "targetPath" "js/main.js" }} {{ with . | js.Build $opts }} {{ if
+      hugo.IsProduction }} {{ with . | fingerprint }}
+      <script
+        src="{{ .RelPermalink }}"
+        integrity="{{ .Data.Integrity }}"
+        crossorigin="anonymous"
+      ></script>
+      {{ end }} {{ else }}
+      <script src="{{ .RelPermalink }}"></script>
+      {{ end }} {{ end }} {{ end }}
+  </head>
+  <body class="aboutBody">
+    <header>{{- partialCached "header.html" . .Page -}}</header>
+    <main class="content" id="top">
+        <div class="aboutStuff">
+            <h1>i am a person</h1>
+            <p>i exist</p>
+            <p>i am angry and sad these days</p>
+            <p>but i do love to laugh and to make people laugh</p>
+            <p>the world doesn't make sense to me. i thought that it would one day, but it never ended up happening</p>
+            <p>i like real things. records, personal computers not in the cloud, books. stuff like that</p>
+            <p>this is a place for me to write stuff</p>
+            <p>send me emails or something</p>
+        </div>
+    </main>
+    {{ partialCached "businessFooter.html" . .Layout .Kind (.Param "hideFooter")
+    (.Param "ShowCodeCopyButtons") -}}
+  </body>
+</html>

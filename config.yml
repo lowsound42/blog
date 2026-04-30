@@ -78,9 +78,9 @@ menu:
       name: posts
       url: /posts/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
+    - identifier: about
+      name: about
+      url: /about/
       weight: 40
     - identifier: photos
       name: photos
