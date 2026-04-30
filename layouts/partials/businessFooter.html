@@ -59,12 +59,13 @@
             }
         });
     });
-// testing deploy
 </script>
 <script>
+    const docTitle = document.title.split('|')[0].trim()
     document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === "visible") {
-        document.title = "I do business";
+      if(docTitle === 'I do business') document.title = 'I do business'
+      else document.title = `${docTitle} | I do business`;
         var link = document.querySelector("link[rel~='icon']");
         if (!link) {
             link = document.createElement('link');
@@ -73,7 +74,7 @@
         }
         link.href = 'https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/standard/favicon.ico';
     } else {
-        document.title = "شوف هون";
+      document.title = `\u200Eشوف هون | ${docTitle}`;
         var link = document.querySelector("link[rel~='icon']");
         if (!link) {
             link = document.createElement('link');
@@ -83,7 +84,6 @@
         link.href = 'https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/watermelon/favicon.ico';
     }
 });
-</script>
 </script>
 {{- if (not site.Params.disableScrollToTop) }}
 <script>

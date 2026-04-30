@@ -62,27 +62,30 @@
 
 </script>
 <script>
-    document.addEventListener("visibilitychange", function() {
-    if (document.visibilityState === "visible") {
-        document.title = "I do business";
-        var link = document.querySelector("link[rel~='icon']");
-        if (!link) {
-            link = document.createElement('link');
-            link.rel = 'icon';
-            document.head.appendChild(link);
-        }
-        link.href = 'https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/standard/favicon.ico';
-    } else {
-        document.title = "شوف هون";
-        var link = document.querySelector("link[rel~='icon']");
-        if (!link) {
-            link = document.createElement('link');
-            link.rel = 'icon';
-            document.head.appendChild(link);
-        }
-        link.href = 'https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/watermelon/favicon.ico';
-    }
-});
+  const docTitle = document.title.split('|')[0].trim()
+  document.addEventListener("visibilitychange", function() {
+  if (document.visibilityState === "visible") {
+    if(docTitle === 'I do business') document.title = 'I do business'
+      else
+      document.title = `${docTitle} | I do business`;
+      var link = document.querySelector("link[rel~='icon']");
+      if (!link) {
+          link = document.createElement('link');
+          link.rel = 'icon';
+          document.head.appendChild(link);
+      }
+      link.href = 'https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/standard/favicon.ico';
+  } else {
+    document.title = `شوف هون | ${docTitle}`;
+      var link = document.querySelector("link[rel~='icon']");
+      if (!link) {
+          link = document.createElement('link');
+          link.rel = 'icon';
+          document.head.appendChild(link);
+      }
+      link.href = 'https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/watermelon/favicon.ico';
+  }
+  });
 </script>
 
 {{- if (not site.Params.disableScrollToTop) }}
