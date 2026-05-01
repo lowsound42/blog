@@ -1,5 +1,5 @@
 baseURL: "https://lowsound.dev/"
-title: "I do business"
+title: "Omar Khan | I do business"
 theme: PaperMod
 pagination:
   pagerSize: 5
@@ -24,10 +24,10 @@ params:
   cdnUrl: "https://lowsound.tor1.cdn.digitaloceanspaces.com"
   math: false
   env: production
-  title: "Place for Things"
-  description: "Things and Stuff"
-  keywords: [Blog]
-  author: Me
+  title: "Omar Khan, Developer Blog"
+  description: "Omar Khan's developer blog"
+  keywords: [Omar Khan, Software Developer, Toronto]
+  author: Omar Khan
   # author: ["Me", "You"] # multiple authors
   images: ["./assets/images/gobiandmewhite.jpg"]
   DateFormat: "January 2, 2006"
