@@ -1,7 +1,7 @@
 ---
 title: "Scream"
 date: 2025-12-03
-modified: 2025-12-03
+lastmod: 2025-12-03
 tags: ["art"]
 draft: false
 author: "Omar"

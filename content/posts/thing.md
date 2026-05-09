@@ -1,7 +1,7 @@
 ---
 title: "The Thing"
 date: 2025-12-23
-modified: 2025-12-23
+lastmod: 2025-12-23
 tags: ["thoughts", "blog"]
 draft: false
 author: "Omar"
