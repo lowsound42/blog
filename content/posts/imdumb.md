@@ -26,6 +26,8 @@ We literally have that, we live on it. Instead of protecting it and acting like 
 
 I think that I might be dumb.
 ***
+The fucking "Hydration Break" in this current world cup.
+***
 What the fuck is the deal with Nationalism? I'd love to see the overlap between the people that don't know or care about their neighbours, the people that don't participate or contribute to their communities, and the people that want to rub the national flag all over their bodies and scream-sing the national anthem. I don't care about that stuff, but I love the place I live in and I care about the people in my community. It's like that's not enough for some people. You have to be proud to be a Canadian and you have to show it in very specific ways.
 
 Brother, I'm not even proud to be myself, so shove it up your ass.
