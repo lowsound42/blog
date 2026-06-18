@@ -27,7 +27,7 @@
           to get started, more to come.
         </p>
         <div class="gallery">
-          {{ range $photos := .Site.Data.photos }} {{ range $photos }}
+          {{ range $photos := hugo.Data.photos }} {{ range $photos }}
           <a
             class="img-block big"
             data-fancybox="gallery"
