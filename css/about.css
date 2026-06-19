@@ -25,9 +25,17 @@
     height: 100%;
     text-align: center;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .aboutStuff > p {
+    margin-top: 2rem;
+}
+
+.librefm {
+    align-self: center;
+    justify-self: center;
     margin-top: 2rem;
 }
 
