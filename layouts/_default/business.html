@@ -26,7 +26,7 @@
   <body>
           <header>{{- partialCached "header.html" . .Page -}}</header>
     <main class="content" id="top">
-      {{ range $business := hugo.Data.business }}
+      {{ range $business := .Site.Data.business }}
       <div class="businessContainer">
         <h1 class="businessHeading">💼</h1>
         <p class="businessIntro">
