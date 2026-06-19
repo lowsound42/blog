@@ -1,20 +1,22 @@
 {{- with site.Params.homeInfoParams }}
 <article class="jetbrains first-entry home-info">
     <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/gobiandmewhite.jpg" title="An illustrated portrait of me and Gobi by Lisa Guo" 
-    alt="An illustrated portrait of me and Gobi by Lisa Guo" width="140" height="140" 
+    <img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/gobiandmewhite.jpg" title="An illustrated portrait of me and Gobi by Lisa Guo"
+    alt="An illustrated portrait of me and Gobi by Lisa Guo" width="140" height="140"
     style="border-radius: 30%; margin-bottom: 0.5rem;"
     />
-        <div>
+        <div class="homeBox">
             <header class="entry-header">
                 <h1>{{ .Title | markdownify }}</h1>
             </header>
             <div class="entry-content" style="margin-left: 0.25rem;">
                 {{ .Content | markdownify }}
             </div>
-            <footer class="entry-footer" style="margin-left: -0.5rem;">
+            <footer class="entry-footer">
                 {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
             </footer>
+            <a class="librefm" href="https://libre.fm/user/lowsound42/"><img class="librefm-badge" src="https://libre.fm/user/lowsound42/now" alt="My current or most recently played track on Libre.fm" loading="lazy" style="width: 100%; max-width: 350px; height: auto;"></a>
+            <p class="libre-info">If I'm listening to any music, this badge will let you know what it is</p>
         </div>
     </div>
 

@@ -5,6 +5,36 @@
   font-style: normal;
 }
 
+.homeBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.librefm {
+    margin-top: 3rem;
+    align-self: center;
+}
+
+.librefm-badge {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.libre-info {
+    font-size: 0.7rem;
+    align-self: center;
+}
+
+.librefm-badge:hover {
+    box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.4),
+                  0 8px 12px -6px rgba(0, 0, 0, 0.3);
+
+  transform: translateY(-2px);
+}
+
 .post-content, .entry-content, .terms-tags{
     font-family: "Inconsolata", monospace;
     font-style: normal;
