@@ -1,0 +1,15 @@
+{{- /* Footer custom content area start */ -}}
+{{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
+<link rel="stylesheet" href="https://townsquare.cauenapier.com/widget.css" />
+<div id="townsquare-root"></div>
+<script type="module">
+  import { mountTownSquare } from "https://townsquare.cauenapier.com/townsquare.mjs";
+
+  mountTownSquare(document.getElementById("townsquare-root"), {
+    serverOrigin: "https://townsquare.cauenapier.com",
+    siteKey: "site_cV6FH5j-Bx-T56SE",
+    scene: {"benches":3,"benchXs":[0.2,0.72,0.46],"trees":4,"treeXs":[0.8,0.58,0.36,0.9],"lamps":3,"lampXs":[0.12,0.88,0.5],"birds":6},
+    theme: "host"
+  });
+</script>
+{{- /* Footer custom content area end */ -}}
