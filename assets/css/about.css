@@ -29,6 +29,28 @@
     flex-direction: column;
 }
 
+.email-me {
+  color: #0066cc;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.email-me::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066cc;
+  transition: width 0.3s ease;
+}
+
+.email-me:hover::after {
+  width: 100%;
+}
+
 .aboutStuff > p {
     margin-top: 2rem;
 }
