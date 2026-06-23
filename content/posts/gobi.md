@@ -35,7 +35,7 @@ a great open air market on the weekend and the paths in and out of the
 quarry make for great walks for humans and dogs alike. Before hitting up
 the market, it's a good idea to go for a walk so that the lil' miss can
 stretch her legs, get some serious sniffing time in, and do a little
-sightseeing. There's turtles (and terrapins), woodpeckers, gulls, herons,
+sightseeing. There's turtles, woodpeckers, gulls, herons,
 hummingbirds, ducks, hawks, and more and more and more. I actually don't
 know the names of a lot of the animals we see on these walks. There are
 snakes as well but we've never seen one.
