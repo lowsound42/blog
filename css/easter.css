@@ -8,7 +8,7 @@
     color: white;
     text-decoration: none;
   }
-  
+
   main {
     color: white;
     font-weight: 400;
@@ -26,7 +26,7 @@
     margin-top: 1rem;
     font-size: 6rem;
   }
-  
+
   .geoback {
     margin-top: 2rem;
     margin-left: 2rem;
@@ -43,25 +43,25 @@
     justify-content: space-between;
     width: 100%;
   }
-  
+
   .geoback > img {
     width: 125px;
     cursor: pointer;
   }
-  
+
 
   p {
     padding: 1rem;
     font-size: 4rem;
   }
-  
+
   .geomain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
+
   .geowelcome {
     margin: 2rem 0rem;
   }
@@ -89,7 +89,7 @@
   .geohome > p {
     font-size: 3rem;
   }
-  
+
   .loader{
     height: 100vh;
     display: flex;
@@ -106,7 +106,7 @@
     font-family: 'Delicious Handrawn', cursive;
     text-align: center;
   }
-  
+
   .word-vomit {
     margin: 2rem 0rem;
     width: 40%;
@@ -157,7 +157,7 @@
     flex-direction: column;
     text-align: center;
   }
-  
+
   .music-link {
     font-family: "VT323", serif;
     font-size: 2rem;
@@ -197,7 +197,7 @@
     text-decoration: none;
     color: white;
   }
-  
+
 
   @media only screen and (max-width: 800px) {
 
@@ -220,4 +220,3 @@
       text-align: center;
     }
   }
-
