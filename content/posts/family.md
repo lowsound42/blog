@@ -84,7 +84,7 @@ Brain punching itself
 {{< /center >}}
 ***
 
-So here's the cognitive death loop I've put myself in. I can't see how a parent could decide that they've had enough of being a parent and will be tapping out if they find conversation too difficult. After being through this infertility journey, if Geetha and I do end up having a kid, whether through IVF or adoption, these are things I could never see myself doing:
+So here's the cognitive death loop I've put myself in. I can't see how a parent could decide that they've had enough of being a parent and will be tapping out when they find conversations too difficult to have. After being through this infertility journey, if Geetha and I do end up having a kid, whether through IVF or adoption, these are things I could never see myself doing:
 
 - Feuding with my child while they are still just a child.
 - Refusing to engage with them as an adult simply because we disagree.
