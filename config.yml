@@ -8,6 +8,8 @@ pagination:
 markup:
   goldmark:
     extensions:
+      typeographer:
+        enable: true
       passthrough:
         delimiters:
           block:
