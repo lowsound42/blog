@@ -49,7 +49,7 @@ My father and I do not talk. Like, at all. We're both angry people and that's pa
 
 The first is an appeal to a very simplistic view of family, which is that as the patriarch, he just gets to decide everything, all the time, forever.
 
-The "I can't change thing" is actually "I won't change", but you know, it's way easier to say _can't_.
+The "I can't change" thing is actually "I won't change", but you know, it's way easier to say _can't_.
 
 He knows we're dealing with this right now but has never really asked us about it or offered any words of encouragement. Which makes sense because like I said, we don't talk. However he also doesn't like it when my mother wants to talk to me without him and so my relationship with her has also been negatively affected by our inability to communicate.
 
