@@ -91,6 +91,6 @@ So here's the cognitive death loop I've put myself in. I can't see how a parent 
 - Hiding behind "I can't change" when my behavior is causing them distress.
 - Letting months of silence pass without doing everything in my power to start a conversation again.
 
-I know that parenting must be harder that I can imagine, I'm not there yet. And I don't mean to suggest that I'd be the perfect father. But I do know this: I would never let my pride undercut my relationship with my child.
+I know that parenting must be harder than I can imagine, I'm not there yet. And I don't mean to suggest that I'd be the perfect father. But I do know this: I would never let my pride undercut my relationship with my child.
 
 That's really what I can't get past. I mean, I'm sure they could all justify their behaviour their own way, there's always their side of the story. But if he's "the father" then I am "the child", and I could never imagine treating my child that way.
