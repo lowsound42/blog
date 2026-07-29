@@ -1,7 +1,7 @@
 ---
 title: "Cognitive Death Loop"
-date: 2026-07-26
-lastmod: 2026-07-26
+date: 2026-07-29
+lastmod: 2026-07-29
 tags: ["blog", "thoughts", "family"]
 draft: false
 author: "Omar"
