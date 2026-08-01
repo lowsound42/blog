@@ -12,7 +12,7 @@ jobs:
       - uses: https://github.com/actions/checkout@v4
       - name: Run Semgrep
         run: |
-          pip install --break-system-packages semgrep
+          pip install --break-system-packages --ignore-installed PyJWT semgrep
           semgrep scan --config=auto --no-git-ignore .
 
   build-and-deploy:
