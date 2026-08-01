@@ -1,5 +1,5 @@
 ---
-title: "Cognitive Death Loop"
+title: "The Cognitive Death Loop"
 date: 2026-07-29
 lastmod: 2026-07-29
 tags: ["blog", "thoughts", "family"]
@@ -49,7 +49,7 @@ My father and I do not talk. Like, at all. We're both angry people and that's pa
 
 The first is an appeal to a very simplistic view of family, which is that as the patriarch, he just gets to decide everything, all the time, forever.
 
-The "I can't change thing" is actually "I won't change", but you know, it's way easier to say _can't_.
+The "I can't change" thing is actually "I won't change", but you know, it's way easier to say _can't_.
 
 He knows we're dealing with this right now but has never really asked us about it or offered any words of encouragement. Which makes sense because like I said, we don't talk. However he also doesn't like it when my mother wants to talk to me without him and so my relationship with her has also been negatively affected by our inability to communicate.
 
@@ -84,13 +84,13 @@ Brain punching itself
 {{< /center >}}
 ***
 
-So here's the cognitive death loop I've put myself in. After being through this infertility journey, if Geetha and I do end up having a kid, whether through IVF or adoption, these are things I could never see myself doing:
+So here's the cognitive death loop I've put myself in. I can't see how a parent could decide that they've had enough of being a parent and will be tapping out when they find conversations too difficult to have. After being through this infertility journey, if Geetha and I do end up having a kid, whether through IVF or adoption, these are things I could never see myself doing:
 
 - Feuding with my child while they are still just a child.
 - Refusing to engage with them as an adult simply because we disagree.
 - Hiding behind "I can't change" when my behavior is causing them distress.
 - Letting months of silence pass without doing everything in my power to start a conversation again.
 
-I know that parenting must be harder that I can imagine, I'm not there yet. And I don't mean to suggest that I'd be the perfect father. But I do know this: I would never let my pride undercut my relationship with my child.
+I know that parenting must be harder than I can imagine, I'm not there yet. And I don't mean to suggest that I'd be the perfect father. But I do know this: I would never let my pride undercut my relationship with my child.
 
 That's really what I can't get past. I mean, I'm sure they could all justify their behaviour their own way, there's always their side of the story. But if he's "the father" then I am "the child", and I could never imagine treating my child that way.
