@@ -5,6 +5,18 @@
   font-style: normal;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .homeBox {
     display: flex;
     flex-direction: column;

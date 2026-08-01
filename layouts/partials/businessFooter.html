@@ -1,5 +1,29 @@
 {{- if not (.Param "hideFooter") }}
 <footer class="footer">
+    <a class="love-rss" href="https://iheartrss.com/">
+      <img
+        src="https://iheartrss.com/iheartrss-dark.svg"
+        alt="I love RSS"
+        width="88"
+        height="31"
+        class="rss-badge-light"
+      >
+      <img
+        src="https://iheartrss.com/iheartrss.svg"
+        alt="I love RSS"
+        width="88"
+        height="31"
+        class="rss-badge-dark"
+      >
+      <style>
+        .rss-badge-dark { display: none; }
+        .rss-badge-light { display: inline-block; }
+
+        html[data-theme="light"] .rss-badge-light { display: none !important; }
+        html[data-theme="light"] .rss-badge-dark { display: inline-block !important; }
+      </style>
+    </a>
+    <div class="footer-container">
     {{- partial "extend_footer.html" . }}
     {{- if not site.Params.footer.hideCopyright }}
         {{- if site.Copyright }}
@@ -20,6 +44,7 @@
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
+    </div>
 </footer>
 {{- end }}
 
