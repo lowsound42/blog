@@ -33,7 +33,28 @@
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- end }}
+    {{- with .Params.in_reply_to -}}
+      <blockquote class="u-in-reply-to h-cite" cite="{{ . }}">
+        <p>
+          In reply to
+          {{- with $.Params.reply_context -}}
+            {{- if .author_name -}}
+              <a class="p-author h-card" href="{{ .author_url | default $.Params.in_reply_to }}">
+                {{- if .author_photo -}}<img class="u-photo" src="{{ .author_photo }}" alt="" style="width:24px; height:24px; border-radius:50%; vertical-align:middle;"> {{- end -}}
+                <strong>{{ .author_name }}'s</strong>
+              </a>
+            {{- end -}}
+          {{- end -}}
+          <a class="u-url" rel="in-reply-to" href="{{ . }}">post</a>:
+        </p>
 
+        {{- with $.Params.reply_context.content -}}
+          <div class="p-content e-content">
+            <p>“{{ . }}”</p>
+          </div>
+        {{- end -}}
+      </blockquote>
+    {{- end -}}
   {{- if .Content }}
   <div class="post-content md-content e-content">
     {{- if not (.Param "disableAnchoredHeadings") }}

@@ -1,6 +1,6 @@
 {{- /* Footer custom content area start */ -}}
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
-<p class="h-card vcard">
+<p class="h-card vcard" style="display: flex; flex-direction: row; align-items: center;">
     {{- if not site.Params.footer.hideCopyright }}
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
@@ -10,7 +10,7 @@
         {{- print " · "}}
     {{- end }}
    <a style="text-decoration: none" href={{ .Site.BaseURL }} class="p-name u-url url author metatag" rel="me"> {{ .Site.Params.author }} </a>
-   <img class="u-photo" src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/gobiandmewhite.jpg" alt="An illustrated portrait of me and Gobi by Lisa Guo" />
+   <img class="u-photo" src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/gobiandmewhite.jpg" alt="An illustrated portrait of me and Gobi by Lisa Guo" width="10" height="10"/>
 </p>
 
 {{- /* Footer custom content area end */ -}}
