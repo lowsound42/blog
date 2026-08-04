@@ -1,3 +1,16 @@
 {{- /* Footer custom content area start */ -}}
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
+<p class="h-card vcard">
+    {{- if not site.Params.footer.hideCopyright }}
+        {{- if site.Copyright }}
+        <span>{{ site.Copyright | markdownify }}</span>
+        {{- else }}
+        <span>&copy; {{ now.Year }}</span>
+        {{- end }}
+        {{- print " · "}}
+    {{- end }}
+   <a style="text-decoration: none" href={{ .Site.BaseURL }} class="p-name u-url url author metatag" rel="me"> {{ .Site.Params.author }} </a>
+   <img class="u-photo" src="img/headshot.png" alt="" />
+</p>
+
 {{- /* Footer custom content area end */ -}}
