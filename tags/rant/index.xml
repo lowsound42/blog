@@ -1,130 +1,126 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rant on I do business</title><link>https://lowsound.dev/tags/rant/</link><description>Software Developer. Luddite. Cat and Dog friend.</description><image><title>I do business</title><url>https://lowsound.dev/assets/images/gobiandmewhite.jpg</url><link>https://lowsound.dev/assets/images/gobiandmewhite.jpg</link></image><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 24 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lowsound.dev/tags/rant/index.xml" rel="self" type="application/rss+xml"/><item><title>Escalators</title><link>https://lowsound.dev/posts/escalator/</link><pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/escalator/?v=2</guid><description>Krist Novoselic on the AI brainrot</description><content:encoded><![CDATA[<p>I love this rant. In this video, Krist Novoselic goes off on escalators. Specifically the way that people use them. Watch it.</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Rant on I do business</title><link>https://lowsound.dev/tags/rant/</link><description>Software Developer. Luddite. Cat and Dog friend.</description><image><title>I do business</title><url>https://lowsound.dev/assets/images/gobiandmewhite.jpg</url><link>https://lowsound.dev/assets/images/gobiandmewhite.jpg</link></image><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 24 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lowsound.dev/tags/rant/index.xml" rel="self" type="application/rss+xml"/><item><title>Escalators</title><link>https://lowsound.dev/posts/escalator/</link><pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/escalator/?v=2</guid><description>Krist Novoselic on the AI brainrot</description><content:encoded>&lt;p&gt;I love this rant. In this video, Krist Novoselic goes off on escalators. Specifically the way that people use them. Watch it.&lt;/p&gt;
 
 
 
-<div class="small-video-flex">
-<video class="video-shortcode" preload="auto" controls>
-    <source src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/escalators.mp4" type="video/mp4">
-    There should have been a video here but your browser does not seem
-    to support it.
-</video>
-</div>
+&lt;div class="small-video-flex"&gt;
+&lt;video class="video-shortcode" preload="auto" controls&gt;
+ &lt;source src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/escalators.mp4" type="video/mp4"&gt;
+ There should have been a video here but your browser does not seem
+ to support it.
+&lt;/video&gt;
+&lt;/div&gt;
 
-<p>In case you didn&rsquo;t actually watch, his rant is about how escalators were designed like stairs because they&rsquo;re meant to be used like them. They just make us faster at going up stairs. Krist Novoselic is frustrated by people standing on escalators.</p>
-<p>Things that I love about the video:</p>
-<ul>
-<li>How stoned he is.</li>
-<li>How Kurt and Dave immediately groan as he begins the rant. This is obviously a recurring theme.</li>
-<li>Kurt butts in with a solution. Stand to the side so that people can walk up the left. Krist ignores him and continues the rant.</li>
-</ul>
-<p>I found this on YouTube years ago, I watched it, and then forgot about it. The stupid AI bullshit in the air these days reminded me that it existed.</p>
-<h3 id="excuse-me-whatever-the-fuck-do-you-mean">Excuse me, whatever the fuck do you mean?</h3>
-<p>What I mean is that so called &ldquo;AI&rdquo; is the Escalator. I&rsquo;m just going to ignore the fact that what is referred to as a monolithic AI is actually a myriad set of technologies. LLM&rsquo;s have taken over the concept and when people say AI now they kind of just mean one of these LLM&rsquo;s. Whatever, I&rsquo;m just going to say AI and you, the reader, can substitute whatever you want in there.</p>
-<p>What matters is the idea. AI is supposed to make us better and quicker but people are standing on the escalator. Instead of being better and quicker, we&rsquo;re feeding things into the machine and regurgitating what it tells us.</p>
-<p><strong>I&rsquo;m sure there are people that are like &ldquo;oh man <em>I</em> don&rsquo;t use it that way, I have a workflow that blah blah blah blah.&rdquo; Great, neat. I&rsquo;m not talking about you.</strong></p>
-<p>I&rsquo;m talking about:</p>
-<ul>
-<li>The people inundating YouTube with generated music playlists</li>
-<li>The people wasting everyone&rsquo;s time with generated emails</li>
-<li>The &lsquo;grok, is this true?&rsquo; morons on twitter</li>
-<li>Other similar people doing similarly idiotic things</li>
-</ul>
-<p>People don&rsquo;t care about being better, they just care about quicker. In fact, quicker and shittier is fine.</p>
-<p>I&rsquo;ll admit, after having gotten this far into writing this, the analogy does seem to break down a bit. We&rsquo;re not all trying to go to the same place and so we&rsquo;re not all standing on the same escalator. Some people are all about the hustle and grind and other people are normal. My point is that the way so called AI is being marketed to us is the same way the escalator was probably sold to people, i.e. &ldquo;wow, we are about to accelerate into the future!&rdquo; But we actually end up going slower. I&rsquo;m also aware that part of the benefit of an escalator is to be able to rest your legs. And if that&rsquo;s what you want to do, rest your brain, that&rsquo;s cool.</p>
-<p>To me, Krist&rsquo;s rant sounds almost prophetic, like he was possessed by someone from the future. You want to stand on the escalator? Fine, let me take the stairs or go some other way. I don&rsquo;t have to stand on this thing with you. Which leads me to the next point.</p>
-<h3 id="the-ai-is-inevitable-bullshit">The &ldquo;AI is inevitable&rdquo; bullshit</h3>
-<p>There&rsquo;s a lot of this going around right now. Posts where people try to convince you that &ldquo;AI is here now and you need to adapt&rdquo; are basically the main genre of things being uploaded to LinkedIn. &ldquo;AI won&rsquo;t take your job, a person using AI will.&rdquo;</p>
-<p>Shut. The. Fuck. Up.</p>
-<p>None of this is inevitable. Megacorps (run by loser finance guys posing as scientists) have been given the keys to our societies and are engaging in wildly unethical, unsustainable extractivism. These posts about inevitability and people having to adapt are just attempts to manufacture consent. We don&rsquo;t have to accept anything or adapt to anything if we don&rsquo;t want to, especially if it is harmful to people.</p>
-<p>And sure, call me a Luddite. I don&rsquo;t mind. In fact I consider it a badge of honour.</p>
-<h3 id="everything-is-business-nothing-is-interesting">Everything is business, nothing is interesting</h3>
-<p>I actually happen to think this stuff <em>is</em> interesting. LLM&rsquo;s are cool. Computer Vision is cool. Machine Learning is cool. But the CEO&rsquo;s, VP&rsquo;s of Sales, Heads of Marketing, etc are hell-bent on pushing this shit on us as a foRcE mULtIpLIeR.</p>
-<p>There <em>are</em> great applications for these kinds of technologies. <a href="https://tehiku.nz/te-hiku-tech/papa-reo/">Here&rsquo;s</a> an incredible example. The indigenous Māori language, te reo Māori, is dying. The goal of Te Hiku Media is to collect all the recorded te reo Māori that they can find and build a model for the language. They are currently able to translate between te reo Māori and English with 82% accuracy.</p>
-<p>All of this was done <em>with</em> the Māori peoples&rsquo; consent and participation. They used <strong>two</strong> GPU&rsquo;s to get the model trained. And the tool has been built to do something specific. When these tools use data that makes sense for a specific job, not only can they produce amazing results, but they can be trained to do so without chugging infinite amounts of fresh water, producing noise pollution, emanating waves of heat, and crashing global supply chains because of chip hoarding. Te Hiku Media exists in opposition to the fucking Silicon Valley ethos which seems to involve taking whatever they want from whomever they want without asking for permission.</p>
-<p>And the problems they claim they are trying to solve are&hellip;¯\<em>(ツ)</em>/¯</p>
-<p>Listening to these weirdos talk about it is crazy. Apparently it doesn&rsquo;t make sense to focus on climate change because it&rsquo;s too hard, we should just create a digital god to solve the problem for us.</p>
-<p>Wut?</p>
-<p>Oh and the god is hungry. The god needs to eat tens of thousands of GPU&rsquo;s to generate images cobbled together from art made by real people so that LinkedIn losers can write a post about #marketing.</p>
-<h3 id="it-gets-worse">It gets worse</h3>
-<p>Just the fact that we are watching a handful of people burn the atmosphere for social media clicks is dire enough, but it <em>does</em> actually get worse than that.</p>
-<p><a href="https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists">So called &ldquo;AI&rdquo; is being used to murder people in an ongoing genocide</a>.</p>
-<p>If you&rsquo;re one of those people that thinks posting Al Jazeera makes me a woke radical or whatever then <a href="https://www.972mag.com/lavender-ai-israeli-army-gaza/">here&rsquo;s another source, actually the original source</a>. Though I know that if you think Al Jazeera is woke then +972 will be as well for you.</p>
-<p>We&rsquo;ve known for a long time that the megacorps have been collecting all our data. Sometimes with our consent and often without. Google, Microsoft, Netflix, Facebook/Meta, Twitter, Apple, Amazon, etc; they&rsquo;re all constantly sucking up whatever they can from us under the protection of the commercial relationships we have signed up for under them. <a href="https://www.972mag.com/microsoft-8200-intelligence-surveillance-cloud-azure/">But they&rsquo;re doing worse things than just that bullshit</a>. Microsoft has been storing surveillance data on their cloud. This is the data collected from a people living under occupation.</p>
-<p>Similarly Google has &lsquo;Project Nimbus&rsquo;, which provides cloud storage and compute to the IOF. I wonder what they use it for? Surely just to store HR/payroll documents.</p>
-<p>And then there&rsquo;s the next level of evil tech assholes. Personally I think that the New York Times is a neo-liberal rag but <a href="https://www.nytimes.com/2025/05/30/technology/trump-palantir-data-americans.html">here&rsquo;s something that they wrote that should be read</a>. Peter Thiel backed Palantir is building a domestic panopticon, the elusive surveillance state that the Republicans have been trying to create since the early 2000&rsquo;s.</p>
-<p>This is scary, fucked up shit. And it is directly related to the stupid fucking <code>Studio-Ghibli-stealing-image-generator-machines</code>. These are the same thing, they come from the same place, from the same minds, from the same venture capital money.</p>
-<p><strong>Krist Novoselic tried to warn us.</strong></p>
-<h3 id="recommended-brain-reset-tools">Recommended brain reset tools</h3>
-<ul>
-<li>
-<p><a href="https://karendhao.com/">Empire of AI</a>. Brilliant. The first time I heard the story about Te Hiku Media was actually on the podcast, Tech Won&rsquo;t Save Us (Paris Marx), but reading about it again in Empire of AI recently made me think about how this stuff can be wonderful. And how like many technologies, it is being co-opted by lunatics.</p>
-</li>
-<li>
-<p><a href="https://www.techwontsave.us/">Tech Won&rsquo;t Save Us</a>. My favourite podcast. Always fantastic guests, and always great conversation about what is happening. It&rsquo;s not an &ldquo;oh shit things are hopeless&rdquo; vibe either. It&rsquo;s always presenting a hopeful vision.</p>
-</li>
-<li>
-<p><a href="https://www.dair-institute.org/">DAIR</a>. Timnit Gebru was fired from Google for doing her job well. i.e. researching the ethical implications of AI (specifically for co-authoring <a href="https://dl.acm.org/doi/10.1145/3442188.3445922">this</a> paper on LLM&rsquo;s). She is one of the great researchers that went on to found DAIR, an independent institute that explores a better vision for technology.</p>
-</li>
-<li>
-<p><a href="https://www.wheresyoured.at/">Where&rsquo;s Your Ed At</a>. Ed Zitron&rsquo;s very funny blog. His piece on <a href="https://www.wheresyoured.at/the-era-of-the-business-idiot/">business idiots</a> is just fantastic.</p>
-</li>
-<li>
-<p><a href="https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/?ref=wheresyoured.at">Nik Suresh</a>. I&rsquo;ve linked to a specific post that killed me the first time I read it, but Nikhil&rsquo;s blog is amazing in general.</p>
-</li>
-</ul>
-]]></content:encoded></item><item><title>This is the Anti-Rant that Never Ends</title><link>https://lowsound.dev/posts/antirant/</link><pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/antirant/?v=2</guid><description>I will keep updating this with things that delight me.</description><content:encoded><![CDATA[<p>After hearing about my rant post, Geetha suggested I do one for things that delight me. I think it&rsquo;s a good idea, there are a lot of things that make me happy and it&rsquo;ll be nice to jot them down over time.</p>
-<h3 id="july-12-2025">July 12, 2025</h3>
-<ul>
-<li>The way Gobi (my dog) sighs and burrows her head into the bed as she makes herself comfortable, ready to nap.</li>
-<li>Software that is built by people for other people and not for &ldquo;customers.&rdquo; Things like <a href="https://github.com/jellyfin">jellyfin</a>, <a href="https://github.com/mealie-recipes">mealie</a>, and <a href="https://github.com/FreshRSS">freshRSS</a>.</li>
-<li>Community building. This is kind of wishy-washy but it means something different to everyone. I know it when I see it and I love it. The neighbourhood I live in always has something happening, especially in the summer. Also my neighbours are lovely in general and it really feels like people care about each other. <a href="https://showuptoronto.ca/">This</a> is a great resource for more concrete examples of real things happening in Toronto.</li>
-<li>Cycling. It feels like freedom.</li>
-</ul>
-<h3 id="february-23-2026">February 23, 2026</h3>
-<ul>
-<li>PROPAGANDHI!!!!! Best. Canadian. Band. Ever. They have dethroned Rush (for me) and my biggest regret is getting into them so late. There are so many things that I love about them:
-<ul>
-<li>Their politics are progressive, inclusive, radical, and energizing. It feels so good to engage with music that is so unapologetically true to these values, especially when everything around us is melting to the ground and the overwhelming response seems so milquetoast and subsumed by corporate enshittification.</li>
-<li>They have evolved with every album and even though I do like that old 90&rsquo;s punk sound, I love the thrashy metal sound they&rsquo;ve grown into. That&rsquo;s actually more my speed.</li>
-<li>The songs aren&rsquo;t conventional at all. They&rsquo;re not verse-chorus-verse-chorus-bridge-verse or whatever. They&rsquo;re full of time changes, poetic streams of consciousness, and stank-face riffage.</li>
-<li>They are just fucking awesome.</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded></item><item><title>This is the Rant that Never Ends</title><link>https://lowsound.dev/posts/rant/</link><pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/rant/?v=2</guid><description>I will keep updating this with things that piss me off.</description><content:encoded><![CDATA[<p>There&rsquo;s a lot in this world that makes me mad. When something like this is actively on my mind I&rsquo;ll try to add it to this list instead of letting it occupy my thoughts. Maybe this will be helpful. Some of these things are probably bigger than others.</p>
-<h3 id="july-12-2025">July 12, 2025</h3>
-<ul>
-<li>The religious zealotry around whatever the contemporary hotness coming out of silicon valley is. There is almost no critical thought around what, why, how, and for whom, and a lot of fawning over &ldquo;growth&rdquo;, &ldquo;value&rdquo;, and other such metrics.</li>
-<li>People that fight to &ldquo;preserve the character of their neighbourhoods.&rdquo; This is almost always NIMBYs fighting to keep other people out of a home and to deny efficient, equitable transit to those that rely on it. Usually this is for the sake of their &ldquo;property values&rdquo; but can sometimes be for even stupider reasons like not wanting to lose a parking spot.</li>
-<li>Food delivery apps that claim to be innovative when their actual accomplishments include:
-<ul>
-<li>Cannibalizing our municipal infrastructure for their own use without contributing to upkeep in any meaningful way</li>
-<li>Turning the employment relationship on its head and exploiting people as a result</li>
-<li>Delivering an inferior version of good food for the low price of ${extremelyExpensive}.</li>
-</ul>
-</li>
-<li>People that walk really slowly on the sidewalk while also blocking the way for everyone behind them. Take your time but please let me get by.</li>
-</ul>
-<h3 id="september-21-2025">September 21, 2025</h3>
-<ul>
-<li>
-<p>People that like living in unwalkable, pedestrian hostile, boring suburbs acting like they should have not just a say in the urban planning and development of my city, but the final word. Our own authoritarian provincial leader kowtowing to this selfish cohort so that he can keep power like the No Name dictator that he is makes this beyond infuriating.</p>
-</li>
-<li>
-<p>This recent push to return to the office for PrOdUcTivITy. No research to back it up, no explanation besides &ldquo;it is better&rdquo;, &ldquo;duh watercooler chats&rdquo;, etc. Our cities are less congested now, people have better lives now, our salaries mean more now. But sure, change it all for the vibes you goddamn ghouls.</p>
-</li>
-</ul>
-<h3 id="february-24-2026">February 24, 2026</h3>
-<ul>
-<li>People fawning over LLMs. Sorry, this is kind of the same as the one from July but it really fucking annoys me. There&rsquo;s so much trash on LinkedIn about &ldquo;WOW THE AI DID AN AMAZING THING&rdquo; with very little substance behind it. I have connections that are constantly commenting on posts about how useful the LLM they love is, but there&rsquo;s no github repos, no deployed applications, no ideas being discussed, no nothing. Just a bunch of circle-jerking, self-aggrandizing posts that mean next to nothing. I actually think that the stupid AI tools are kind of useful sometimes, but in the same way as many other tools that I&rsquo;ve used. I&rsquo;m not fucking slithering around LinkedIn commenting on various posts about how AMAZING my calculator is because it SAVED ME SO MUCH TIME or whatever. I don&rsquo;t fucking care that a fucking language model saved you 4 minutes you fucking weirdos. SoFTwArE iS CoOKEd, this is that, that is this. Fucking stupid assholes.</li>
-</ul>
-]]></content:encoded></item><item><title>Public Service Announcement</title><link>https://lowsound.dev/posts/worst-bread/</link><pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/worst-bread/?v=2</guid><description>This bread sucks.</description><content:encoded><![CDATA[<p>I do a lot of things that are ultimately meaningless but make me feel good. One of these things is getting good bread instead of the supermarket stuff. This means getting bread from bakeries and cafes near us instead of the Dempsters and Villagio. However, due to the convergence of a series of procrastinations I found that we were at home this week with no bread available. Reluctantly, I walked over to the No Frills to get something to tide us over and I brought home this bag of Dimpflmeier.</p>
+&lt;p&gt;In case you didn&amp;rsquo;t actually watch, his rant is about how escalators were designed like stairs because they&amp;rsquo;re meant to be used like them. They just make us faster at going up stairs. Krist Novoselic is frustrated by people standing on escalators.&lt;/p&gt;
+&lt;p&gt;Things that I love about the video:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How stoned he is.&lt;/li&gt;
+&lt;li&gt;How Kurt and Dave immediately groan as he begins the rant. This is obviously a recurring theme.&lt;/li&gt;
+&lt;li&gt;Kurt butts in with a solution. Stand to the side so that people can walk up the left. Krist ignores him and continues the rant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I found this on YouTube years ago, I watched it, and then forgot about it. The stupid AI bullshit in the air these days reminded me that it existed.&lt;/p&gt;
+&lt;h3 id="excuse-me-whatever-the-fuck-do-you-mean"&gt;Excuse me, whatever the fuck do you mean?&lt;/h3&gt;
+&lt;p&gt;What I mean is that so called &amp;ldquo;AI&amp;rdquo; is the Escalator. I&amp;rsquo;m just going to ignore the fact that what is referred to as a monolithic AI is actually a myriad set of technologies. LLM&amp;rsquo;s have taken over the concept and when people say AI now they kind of just mean one of these LLM&amp;rsquo;s. Whatever, I&amp;rsquo;m just going to say AI and you, the reader, can substitute whatever you want in there.&lt;/p&gt;
+&lt;p&gt;What matters is the idea. AI is supposed to make us better and quicker but people are standing on the escalator. Instead of being better and quicker, we&amp;rsquo;re feeding things into the machine and regurgitating what it tells us.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;I&amp;rsquo;m sure there are people that are like &amp;ldquo;oh man &lt;em&gt;I&lt;/em&gt; don&amp;rsquo;t use it that way, I have a workflow that blah blah blah blah.&amp;rdquo; Great, neat. I&amp;rsquo;m not talking about you.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m talking about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The people inundating YouTube with generated music playlists&lt;/li&gt;
+&lt;li&gt;The people wasting everyone&amp;rsquo;s time with generated emails&lt;/li&gt;
+&lt;li&gt;The &amp;lsquo;grok, is this true?&amp;rsquo; morons on twitter&lt;/li&gt;
+&lt;li&gt;Other similar people doing similarly idiotic things&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;People don&amp;rsquo;t care about being better, they just care about quicker. In fact, quicker and shittier is fine.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll admit, after having gotten this far into writing this, the analogy does seem to break down a bit. We&amp;rsquo;re not all trying to go to the same place and so we&amp;rsquo;re not all standing on the same escalator. Some people are all about the hustle and grind and other people are normal. My point is that the way so called AI is being marketed to us is the same way the escalator was probably sold to people, i.e. &amp;ldquo;wow, we are about to accelerate into the future!&amp;rdquo; But we actually end up going slower. I&amp;rsquo;m also aware that part of the benefit of an escalator is to be able to rest your legs. And if that&amp;rsquo;s what you want to do, rest your brain, that&amp;rsquo;s cool.&lt;/p&gt;
+&lt;p&gt;To me, Krist&amp;rsquo;s rant sounds almost prophetic, like he was possessed by someone from the future. You want to stand on the escalator? Fine, let me take the stairs or go some other way. I don&amp;rsquo;t have to stand on this thing with you. Which leads me to the next point.&lt;/p&gt;
+&lt;h3 id="the-ai-is-inevitable-bullshit"&gt;The &amp;ldquo;AI is inevitable&amp;rdquo; bullshit&lt;/h3&gt;
+&lt;p&gt;There&amp;rsquo;s a lot of this going around right now. Posts where people try to convince you that &amp;ldquo;AI is here now and you need to adapt&amp;rdquo; are basically the main genre of things being uploaded to LinkedIn. &amp;ldquo;AI won&amp;rsquo;t take your job, a person using AI will.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Shut. The. Fuck. Up.&lt;/p&gt;
+&lt;p&gt;None of this is inevitable. Megacorps (run by loser finance guys posing as scientists) have been given the keys to our societies and are engaging in wildly unethical, unsustainable extractivism. These posts about inevitability and people having to adapt are just attempts to manufacture consent. We don&amp;rsquo;t have to accept anything or adapt to anything if we don&amp;rsquo;t want to, especially if it is harmful to people.&lt;/p&gt;
+&lt;p&gt;And sure, call me a Luddite. I don&amp;rsquo;t mind. In fact I consider it a badge of honour.&lt;/p&gt;
+&lt;h3 id="everything-is-business-nothing-is-interesting"&gt;Everything is business, nothing is interesting&lt;/h3&gt;
+&lt;p&gt;I actually happen to think this stuff &lt;em&gt;is&lt;/em&gt; interesting. LLM&amp;rsquo;s are cool. Computer Vision is cool. Machine Learning is cool. But the CEO&amp;rsquo;s, VP&amp;rsquo;s of Sales, Heads of Marketing, etc are hell-bent on pushing this shit on us as a foRcE mULtIpLIeR.&lt;/p&gt;
+&lt;p&gt;There &lt;em&gt;are&lt;/em&gt; great applications for these kinds of technologies. &lt;a href="https://tehiku.nz/te-hiku-tech/papa-reo/"&gt;Here&amp;rsquo;s&lt;/a&gt; an incredible example. The indigenous Māori language, te reo Māori, is dying. The goal of Te Hiku Media is to collect all the recorded te reo Māori that they can find and build a model for the language. They are currently able to translate between te reo Māori and English with 82% accuracy.&lt;/p&gt;
+&lt;p&gt;All of this was done &lt;em&gt;with&lt;/em&gt; the Māori peoples&amp;rsquo; consent and participation. They used &lt;strong&gt;two&lt;/strong&gt; GPU&amp;rsquo;s to get the model trained. And the tool has been built to do something specific. When these tools use data that makes sense for a specific job, not only can they produce amazing results, but they can be trained to do so without chugging infinite amounts of fresh water, producing noise pollution, emanating waves of heat, and crashing global supply chains because of chip hoarding. Te Hiku Media exists in opposition to the fucking Silicon Valley ethos which seems to involve taking whatever they want from whomever they want without asking for permission.&lt;/p&gt;
+&lt;p&gt;And the problems they claim they are trying to solve are&amp;hellip;¯\&lt;em&gt;(ツ)&lt;/em&gt;/¯&lt;/p&gt;
+&lt;p&gt;Listening to these weirdos talk about it is crazy. Apparently it doesn&amp;rsquo;t make sense to focus on climate change because it&amp;rsquo;s too hard, we should just create a digital god to solve the problem for us.&lt;/p&gt;
+&lt;p&gt;Wut?&lt;/p&gt;
+&lt;p&gt;Oh and the god is hungry. The god needs to eat tens of thousands of GPU&amp;rsquo;s to generate images cobbled together from art made by real people so that LinkedIn losers can write a post about #marketing.&lt;/p&gt;
+&lt;h3 id="it-gets-worse"&gt;It gets worse&lt;/h3&gt;
+&lt;p&gt;Just the fact that we are watching a handful of people burn the atmosphere for social media clicks is dire enough, but it &lt;em&gt;does&lt;/em&gt; actually get worse than that.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists"&gt;So called &amp;ldquo;AI&amp;rdquo; is being used to murder people in an ongoing genocide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re one of those people that thinks posting Al Jazeera makes me a woke radical or whatever then &lt;a href="https://www.972mag.com/lavender-ai-israeli-army-gaza/"&gt;here&amp;rsquo;s another source, actually the original source&lt;/a&gt;. Though I know that if you think Al Jazeera is woke then +972 will be as well for you.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve known for a long time that the megacorps have been collecting all our data. Sometimes with our consent and often without. Google, Microsoft, Netflix, Facebook/Meta, Twitter, Apple, Amazon, etc; they&amp;rsquo;re all constantly sucking up whatever they can from us under the protection of the commercial relationships we have signed up for under them. &lt;a href="https://www.972mag.com/microsoft-8200-intelligence-surveillance-cloud-azure/"&gt;But they&amp;rsquo;re doing worse things than just that bullshit&lt;/a&gt;. Microsoft has been storing surveillance data on their cloud. This is the data collected from a people living under occupation.&lt;/p&gt;
+&lt;p&gt;Similarly Google has &amp;lsquo;Project Nimbus&amp;rsquo;, which provides cloud storage and compute to the IOF. I wonder what they use it for? Surely just to store HR/payroll documents.&lt;/p&gt;
+&lt;p&gt;And then there&amp;rsquo;s the next level of evil tech assholes. Personally I think that the New York Times is a neo-liberal rag but &lt;a href="https://www.nytimes.com/2025/05/30/technology/trump-palantir-data-americans.html"&gt;here&amp;rsquo;s something that they wrote that should be read&lt;/a&gt;. Peter Thiel backed Palantir is building a domestic panopticon, the elusive surveillance state that the Republicans have been trying to create since the early 2000&amp;rsquo;s.&lt;/p&gt;
+&lt;p&gt;This is scary, fucked up shit. And it is directly related to the stupid fucking &lt;code&gt;Studio-Ghibli-stealing-image-generator-machines&lt;/code&gt;. These are the same thing, they come from the same place, from the same minds, from the same venture capital money.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Krist Novoselic tried to warn us.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id="recommended-brain-reset-tools"&gt;Recommended brain reset tools&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://karendhao.com/"&gt;Empire of AI&lt;/a&gt;. Brilliant. The first time I heard the story about Te Hiku Media was actually on the podcast, Tech Won&amp;rsquo;t Save Us (Paris Marx), but reading about it again in Empire of AI recently made me think about how this stuff can be wonderful. And how like many technologies, it is being co-opted by lunatics.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.techwontsave.us/"&gt;Tech Won&amp;rsquo;t Save Us&lt;/a&gt;. My favourite podcast. Always fantastic guests, and always great conversation about what is happening. It&amp;rsquo;s not an &amp;ldquo;oh shit things are hopeless&amp;rdquo; vibe either. It&amp;rsquo;s always presenting a hopeful vision.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.dair-institute.org/"&gt;DAIR&lt;/a&gt;. Timnit Gebru was fired from Google for doing her job well. i.e. researching the ethical implications of AI (specifically for co-authoring &lt;a href="https://dl.acm.org/doi/10.1145/3442188.3445922"&gt;this&lt;/a&gt; paper on LLM&amp;rsquo;s). She is one of the great researchers that went on to found DAIR, an independent institute that explores a better vision for technology.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://www.wheresyoured.at/"&gt;Where&amp;rsquo;s Your Ed At&lt;/a&gt;. Ed Zitron&amp;rsquo;s very funny blog. His piece on &lt;a href="https://www.wheresyoured.at/the-era-of-the-business-idiot/"&gt;business idiots&lt;/a&gt; is just fantastic.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/?ref=wheresyoured.at"&gt;Nik Suresh&lt;/a&gt;. I&amp;rsquo;ve linked to a specific post that killed me the first time I read it, but Nikhil&amp;rsquo;s blog is amazing in general.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title>This is the Anti-Rant that Never Ends</title><link>https://lowsound.dev/posts/antirant/</link><pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/antirant/?v=2</guid><description>I will keep updating this with things that delight me.</description><content:encoded>&lt;p&gt;After hearing about my rant post, Geetha suggested I do one for things that delight me. I think it&amp;rsquo;s a good idea, there are a lot of things that make me happy and it&amp;rsquo;ll be nice to jot them down over time.&lt;/p&gt;
+&lt;h3 id="july-12-2025"&gt;July 12, 2025&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The way Gobi (my dog) sighs and burrows her head into the bed as she makes herself comfortable, ready to nap.&lt;/li&gt;
+&lt;li&gt;Software that is built by people for other people and not for &amp;ldquo;customers.&amp;rdquo; Things like &lt;a href="https://github.com/jellyfin"&gt;jellyfin&lt;/a&gt;, &lt;a href="https://github.com/mealie-recipes"&gt;mealie&lt;/a&gt;, and &lt;a href="https://github.com/FreshRSS"&gt;freshRSS&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Community building. This is kind of wishy-washy but it means something different to everyone. I know it when I see it and I love it. The neighbourhood I live in always has something happening, especially in the summer. Also my neighbours are lovely in general and it really feels like people care about each other. &lt;a href="https://showuptoronto.ca/"&gt;This&lt;/a&gt; is a great resource for more concrete examples of real things happening in Toronto.&lt;/li&gt;
+&lt;li&gt;Cycling. It feels like freedom.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="february-23-2026"&gt;February 23, 2026&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;PROPAGANDHI!!!!! Best. Canadian. Band. Ever. They have dethroned Rush (for me) and my biggest regret is getting into them so late. There are so many things that I love about them:
+&lt;ul&gt;
+&lt;li&gt;Their politics are progressive, inclusive, radical, and energizing. It feels so good to engage with music that is so unapologetically true to these values, especially when everything around us is melting to the ground and the overwhelming response seems so milquetoast and subsumed by corporate enshittification.&lt;/li&gt;
+&lt;li&gt;They have evolved with every album and even though I do like that old 90&amp;rsquo;s punk sound, I love the thrashy metal sound they&amp;rsquo;ve grown into. That&amp;rsquo;s actually more my speed.&lt;/li&gt;
+&lt;li&gt;The songs aren&amp;rsquo;t conventional at all. They&amp;rsquo;re not verse-chorus-verse-chorus-bridge-verse or whatever. They&amp;rsquo;re full of time changes, poetic streams of consciousness, and stank-face riffage.&lt;/li&gt;
+&lt;li&gt;They are just fucking awesome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title>This is the Rant that Never Ends</title><link>https://lowsound.dev/posts/rant/</link><pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/rant/?v=2</guid><description>I will keep updating this with things that piss me off.</description><content:encoded>&lt;p&gt;There&amp;rsquo;s a lot in this world that makes me mad. When something like this is actively on my mind I&amp;rsquo;ll try to add it to this list instead of letting it occupy my thoughts. Maybe this will be helpful. Some of these things are probably bigger than others.&lt;/p&gt;
+&lt;h3 id="july-12-2025"&gt;July 12, 2025&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The religious zealotry around whatever the contemporary hotness coming out of silicon valley is. There is almost no critical thought around what, why, how, and for whom, and a lot of fawning over &amp;ldquo;growth&amp;rdquo;, &amp;ldquo;value&amp;rdquo;, and other such metrics.&lt;/li&gt;
+&lt;li&gt;People that fight to &amp;ldquo;preserve the character of their neighbourhoods.&amp;rdquo; This is almost always NIMBYs fighting to keep other people out of a home and to deny efficient, equitable transit to those that rely on it. Usually this is for the sake of their &amp;ldquo;property values&amp;rdquo; but can sometimes be for even stupider reasons like not wanting to lose a parking spot.&lt;/li&gt;
+&lt;li&gt;Food delivery apps that claim to be innovative when their actual accomplishments include:
+&lt;ul&gt;
+&lt;li&gt;Cannibalizing our municipal infrastructure for their own use without contributing to upkeep in any meaningful way&lt;/li&gt;
+&lt;li&gt;Turning the employment relationship on its head and exploiting people as a result&lt;/li&gt;
+&lt;li&gt;Delivering an inferior version of good food for the low price of ${extremelyExpensive}.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;People that walk really slowly on the sidewalk while also blocking the way for everyone behind them. Take your time but please let me get by.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="september-21-2025"&gt;September 21, 2025&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;People that like living in unwalkable, pedestrian hostile, boring suburbs acting like they should have not just a say in the urban planning and development of my city, but the final word. Our own authoritarian provincial leader kowtowing to this selfish cohort so that he can keep power like the No Name dictator that he is makes this beyond infuriating.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This recent push to return to the office for PrOdUcTivITy. No research to back it up, no explanation besides &amp;ldquo;it is better&amp;rdquo;, &amp;ldquo;duh watercooler chats&amp;rdquo;, etc. Our cities are less congested now, people have better lives now, our salaries mean more now. But sure, change it all for the vibes you goddamn ghouls.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="february-24-2026"&gt;February 24, 2026&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;People fawning over LLMs. Sorry, this is kind of the same as the one from July but it really fucking annoys me. There&amp;rsquo;s so much trash on LinkedIn about &amp;ldquo;WOW THE AI DID AN AMAZING THING&amp;rdquo; with very little substance behind it. I have connections that are constantly commenting on posts about how useful the LLM they love is, but there&amp;rsquo;s no github repos, no deployed applications, no ideas being discussed, no nothing. Just a bunch of circle-jerking, self-aggrandizing posts that mean next to nothing. I actually think that the stupid AI tools are kind of useful sometimes, but in the same way as many other tools that I&amp;rsquo;ve used. I&amp;rsquo;m not fucking slithering around LinkedIn commenting on various posts about how AMAZING my calculator is because it SAVED ME SO MUCH TIME or whatever. I don&amp;rsquo;t fucking care that a fucking language model saved you 4 minutes you fucking weirdos. SoFTwArE iS CoOKEd, this is that, that is this. Fucking stupid assholes.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title>Public Service Announcement</title><link>https://lowsound.dev/posts/worst-bread/</link><pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/worst-bread/?v=2</guid><description>This bread sucks.</description><content:encoded>&lt;p&gt;I do a lot of things that are ultimately meaningless but make me feel good. One of these things is getting good bread instead of the supermarket stuff. This means getting bread from bakeries and cafes near us instead of the Dempsters and Villagio. However, due to the convergence of a series of procrastinations I found that we were at home this week with no bread available. Reluctantly, I walked over to the No Frills to get something to tide us over and I brought home this bag of Dimpflmeier.&lt;/p&gt;
 
 
 
 
-<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/dimpflmeier.png" alt="plastic product that is being passed off as bread">
+&lt;img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/dimpflmeier.png" alt="plastic product that is being passed off as bread"&gt;
 
-<p>Now I&rsquo;ll say that I have never had a Dimpflmeier bread before, maybe they do some amazing rye bread or something. This bread is bad though. I hated it and I&rsquo;m here to help you make a better decision than I did.</p>
-<p>I ate a slice this morning and I felt like I was eating melty plastic that somehow had the texture of bread. It could only be the universe  punishing me for failing my mission to patronize our local bakeries. Forgive me universe, I have learned my lesson. I want to pass my message along to everybody else out there: Stay away from Dimpflmeier Farmers&rsquo; Gold bread. If you want to eat something bad though this is the thing you should eat.</p>
-]]></content:encoded></item></channel></rss>
+&lt;p&gt;Now I&amp;rsquo;ll say that I have never had a Dimpflmeier bread before, maybe they do some amazing rye bread or something. This bread is bad though. I hated it and I&amp;rsquo;m here to help you make a better decision than I did.&lt;/p&gt;
+&lt;p&gt;I ate a slice this morning and I felt like I was eating melty plastic that somehow had the texture of bread. It could only be the universe punishing me for failing my mission to patronize our local bakeries. Forgive me universe, I have learned my lesson. I want to pass my message along to everybody else out there: Stay away from Dimpflmeier Farmers&amp;rsquo; Gold bread. If you want to eat something bad though this is the thing you should eat.&lt;/p&gt;</content:encoded></item></channel></rss>
