@@ -37,6 +37,7 @@ params:
   disableThemeToggle: false
   imageCdn: "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/"
   ShowReadingTime: false
+  ShowFullTextinRSS: true
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
