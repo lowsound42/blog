@@ -85,4 +85,61 @@
   {{- end }}
 </article>
 
+<!--<section class="webmentions">
+  <h2>Reactions & Replies</h2>
+  <div id="webmentions-container" data-url="{{ .Permalink }}">
+    <p class="loading">Loading webmentions...</p>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const container = document.getElementById("webmentions-container");
+  const targetUrl = container.getAttribute("data-url");
+  const apiUrl = `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(targetUrl)}`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      if (!data.children || data.children.length === 0) {
+        container.innerHTML = "<p>No responses yet. Be the first to reply or mention this post!</p>";
+        return;
+      }
+
+      let html = '<ul class="webmention-list">';
+      data.children.forEach(item => {
+        const authorName = item.author?.name || "Anonymous";
+        const authorPhoto = item.author?.photo || "";
+        const authorUrl = item.author?.url || "#";
+        const published = item.published ? new Date(item.published).toLocaleDateString() : "";
+        const content = item.content?.html || item.content?.text || "";
+        const type = item["wm-property"]; // in-reply-to, like-of, repost-of, etc.
+
+        if (type === "like-of") {
+          html += `<li class="mention-like">❤️ Liked by <a href="${authorUrl}" class="h-card p-author">${authorName}</a></li>`;
+        } else if (type === "repost-of") {
+          html += `<li class="mention-repost">🔁 Reposted by <a href="${authorUrl}" class="h-card p-author">${authorName}</a></li>`;
+        } else {
+          // Standard reply or mention
+          html += `
+            <li class="webmention h-cite">
+              <div class="author-info">
+                ${authorPhoto ? `<img src="${authorPhoto}" class="u-photo" alt="" width="32" height="32" style="border-radius:50%; vertical-align:middle;">` : ''}
+                <a href="${authorUrl}" class="p-author h-card"><strong>${authorName}</strong></a>
+                ${published ? `<time class="dt-published">${published}</time>` : ''}
+              </div>
+              <div class="e-content p-content">${content}</div>
+            </li>`;
+        }
+      });
+      html += '</ul>';
+      container.innerHTML = html;
+    })
+    .catch(err => {
+      container.innerHTML = "<p>Unable to load webmentions right now.</p>";
+      console.error(err);
+    });
+});
+</script>-->
+
 {{- end }}{{/* end main */}}
