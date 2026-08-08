@@ -1,2 +1,318 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Programming on I do business</title><link>https://lowsound.dev/tags/programming/</link><description>Software Developer. Luddite. Cat and Dog friend.</description><image><title>I do business</title><url>https://lowsound.dev/assets/images/gobiandmewhite.jpg</url><link>https://lowsound.dev/assets/images/gobiandmewhite.jpg</link></image><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lowsound.dev/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Mum, can we have CI/CD?</title><link>https://lowsound.dev/posts/devops/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/devops/</guid><description>No, we have CI/CD at home</description></item><item><title>Escalators</title><link>https://lowsound.dev/posts/escalator/</link><pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/escalator/</guid><description>Krist Novoselic on the AI brainrot</description></item><item><title>Mathematics for fun</title><link>https://lowsound.dev/posts/maths/</link><pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/maths/</guid><description>&lt;p&gt;So I&amp;rsquo;m learning (relearning?) some basic maths. (I grew up saying &lt;em&gt;Maths&lt;/em&gt; and not &lt;em&gt;Math&lt;/em&gt; and I&amp;rsquo;m just going to keep saying it that way). It&amp;rsquo;s fun and it&amp;rsquo;s also a way to get better at using Python and Jupyter Notebooks. What&amp;rsquo;s going to be really cool is using LateX to write about what I&amp;rsquo;m learning.&lt;/p&gt;
-&lt;p&gt;Getting it set up on this Hugo theme that I&amp;rsquo;m using was a breeze thanks to &lt;a href="https://behova.net/posts/hugo-setup/"&gt;this&lt;/a&gt; excellent blog post. Below are some examples of the nice formatting this allows us to do.&lt;/p&gt;</description></item><item><title>IDE Adventure</title><link>https://lowsound.dev/posts/nvim/</link><pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/nvim/</guid><description>Neovim</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Programming on I do business</title><link>https://lowsound.dev/tags/programming/</link><description>Software Developer. Luddite. Cat and Dog friend.</description><image><title>I do business</title><url>https://lowsound.dev/assets/images/gobiandmewhite.jpg</url><link>https://lowsound.dev/assets/images/gobiandmewhite.jpg</link></image><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lowsound.dev/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Mum, can we have CI/CD?</title><link>https://lowsound.dev/posts/devops/</link><pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/devops/</guid><description>No, we have CI/CD at home</description><content:encoded><![CDATA[<p>I&rsquo;ve been wanting to setup some sort of CI/CD pipeline on my home server. Oh yeah, I have a home server and I shoehorn it into every conversation I have IRL. It runs a bunch of services and I&rsquo;ll get into the whole thing in another post I&rsquo;m sure. This one is focused on the most recent addition.</p>
+<h2 id="how-its-been-getting-done">How it&rsquo;s been getting done</h2>
+<p>This website is built using <a href="https://gohugo.io">Hugo</a>, a static site generator that&rsquo;s easy to use and super lightweight. The theme I&rsquo;m using is <a href="https://github.com/adityatelange/hugo-PaperMod/">Papermod</a>.</p>
+<p>I work on the site on my machine by adding markdown files for the posts, custom js and css when required, and maybe some tweaks to the theme. It then gets commited and pushed to github where the github workflow file triggers actions that build the site and then deploy the built assets to github pages, pretty simple. All I did was follow this guide <a href="https://gohugo.io/host-and-deploy/host-on-github-pages/">here</a> to set it up.</p>
+<p>So I do stuff, commit it, push to the remote repository and a few minutes later it&rsquo;s been built and deployed to <a href="https://lowsound.dev">lowsound.dev</a>. Pretty great.</p>
+<h2 id="so-whats-new">So, what&rsquo;s new?</h2>
+<p>I wanted to do more with my home server. Here&rsquo;s what I did.</p>
+<h3 id="gitea">Gitea</h3>
+<p>Run a <a href="https://about.gitea.com">gitea</a> instance and use that as my source of truth. I&rsquo;ve got a bunch of docker containers running all kinds of things, Gitea is the newest service I&rsquo;m running (via docker compose). Here&rsquo;s what the compose file looks like:</p>
+<pre tabindex="0"><code class="language-version:" data-lang="version:">
+networks:
+  gitea:
+    external: false
+
+services:
+  server:
+    image: gitea/gitea:latest
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+      - GITEA__database__DB_TYPE=postgres
+      - GITEA__database__HOST=db:${PG_PORT}
+      - GITEA__database__NAME=${PG_USER}
+      - GITEA__database__USER=${PG_DB_NAME}
+      - GITEA__database__PASSWD=${PG_PASSWORD}
+    restart: always
+    networks:
+      - gitea
+    volumes:
+      - ./gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - &#34;3001:3000&#34;
+      - &#34;2221:22&#34;
+    depends_on:
+      - db
+
+  runner:
+    image: gitea/act_runner:latest
+    container_name: gitea-runner
+    restart: always
+    networks:
+      - gitea
+    depends_on:
+      - server
+    volumes:
+      - ./runner:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - GITEA_INSTANCE_URL=${INSTANCE_URL}
+      - GITEA_RUNNER_REGISTRATION_TOKEN=${RUNNER_TOKEN}
+      - GITEA_RUNNER_NAME=${RUNNER_NAME}
+
+  db:
+    image: docker.io/library/postgres:14
+    restart: always
+    environment:
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_DB=${PG_DB_NAME}
+      - PGPORT=${PG_PORT}
+    networks:
+      - gitea
+    ports:
+      - &#34;${PG_PORT}:${PG_PORT}&#34;
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+</code></pre><p>There&rsquo;s a bunch of stuff happening here. First we need the <code>gitea</code> service. It depends on the <code>db</code> service. I decided to go with postgres but you could go with mysql, sqlite, or probably anything else.</p>
+<p>There&rsquo;s also the <code>runner</code> service. This is essentially a docker container that spins up containers to run the <code>gitea actions</code> that I will define (thus the <code>/var/run/docker.sock:/var/run/docker.sock</code> line, it needs that to spin up containers). The token is generated in Gitea (via the runners settings tab). It&rsquo;s a chicken-and-egg kind of situation, I had to run the docker services without the runner, get the token, then alter the compose file, add the runner service, and restart the stack.</p>
+<p>Here&rsquo;s what it looks like in the Gitea UI</p>
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/runner.png" alt="My Gitea runner&#39;s UI">
+
+<p>This UI is accessible via the port I defined in the compose file (3001). I use nginx to proxy the request from a domain I own to the service (<a href="https://gitea.gobimax.com">https://gitea.gobimax.com</a>). Sorry, you won&rsquo;t be able to access it because the server that this is pointing to is hiding behind tailscale so only my devices can hit it.</p>
+<h3 id="build-and-deploy">Build and Deploy</h3>
+<p>Okay, so now that that&rsquo;s running, in my Hugo project I define a <code>ci.yaml</code> file with the steps that the runner needs to iterate through. This is what that looks like:</p>
+<pre tabindex="0"><code>name: Deploy Hugo to GitHub Pages
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: https://github.com/actions/checkout@v4
+      - name: Run Semgrep
+        run: |
+          pip install --break-system-packages semgrep
+          semgrep scan --config=auto --no-git-ignore .
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.149.0
+    steps:
+      - name: Install Hugo
+        run: |
+          wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          &amp;&amp; sudo dpkg -i /tmp/hugo.deb
+
+      - uses: https://github.com/actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: /tmp/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/Toronto
+        run: |
+          hugo --gc --minify --baseURL &#34;https://www.lowsound.dev&#34;
+
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email &#34;gitea_runner@gobimax.com&#34;
+          git config --global user.name &#34;Gitea CI&#34;
+          git clone --branch gh-pages --single-branch \
+            https://${{ secrets.REPO_PAT }}@github.com/lowsound42/blog.git gh-pages-deploy
+          cp -r public/* gh-pages-deploy/
+          cd gh-pages-deploy
+          git add -A
+          git commit -m &#34;deploy: ${{ gitea.sha }}&#34; || echo &#34;nothing to commit&#34;
+          git push
+</code></pre><p>The first job uses a tool called <a href="https://github.com/semgrep/semgrep"><code>semgrep</code></a> to run a static code analysis, it&rsquo;s super cool. To be honest, there isn&rsquo;t <em>that</em> much to analyze here, it&rsquo;s mostly markdown files. I have, however, added some custom pages with some custom javascript to this site. Mostly I just wanted to test out <code>semgrep</code> because I want to use it on another, bigger project that I&rsquo;m working on so this is sort of a proof of concept for me.</p>
+<p>After that is the Hugo build process, very similar to what I was running in my github actions.</p>
+<p>Finally the deploy step. Essentially I am pushing the <code>public</code> folder that gets generated by the Hugo build to a new branch on github called <code>gh-pages</code>. In the old process, the github action would trigger the deployment, but now I&rsquo;ve changed it to just serve the static assets from the <code>gh-pages</code> branch.</p>
+<p>So, when I push to my <code>master</code> branch, I see this:
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/actions.png" alt="My Gitea actions">
+</p>
+<p>One of those runs looks like this:
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/action.png" alt="The steps in an action">
+</p>
+<h3 id="fin">Fin</h3>
+<p>And&hellip;that&rsquo;s it. The build and deploy stuff isn&rsquo;t super complicated (that&rsquo;s kind of the nice thing about Hugo). The fun part is having a version control system that I self host and that runs my CI/CD pipelines for me. Granted, this one is super simple and doesn&rsquo;t do much more than run the Hugo build command and push to a github branch that my github page points to. Yes, there&rsquo;s the <code>semgrep</code> stuff but again, that&rsquo;s mostly for show for this project.</p>
+<p>I&rsquo;m excited to use this for bigger projects that have more complex build processes and that require actual static analysis.</p>
+<p>Yet another Sunday occupied by working on this lovely little server.</p>
+]]></content:encoded></item><item><title>Escalators</title><link>https://lowsound.dev/posts/escalator/</link><pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/escalator/</guid><description>Krist Novoselic on the AI brainrot</description><content:encoded><![CDATA[<p>I love this rant. In this video, Krist Novoselic goes off on escalators. Specifically the way that people use them. Watch it.</p>
+
+
+
+<div class="small-video-flex">
+<video class="video-shortcode" preload="auto" controls>
+    <source src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/escalators.mp4" type="video/mp4">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+</div>
+
+<p>In case you didn&rsquo;t actually watch, his rant is about how escalators were designed like stairs because they&rsquo;re meant to be used like them. They just make us faster at going up stairs. Krist Novoselic is frustrated by people standing on escalators.</p>
+<p>Things that I love about the video:</p>
+<ul>
+<li>How stoned he is.</li>
+<li>How Kurt and Dave immediately groan as he begins the rant. This is obviously a recurring theme.</li>
+<li>Kurt butts in with a solution. Stand to the side so that people can walk up the left. Krist ignores him and continues the rant.</li>
+</ul>
+<p>I found this on YouTube years ago, I watched it, and then forgot about it. The stupid AI bullshit in the air these days reminded me that it existed.</p>
+<h3 id="excuse-me-whatever-the-fuck-do-you-mean">Excuse me, whatever the fuck do you mean?</h3>
+<p>What I mean is that so called &ldquo;AI&rdquo; is the Escalator. I&rsquo;m just going to ignore the fact that what is referred to as a monolithic AI is actually a myriad set of technologies. LLM&rsquo;s have taken over the concept and when people say AI now they kind of just mean one of these LLM&rsquo;s. Whatever, I&rsquo;m just going to say AI and you, the reader, can substitute whatever you want in there.</p>
+<p>What matters is the idea. AI is supposed to make us better and quicker but people are standing on the escalator. Instead of being better and quicker, we&rsquo;re feeding things into the machine and regurgitating what it tells us.</p>
+<p><strong>I&rsquo;m sure there are people that are like &ldquo;oh man <em>I</em> don&rsquo;t use it that way, I have a workflow that blah blah blah blah.&rdquo; Great, neat. I&rsquo;m not talking about you.</strong></p>
+<p>I&rsquo;m talking about:</p>
+<ul>
+<li>The people inundating YouTube with generated music playlists</li>
+<li>The people wasting everyone&rsquo;s time with generated emails</li>
+<li>The &lsquo;grok, is this true?&rsquo; morons on twitter</li>
+<li>Other similar people doing similarly idiotic things</li>
+</ul>
+<p>People don&rsquo;t care about being better, they just care about quicker. In fact, quicker and shittier is fine.</p>
+<p>I&rsquo;ll admit, after having gotten this far into writing this, the analogy does seem to break down a bit. We&rsquo;re not all trying to go to the same place and so we&rsquo;re not all standing on the same escalator. Some people are all about the hustle and grind and other people are normal. My point is that the way so called AI is being marketed to us is the same way the escalator was probably sold to people, i.e. &ldquo;wow, we are about to accelerate into the future!&rdquo; But we actually end up going slower. I&rsquo;m also aware that part of the benefit of an escalator is to be able to rest your legs. And if that&rsquo;s what you want to do, rest your brain, that&rsquo;s cool.</p>
+<p>To me, Krist&rsquo;s rant sounds almost prophetic, like he was possessed by someone from the future. You want to stand on the escalator? Fine, let me take the stairs or go some other way. I don&rsquo;t have to stand on this thing with you. Which leads me to the next point.</p>
+<h3 id="the-ai-is-inevitable-bullshit">The &ldquo;AI is inevitable&rdquo; bullshit</h3>
+<p>There&rsquo;s a lot of this going around right now. Posts where people try to convince you that &ldquo;AI is here now and you need to adapt&rdquo; are basically the main genre of things being uploaded to LinkedIn. &ldquo;AI won&rsquo;t take your job, a person using AI will.&rdquo;</p>
+<p>Shut. The. Fuck. Up.</p>
+<p>None of this is inevitable. Megacorps (run by loser finance guys posing as scientists) have been given the keys to our societies and are engaging in wildly unethical, unsustainable extractivism. These posts about inevitability and people having to adapt are just attempts to manufacture consent. We don&rsquo;t have to accept anything or adapt to anything if we don&rsquo;t want to, especially if it is harmful to people.</p>
+<p>And sure, call me a Luddite. I don&rsquo;t mind. In fact I consider it a badge of honour.</p>
+<h3 id="everything-is-business-nothing-is-interesting">Everything is business, nothing is interesting</h3>
+<p>I actually happen to think this stuff <em>is</em> interesting. LLM&rsquo;s are cool. Computer Vision is cool. Machine Learning is cool. But the CEO&rsquo;s, VP&rsquo;s of Sales, Heads of Marketing, etc are hell-bent on pushing this shit on us as a foRcE mULtIpLIeR.</p>
+<p>There <em>are</em> great applications for these kinds of technologies. <a href="https://tehiku.nz/te-hiku-tech/papa-reo/">Here&rsquo;s</a> an incredible example. The indigenous Māori language, te reo Māori, is dying. The goal of Te Hiku Media is to collect all the recorded te reo Māori that they can find and build a model for the language. They are currently able to translate between te reo Māori and English with 82% accuracy.</p>
+<p>All of this was done <em>with</em> the Māori peoples&rsquo; consent and participation. They used <strong>two</strong> GPU&rsquo;s to get the model trained. And the tool has been built to do something specific. When these tools use data that makes sense for a specific job, not only can they produce amazing results, but they can be trained to do so without chugging infinite amounts of fresh water, producing noise pollution, emanating waves of heat, and crashing global supply chains because of chip hoarding. Te Hiku Media exists in opposition to the fucking Silicon Valley ethos which seems to involve taking whatever they want from whomever they want without asking for permission.</p>
+<p>And the problems they claim they are trying to solve are&hellip;¯\<em>(ツ)</em>/¯</p>
+<p>Listening to these weirdos talk about it is crazy. Apparently it doesn&rsquo;t make sense to focus on climate change because it&rsquo;s too hard, we should just create a digital god to solve the problem for us.</p>
+<p>Wut?</p>
+<p>Oh and the god is hungry. The god needs to eat tens of thousands of GPU&rsquo;s to generate images cobbled together from art made by real people so that LinkedIn losers can write a post about #marketing.</p>
+<h3 id="it-gets-worse">It gets worse</h3>
+<p>Just the fact that we are watching a handful of people burn the atmosphere for social media clicks is dire enough, but it <em>does</em> actually get worse than that.</p>
+<p><a href="https://www.aljazeera.com/news/2024/4/4/ai-assisted-genocide-israel-reportedly-used-database-for-gaza-kill-lists">So called &ldquo;AI&rdquo; is being used to murder people in an ongoing genocide</a>.</p>
+<p>If you&rsquo;re one of those people that thinks posting Al Jazeera makes me a woke radical or whatever then <a href="https://www.972mag.com/lavender-ai-israeli-army-gaza/">here&rsquo;s another source, actually the original source</a>. Though I know that if you think Al Jazeera is woke then +972 will be as well for you.</p>
+<p>We&rsquo;ve known for a long time that the megacorps have been collecting all our data. Sometimes with our consent and often without. Google, Microsoft, Netflix, Facebook/Meta, Twitter, Apple, Amazon, etc; they&rsquo;re all constantly sucking up whatever they can from us under the protection of the commercial relationships we have signed up for under them. <a href="https://www.972mag.com/microsoft-8200-intelligence-surveillance-cloud-azure/">But they&rsquo;re doing worse things than just that bullshit</a>. Microsoft has been storing surveillance data on their cloud. This is the data collected from a people living under occupation.</p>
+<p>Similarly Google has &lsquo;Project Nimbus&rsquo;, which provides cloud storage and compute to the IOF. I wonder what they use it for? Surely just to store HR/payroll documents.</p>
+<p>And then there&rsquo;s the next level of evil tech assholes. Personally I think that the New York Times is a neo-liberal rag but <a href="https://www.nytimes.com/2025/05/30/technology/trump-palantir-data-americans.html">here&rsquo;s something that they wrote that should be read</a>. Peter Thiel backed Palantir is building a domestic panopticon, the elusive surveillance state that the Republicans have been trying to create since the early 2000&rsquo;s.</p>
+<p>This is scary, fucked up shit. And it is directly related to the stupid fucking <code>Studio-Ghibli-stealing-image-generator-machines</code>. These are the same thing, they come from the same place, from the same minds, from the same venture capital money.</p>
+<p><strong>Krist Novoselic tried to warn us.</strong></p>
+<h3 id="recommended-brain-reset-tools">Recommended brain reset tools</h3>
+<ul>
+<li>
+<p><a href="https://karendhao.com/">Empire of AI</a>. Brilliant. The first time I heard the story about Te Hiku Media was actually on the podcast, Tech Won&rsquo;t Save Us (Paris Marx), but reading about it again in Empire of AI recently made me think about how this stuff can be wonderful. And how like many technologies, it is being co-opted by lunatics.</p>
+</li>
+<li>
+<p><a href="https://www.techwontsave.us/">Tech Won&rsquo;t Save Us</a>. My favourite podcast. Always fantastic guests, and always great conversation about what is happening. It&rsquo;s not an &ldquo;oh shit things are hopeless&rdquo; vibe either. It&rsquo;s always presenting a hopeful vision.</p>
+</li>
+<li>
+<p><a href="https://www.dair-institute.org/">DAIR</a>. Timnit Gebru was fired from Google for doing her job well. i.e. researching the ethical implications of AI (specifically for co-authoring <a href="https://dl.acm.org/doi/10.1145/3442188.3445922">this</a> paper on LLM&rsquo;s). She is one of the great researchers that went on to found DAIR, an independent institute that explores a better vision for technology.</p>
+</li>
+<li>
+<p><a href="https://www.wheresyoured.at/">Where&rsquo;s Your Ed At</a>. Ed Zitron&rsquo;s very funny blog. His piece on <a href="https://www.wheresyoured.at/the-era-of-the-business-idiot/">business idiots</a> is just fantastic.</p>
+</li>
+<li>
+<p><a href="https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/?ref=wheresyoured.at">Nik Suresh</a>. I&rsquo;ve linked to a specific post that killed me the first time I read it, but Nikhil&rsquo;s blog is amazing in general.</p>
+</li>
+</ul>
+]]></content:encoded></item><item><title>Mathematics for fun</title><link>https://lowsound.dev/posts/maths/</link><pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/maths/</guid><description>&lt;p&gt;So I&amp;rsquo;m learning (relearning?) some basic maths. (I grew up saying &lt;em&gt;Maths&lt;/em&gt; and not &lt;em&gt;Math&lt;/em&gt; and I&amp;rsquo;m just going to keep saying it that way). It&amp;rsquo;s fun and it&amp;rsquo;s also a way to get better at using Python and Jupyter Notebooks. What&amp;rsquo;s going to be really cool is using LateX to write about what I&amp;rsquo;m learning.&lt;/p&gt;
+&lt;p&gt;Getting it set up on this Hugo theme that I&amp;rsquo;m using was a breeze thanks to &lt;a href="https://behova.net/posts/hugo-setup/"&gt;this&lt;/a&gt; excellent blog post. Below are some examples of the nice formatting this allows us to do.&lt;/p&gt;</description><content:encoded><![CDATA[<p>So I&rsquo;m learning (relearning?) some basic maths. (I grew up saying <em>Maths</em> and not <em>Math</em> and I&rsquo;m just going to keep saying it that way). It&rsquo;s fun and it&rsquo;s also a way to get better at using Python and Jupyter Notebooks. What&rsquo;s going to be really cool is using LateX to write about what I&rsquo;m learning.</p>
+<p>Getting it set up on this Hugo theme that I&rsquo;m using was a breeze thanks to <a href="https://behova.net/posts/hugo-setup/">this</a> excellent blog post. Below are some examples of the nice formatting this allows us to do.</p>
+<p>Example of an inline \(a^*=x-b^*\) equation.</p>
+<p>Examples of block equations:</p>
+\[a^{(\frac{3}{2})}=x-b^8\]\[
+3 \times a = 23 - a
+\]\[
+a^3 + (\frac{x}{y})
+\]]]></content:encoded></item><item><title>IDE Adventure</title><link>https://lowsound.dev/posts/nvim/</link><pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate><guid>https://lowsound.dev/posts/nvim/</guid><description>Neovim</description><content:encoded><![CDATA[<p>I&rsquo;ve decided to set up Neovim and try it out as my IDE for a bit. It&rsquo;s not that I hate my current setup or anything like that, I&rsquo;ve been using <a href="https://github.com/VSCodium/vscodium">vscodium</a> as a vscode replacement for a few months now and it&rsquo;s worked well enough with the extensions I like to use and all that; I&rsquo;ve just been thinking about experimenting with Neovim for a bit and I&rsquo;m finally giving in to the obsession.</p>
+<p>When I&rsquo;m working on setting up a VPS, messing around with my homeserver, or even just working on my laptop config, I tend to use Vim quite a lot. Part of the reason for this experiment is to build a more comfortable, custom experience for when I am using the editor locally. I&rsquo;m also looking to get better with Vim in general, I can get around but I know I&rsquo;m not being as efficient as you can be with the tool. If I use it more often, I think I&rsquo;ll get better at using it. I also cannot deny the fact that a big part of this whole project is the curiosity around Neovim and the extremely cool aesthetic of a fully custom Neovim IDE. I like learning new things and this is the thing I&rsquo;m teaching myself now.</p>
+<p>This post is a way to document how I&rsquo;m building my config and will likely be updated as I continue to tinker with the whole setup.</p>
+<h2 id="installing-neovim">Installing neovim</h2>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">1</span><span><span style="color:#007f7f"># Pretty straightforward on Fedora 41</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#727272">2</span><span>sudo dnf install neovim 
+</span></span></code></pre></div><p>When the installation is complete, run <code>nvim</code> to bring up the editor. This is what it looks like.</p>
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/nvimhomeconv.png" alt="plain, unconfigured nvim">
+
+<p>Not very different from plain ol&rsquo; Vim at the moment.</p>
+<h2 id="customizing-neovim">Customizing Neovim</h2>
+<p>There are now a few things to do before this becomes as usable (or close to as usable) as my current IDE. At the very least I want the following:</p>
+<ul>
+<li>Syntax highlighting</li>
+<li>Auto-formatting</li>
+<li>A file explorer would be nice</li>
+<li>Support for LSP plugins (Language Server Protocol)</li>
+</ul>
+<p>Anything else would be nice and a bonus but at the very least I wanted that stuff. Additionally I wanted to do some basic quality of life stuff like line numbers (and also relative line numbers), allow both vertical and horizontal splitting, make Neovim ask for confirmation when doing destructive stuff, etc.</p>
+<p>I started out just building out config files manually and that quickly got extremely overwhelming. You can interact with Neovim through the traditional Vim API, the Neovim API, and through Lua. I want to do the Lua thing because it would be kind of cool to start messing around with a new language while working through this and it does seem like the most easy to understand way to get through this. But like I said, it does get kind of overwhelming with the sheer vastness of the space that is Neovim config-land, so I started looking around for good examples online and stumbled upon <a href="https://github.com/nvim-lua/kickstart.nvim">Kickstart</a>. This is an awesome project that walks you through a very basic Neovim config in the simplest way possible. It&rsquo;s basically one <code>init.lua</code> file and everything is just thrown in there. It also uses Lazy as the package manager which seems to be the way to do it these days.</p>
+<p>I started by just lifting the <code>init.lua</code> file exactly as it is and dropping it in my <code>.config/nvim</code> folder. This immediately changed everything and now Neovim looks like this.</p>
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/nvimnewconv.png" alt="nvim initialized">
+
+<p>🤣</p>
+<p>It isn&rsquo;t really all that different, but actually, it TOTALLY IS! Obviously there is now a theme being applied, you can also see a line number at the top left, indicating that big changes await as we start exploring. I missed making a screenshot of this but when I spun this up a modal jumped out and showed me that tons of stuff was being installed. This was the Lazy interface and it was showing me the packages being installed. Here&rsquo;s what this looks like when you bring it up.</p>
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/nvimlazyconv.png" alt="lazy plugin manager">
+
+<p>Okay, so there&rsquo;s a lot going on in here. <strong>And also, yes I will acknowledge that I cheated and jumped from nothing straight into &ldquo;customized&rdquo; without really doing a lot, but the customizing journey is just starting</strong>. First off, everything is in the <code>init.lua</code> file and I don&rsquo;t like that. It&rsquo;s hard to read. Kickstart has done a lot in terms of adding some traditional Vim settings (via the Lua API) such as the line numbers thing, some keymappings, and also all of the Lazy plugins. But it requires a lot of scrolling to see what&rsquo;s going on and to customize this one file further is going to be a bit of a pain. So what I&rsquo;ve decided to do is break things up and move them around.</p>
+<p>After a bit of reading and seeing what people do with their setups, what I&rsquo;ve decided to do is this:</p>
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/nvimtreeconv.png" alt="Nvim tree">
+
+<p>The <code>init.lua</code> file isn&rsquo;t really doing much except importing stuff from other files. The <code>lua</code> folder now contains everything and I&rsquo;ve broken up the keymap stuff, the general settings stuff, and some custom stuff that kickstart was doing into their own files. Plugins are in their own folder and the lazy setup file pulls those in individually and is then imported here. This is the init file now:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>require(<span style="color:#e6db74">&#34;general&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>require(<span style="color:#e6db74">&#34;keymaps&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>require(<span style="color:#e6db74">&#34;autocommands&#34;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>require(<span style="color:#e6db74">&#34;config.lazy&#34;</span>)
+</span></span></code></pre></div><p>What this allows me to do is to manage every part of my config separately. It&rsquo;s also made it far less intimidating to read through. I can focus on just one component at a time, and when it comes to the plugins, I can look at them individually with minimal scrolling. One really cool plugin that Kickstart put in there is <code>Telescope</code>. It&rsquo;s a fuzzy finder that lets you search files and folders and it is actually amazing. The way it was setup also included some keymapping to allow you to quickly access its functionality. Here&rsquo;s what that looks like in the telescope plugin config:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sh&#34;</span>, builtin.help_tags, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch [H]elp&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sk&#34;</span>, builtin.keymaps, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch [K]eymaps&#34;</span> })
+</span></span><span style="display:flex; background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sf&#34;</span>, builtin.find_files, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch [F]iles&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;ss&#34;</span>, builtin.builtin, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch [S]elect Telescope&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sw&#34;</span>, builtin.grep_string, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch current [W]ord&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sg&#34;</span>, builtin.live_grep, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch by [G]rep&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sd&#34;</span>, builtin.diagnostics, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch [D]iagnostics&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;sr&#34;</span>, builtin.resume, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[S]earch [R]esume&#34;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;s.&#34;</span>, builtin.oldfiles, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;[S]earch Recent Files (&#34;.&#34; for repeat)&#39;</span> })
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;leader&gt;&lt;leader&gt;&#34;</span>, builtin.buffers, { desc <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[ ] Find existing buffers&#34;</span> })
+</span></span></code></pre></div><p><code>&lt;leader&gt;</code> here is my leader key which I&rsquo;ve defined as <code>&lt;spacebar&gt;</code>. So if I were to do what the highlighted line says, i.e. <code>spacebar + sf</code> in <code>normal</code> mode I&rsquo;d see something like this:</p>
+
+
+
+
+<img src="https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/nvimtelescopeconv.png" alt="Nvim telescope">
+
+<p>which is so useful. In fact, I kind of don&rsquo;t really need a traditional file explorer in the way I was thinking about it, which was kind of like the sidebar style solution explorer I&rsquo;m pretty used to. This is perfectly fine, the search is way better than the one in vscodium, <em>and</em> it forces me to use the entire screen for my code which is great.</p>
+<p>Kickstart also added an LSP plugin which allows me to install LSP&rsquo;s at my leisure! So I&rsquo;ve got ts_ls for javascript/typescript, Volar for Vue, gopls for Go, and some other quality of life stuff that I&rsquo;ll need. Lua comes by default because well, all of this is done via Lua.</p>
+<h2 id="what-i-like-so-far-and-next-steps">What I like so far and next steps</h2>
+<p>One of the keymap settings I like is this one:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;left&gt;&#34;</span>, <span style="color:#e6db74">&#39;&lt;cmd&gt;echo &#34;Use h to move!!&#34;&lt;CR&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;right&gt;&#34;</span>, <span style="color:#e6db74">&#39;&lt;cmd&gt;echo &#34;Use l to move!!&#34;&lt;CR&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;up&gt;&#34;</span>, <span style="color:#e6db74">&#39;&lt;cmd&gt;echo &#34;Use k to move!!&#34;&lt;CR&gt;&#39;</span>)
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>vim.keymap.set(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;down&gt;&#34;</span>, <span style="color:#e6db74">&#39;&lt;cmd&gt;echo &#34;Use j to move!!&#34;&lt;CR&gt;&#39;</span>)
+</span></span></code></pre></div><p>I have a habit of defaulting to the arrow keys and I want to reaaaallly immerse myself in Vim-land now. So arrow keys are turned off and I have to navigate the &lsquo;right&rsquo; way. I&rsquo;m getting better at it.</p>
+<p>In general I like it so far. Is it WAY more work to set this up than vscode or vscodium? Yes, 100%, for sure. But it&rsquo;s a lot of fun, I know more about what is going on, and I have total control over it. If you know me, then you know that I like that even if it&rsquo;s a little inconvenient. So I will keep going down this path and building this out. As I said before, this Neovim journey is just starting now, there&rsquo;s a lot to do with the LSP config, more searching around for cool themes, and most importantly <strong>getting good at Vim</strong>!</p>
+<p>As I build out my setup I&rsquo;ll come back to this post and add to it at the bottom here.</p>
+]]></content:encoded></item></channel></rss>
