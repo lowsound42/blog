@@ -12,31 +12,27 @@ const placeButtons = (currentPage, totalPages) => {
   nextButton.classList.add('crucialButton')
   prevButton.addEventListener('click', async () => {
     const container = document.getElementById('crucialContainer')
-    container.classList.add('fade-out')
-    await new Promise(r => setTimeout(r, 300))
-    const { data, totalPages } = await getTracks(currentPage)
-    window.history.pushState(window.history.state,
-                            "", `/crucial?page=${currentPage}`);
-    currentPage--
-    window.history.replaceState(null,
-                            "", `/crucial?page=${currentPage}`);
-    displayTracks(data)
-    window.scrollTo({ top: 200, behavior: 'smooth' });    container.classList.remove('fade-out')
-      placeButtons(currentPage, totalPages)
+     container.classList.add('fade-out')
+     await new Promise(r => setTimeout(r, 300))
+     currentPage--
+     const { data, totalPages } = await getTracks(currentPage)
+     window.history.pushState({ page: currentPage }, "", `${window.location.pathname}?page=${currentPage}`)
+     displayTracks(data)
+     container.classList.remove('fade-out')
+     placeButtons(currentPage, totalPages)
+     window.scrollTo({ top: 200, behavior: 'smooth' })
     })
-  nextButton.addEventListener('click', async () => {
-    const container = document.getElementById('crucialContainer')
-    container.classList.add('fade-out')
-    await new Promise(r => setTimeout(r, 300))
-    const { data, totalPages } = await getTracks(currentPage)
-    window.history.pushState(window.history.state,
-                            "", `/crucial?page=${currentPage}`);
-    currentPage++
-    window.history.replaceState(null,
-                            "", `/crucial?page=${currentPage}`)
-    displayTracks(data)
-    window.scrollTo({ top: 200, behavior: 'smooth' });    container.classList.remove('fade-out')
+    nextButton.addEventListener('click', async () => {
+      const container = document.getElementById('crucialContainer')
+      container.classList.add('fade-out')
+      await new Promise(r => setTimeout(r, 300))
+      currentPage++
+      const { data, totalPages } = await getTracks(currentPage)
+      window.history.pushState({ page: currentPage }, "", `${window.location.pathname}?page=${currentPage}`)
+      displayTracks(data)
+      container.classList.remove('fade-out')
       placeButtons(currentPage, totalPages)
+      window.scrollTo({ top: 200, behavior: 'smooth' })
     })
   const pageCount = document.createElement('span')
   pageCount.innerText = `page ${currentPage} of ${totalPages}`
@@ -92,7 +88,14 @@ const getTracks = async (page) => {
 }
 
 export const init = async () => {
-  console.log(window.location.pathname, 123)
+  window.addEventListener('popstate', async (e) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get('page') || 1;
+    const { data, totalPages } = await getTracks(page);
+    displayTracks(data);
+    placeButtons(page, totalPages);
+    window.scrollTo({ top: 200, behavior: 'smooth' })
+  });
   if (window.location.pathname.includes('crucial')) {
     const urlParams = new URLSearchParams(window.location.search);
     let page = null
@@ -109,5 +112,4 @@ export const init = async () => {
     displayTracks(data)
     placeButtons(page, totalPages)
   }
-
 }
