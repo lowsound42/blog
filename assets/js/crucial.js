@@ -57,7 +57,7 @@ const displayTracks = (crucialData) => {
     let header = document.createElement('h3')
     headerContainer.append(author)
     headerContainer.append(header)
-    const date = new Date(item.title.slice(19))
+    const date = new Date(item.title.slice(18))
     const day = String(date.getUTCDate()).padStart(2, '0');
     const month = String(date.getUTCMonth() + 1).padStart(2, '0');
     const year = date.getUTCFullYear();
