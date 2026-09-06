@@ -36,8 +36,16 @@ const placeButtons = (currentPage, totalPages) => {
     })
   const pageCount = document.createElement('span')
   pageCount.innerText = `page ${currentPage} of ${totalPages}`
-  if (currentPage !== 1) buttonHolder.append(prevButton)
-  if (currentPage !== totalPages) buttonHolder.append(nextButton)
+  buttonHolder.append(prevButton)
+  buttonHolder.append(nextButton)
+  if (Number(currentPage) === 1) {
+    prevButton.disabled = true
+    prevButton.classList.add('disabled')
+  }
+  if (Number(currentPage) === totalPages) {
+    nextButton.disabled = true
+    nextButton.classList.add('disabled')
+  }
   pageCountContainer.append(pageCount)
 }
 
