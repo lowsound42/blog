@@ -36,7 +36,6 @@ const placeButtons = (currentPage, totalPages) => {
     })
   const pageCount = document.createElement('span')
   pageCount.innerText = `page ${currentPage} of ${totalPages}`
-  console.log(currentPage)
   if (currentPage !== 1) buttonHolder.append(prevButton)
   if (currentPage !== totalPages) buttonHolder.append(nextButton)
   pageCountContainer.append(pageCount)
@@ -87,11 +86,21 @@ const getTracks = async (page) => {
   }
 }
 
+const pageChecker = (page, totalPages) => {
+  if (
+    page > totalPages || page < 1 || isNaN(parseInt(page, 10))
+  ) {
+    console.log('wow')
+    window.location = `/crucial?page=1`;
+  }
+}
+
 export const init = async () => {
   window.addEventListener('popstate', async (e) => {
     const urlParams = new URLSearchParams(window.location.search);
     const page = urlParams.get('page') || 1;
     const { data, totalPages } = await getTracks(page);
+    pageChecker(page, totalPages)
     displayTracks(data);
     placeButtons(page, totalPages);
     window.scrollTo({ top: 200, behavior: 'smooth' })
@@ -106,9 +115,7 @@ export const init = async () => {
                               "", `/crucial?page=${page}`);
     }
     const { data, totalPages } = await getTracks(page)
-    if (page > totalPages || page < 1) {
-      window.location = `/crucial?page=1`;
-    }
+    pageChecker(page, totalPages)
     displayTracks(data)
     placeButtons(page, totalPages)
   }
