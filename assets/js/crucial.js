@@ -92,18 +92,22 @@ const getTracks = async (page) => {
 }
 
 export const init = async () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  let page = null
-  page = urlParams.get('page')
-  if (!page) {
-    page = 1
-    window.history.replaceState(null,
-                            "", `/crucial?page=${page}`);
+  console.log(window.location.pathname, 123)
+  if (window.location.pathname.includes('crucial')) {
+    const urlParams = new URLSearchParams(window.location.search);
+    let page = null
+    page = urlParams.get('page')
+    if (!page) {
+      page = 1
+      window.history.replaceState(null,
+                              "", `/crucial?page=${page}`);
+    }
+    const { data, totalPages } = await getTracks(page)
+    if (page > totalPages || page < 1) {
+      window.location = `/crucial?page=1`;
+    }
+    displayTracks(data)
+    placeButtons(page, totalPages)
   }
-  const { data, totalPages } = await getTracks(page)
-  if (page > totalPages || page < 1) {
-    window.location = `/crucial?page=1`;
-  }
-  displayTracks(data)
-  placeButtons(page, totalPages)
+
 }

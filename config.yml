@@ -76,7 +76,7 @@ params:
     - name: RSS
       url: "/posts/index.xml"
     - name: crucialtracks
-      url: "/crucial"
+      url: "https://www.crucialtracks.org/profile/pxplowsound"
 
 menu:
   main:
@@ -95,6 +95,10 @@ menu:
     - identifier: business
       name: "business"
       url: /business/
+      weight: 30
+    - identifier: crucial
+      name: "music"
+      url: /crucial/
       weight: 30
     - identifier: geo
       name: "?"
