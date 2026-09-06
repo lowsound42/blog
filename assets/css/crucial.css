@@ -46,7 +46,27 @@ h2{
     width: 500px;
     padding: 1rem;
     margin-bottom: 2rem;
-    margin: 1rem 2rem 2rem 2rem
+    margin: 1rem 2rem 2rem 2rem;
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border, #e0e0e0);
+}
+
+.crucialItem, .crucialItem h2, .crucialItem div {
+  color: var(--text, #212121);
+}
+
+[data-scheme="dark"] .crucialItem,
+[data-scheme="dark"] .crucialItem h2,
+[data-scheme="dark"] .crucialItem div {
+  color: var(--text-dark, #e0e0e0);
+}
+
+[data-scheme="dark"] .crucialItem a {
+  color: var(--link-dark, #e0e0e0);
+}
+
+[data-scheme="dark"] .crucialItem a:hover {
+  color: var(--link-dark-hover, #e0e0e0);
 }
 
 .crucialLink{

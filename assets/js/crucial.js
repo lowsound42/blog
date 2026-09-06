@@ -49,6 +49,8 @@ const displayTracks = (crucialData) => {
     let dataContainer = document.createElement('div')
     let headerContainer = document.createElement('div')
     let author = document.createElement('img')
+    let artwork = document.createElement('img')
+    artwork.src = item._song_details.artwork_url;
     author.classList.add('avatar')
     author.src = item.authors[0].avatar
     dataContainer.classList.add('crucialItem')
@@ -58,6 +60,7 @@ const displayTracks = (crucialData) => {
     header.textContent = item.title
     headerContainer.classList.add('crucialHeader')
     dataContainer.append(headerContainer)
+    dataContainer.append(artwork)
     const content = document.createElement('div')
     content.innerHTML = item.content_html
     dataContainer.append(content)
