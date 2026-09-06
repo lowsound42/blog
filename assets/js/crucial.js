@@ -1,5 +1,4 @@
-let currentPage = 1;
-
+let initialPageState = 1
 const placeButtons = (currentPage, totalPages) => {
   const buttonHolder = document.getElementById('pageSelector')
   const pageCountContainer = document.getElementById('pageCount')
@@ -15,8 +14,12 @@ const placeButtons = (currentPage, totalPages) => {
     const container = document.getElementById('crucialContainer')
     container.classList.add('fade-out')
     await new Promise(r => setTimeout(r, 300))
-      currentPage--
-      const {data, totalPages} = await getTracks(currentPage)
+    const { data, totalPages } = await getTracks(currentPage)
+    window.history.pushState(window.history.state,
+                            "", `/crucial?page=${currentPage}`);
+    currentPage--
+    window.history.replaceState(null,
+                            "", `/crucial?page=${currentPage}`);
     displayTracks(data)
     window.scrollTo({ top: 200, behavior: 'smooth' });    container.classList.remove('fade-out')
       placeButtons(currentPage, totalPages)
@@ -25,14 +28,19 @@ const placeButtons = (currentPage, totalPages) => {
     const container = document.getElementById('crucialContainer')
     container.classList.add('fade-out')
     await new Promise(r => setTimeout(r, 300))
-      currentPage++
-      const {data, totalPages} = await getTracks(currentPage)
+    const { data, totalPages } = await getTracks(currentPage)
+    window.history.pushState(window.history.state,
+                            "", `/crucial?page=${currentPage}`);
+    currentPage++
+    window.history.replaceState(null,
+                            "", `/crucial?page=${currentPage}`)
     displayTracks(data)
     window.scrollTo({ top: 200, behavior: 'smooth' });    container.classList.remove('fade-out')
       placeButtons(currentPage, totalPages)
     })
   const pageCount = document.createElement('span')
   pageCount.innerText = `page ${currentPage} of ${totalPages}`
+  console.log(currentPage)
   if (currentPage !== 1) buttonHolder.append(prevButton)
   if (currentPage !== totalPages) buttonHolder.append(nextButton)
   pageCountContainer.append(pageCount)
@@ -84,7 +92,18 @@ const getTracks = async (page) => {
 }
 
 export const init = async () => {
-  const { data, totalPages } = await getTracks(currentPage)
+  const urlParams = new URLSearchParams(window.location.search);
+  let page = null
+  page = urlParams.get('page')
+  if (!page) {
+    page = 1
+    window.history.replaceState(null,
+                            "", `/crucial?page=${page}`);
+  }
+  const { data, totalPages } = await getTracks(page)
+  if (page > totalPages || page < 1) {
+    window.location = `/crucial?page=1`;
+  }
   displayTracks(data)
-  placeButtons(currentPage, totalPages)
+  placeButtons(page, totalPages)
 }
