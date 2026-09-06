@@ -36,6 +36,14 @@
   padding-bottom: 5px;
 }
 
+p{
+    font-family: "Inconsolata";
+}
+
+h1{
+    font-family: "Karla", sans-serif;
+}
+
 .email-me::after {
   content: '';
   position: absolute;
