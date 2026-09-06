@@ -57,12 +57,13 @@ const displayTracks = (crucialData) => {
     let header = document.createElement('h3')
     headerContainer.append(author)
     headerContainer.append(header)
-    const date = new Date(item.title.slice(18))
-    const day = String(date.getUTCDate()).padStart(2, '0');
-    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
-    const year = date.getUTCFullYear();
+    const dateStr = item.title.slice(18);
+    const date = new Date(dateStr);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = date.toLocaleDateString('en-US', options);
 
-    header.textContent = `${item.title.slice(0, 18)} ${day}/${month}/${year}`;
+    header.textContent = `${item.title.slice(0, 18)} ${formattedDate}`;
+
     headerContainer.classList.add('crucialHeader')
     dataContainer.append(headerContainer)
     dataContainer.append(artwork)

@@ -33,13 +33,13 @@ h2{
 }
 
 .avatar{
-    height: 15px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     margin-right: 1rem;
     border-radius: 50%;
 }
 
-h4{
+h3{
     align-content: center;
 }
 
@@ -56,22 +56,22 @@ h4{
     border: 1px solid var(--border, #e0e0e0);
 }
 
-.crucialItem, .crucialItem h2, .crucialItem div {
+.crucialItem, .crucialItem h3, .crucialItem div {
   color: var(--text, #212121);
 }
 
-[data-scheme="dark"] .crucialItem,
-[data-scheme="dark"] .crucialItem h2,
-[data-scheme="dark"] .crucialItem div {
-  color: var(--text-dark, #e0e0e0);
+[data-theme="dark"] .crucialItem,
+[data-theme="dark"] .crucialItem h3,
+[data-theme="dark"] .crucialItem div {
+  color: var(--text-dark, #212121);
 }
 
-[data-scheme="dark"] .crucialItem a {
-  color: var(--link-dark, #e0e0e0);
+[data-theme="dark"] .crucialItem a {
+  color: var(--link-dark, #212121);
 }
 
-[data-scheme="dark"] .crucialItem a:hover {
-  color: var(--link-dark-hover, #e0e0e0);
+[data-theme="dark"] .crucialItem a:hover {
+  color: var(--link-dark-hover, #212121);
 }
 
 .crucialLink{
@@ -91,6 +91,7 @@ h4{
 .crucialHeader{
     display: flex;
     flex-direction: row;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -129,11 +130,4 @@ html, body {
 .crucialItem {
   max-width: 100%;
   overflow: hidden;
-}
-
-.crucialItem audio,
-.crucialItem iframe,
-.crucialItem img {
-  max-width: 100%;
-  height: auto;
 }
