@@ -1,4 +1,3 @@
-let initialPageState = 1
 const placeButtons = (currentPage, totalPages) => {
   const buttonHolder = document.getElementById('pageSelector')
   const pageCountContainer = document.getElementById('pageCount')
