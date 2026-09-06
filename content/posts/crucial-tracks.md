@@ -22,4 +22,4 @@ A crucial track is a song that changes the direction of your life or helps you s
 {{< /center >}}
 ***
 
-So, yes, I've been using it and my profile is [Here](https://www.crucialtracks.org/profile/pxplowsound), but I also wanted to add my posts to this website so feel free to check 'em out [here](/crucial).
+So, yes, I've been using it and my profile is [here](https://www.crucialtracks.org/profile/pxplowsound), but I also wanted to add my posts to this website so feel free to check 'em out [here](/crucial).
