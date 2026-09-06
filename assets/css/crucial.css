@@ -1,0 +1,93 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.crucial {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.crucial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inconsolata";
+    font-weight: 500;
+}
+
+h2{
+    font-family: "Karla", sans-serif;
+}
+
+#crucialContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    align-items: center
+}
+
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.crucialItem{
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),
+                0 2px 6px rgba(0,0,0,0.08);
+    width: 500px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin: 1rem 2rem 2rem 2rem
+}
+
+.crucialLink{
+    text-decoration: underline;
+}
+
+#crucialInfo {
+    width: 70%;
+    margin-top: 4rem;
+    margin-bottom: -2rem;
+}
+
+.crucialButton{
+    margin: 0rem 1rem 0rem 1rem
+}
+
+.crucialHeader{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  #crucialInfo {
+      width: 90%;
+  }
+}
+
+@media (max-width: 520px) {
+  .crucialItem {
+      width: 320px;
+  }
+}
+
+#crucialContainer {
+  transition: opacity 0.1s ease;
+}
+
+#crucialContainer.fade-out {
+  opacity: 0;
+}
+
+#crucialContainer.fade-in {
+  opacity: 1;
+}

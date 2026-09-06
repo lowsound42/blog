@@ -22,6 +22,9 @@ markup:
               - \)
         enable: true
 
+build:
+  noJSConfigInAssets: true
+
 params:
   cdnUrl: "https://lowsound.tor1.cdn.digitaloceanspaces.com"
   math: false
@@ -73,7 +76,9 @@ params:
     - name: old homepage
       url: "http://pxplowsound.freeshell.org/"
     - name: RSS
-      url: "https://lowsound.dev/posts/index.xml"
+      url: "/posts/index.xml"
+    - name: crucialtracks
+      url: "/crucial"
 
 menu:
   main:
