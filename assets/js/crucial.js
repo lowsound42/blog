@@ -54,10 +54,15 @@ const displayTracks = (crucialData) => {
     author.classList.add('avatar')
     author.src = item.authors[0].avatar
     dataContainer.classList.add('crucialItem')
-    let header = document.createElement('h2')
-    headerContainer.append(header)
+    let header = document.createElement('h3')
     headerContainer.append(author)
-    header.textContent = item.title
+    headerContainer.append(header)
+    const date = new Date(item.title.slice(19))
+    const day = String(date.getUTCDate()).padStart(2, '0');
+    const month = String(date.getUTCMonth() + 1).padStart(2, '0');
+    const year = date.getUTCFullYear();
+
+    header.textContent = `${item.title.slice(0, 18)} ${day}/${month}/${year}`;
     headerContainer.classList.add('crucialHeader')
     dataContainer.append(headerContainer)
     dataContainer.append(artwork)
