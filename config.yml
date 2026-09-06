@@ -73,8 +73,6 @@ params:
       url: "https://mastodon.sdf.org/@pxplowsound/"
     - name: linkedin
       url: "https://www.linkedin.com/in/omar42/"
-    - name: old homepage
-      url: "http://pxplowsound.freeshell.org/"
     - name: RSS
       url: "/posts/index.xml"
     - name: crucialtracks
