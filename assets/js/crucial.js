@@ -96,9 +96,8 @@ const getTracks = async (page) => {
 
 const pageChecker = (page, totalPages) => {
   if (
-    page > totalPages || page < 1 || isNaN(parseInt(page, 10))
+    page > totalPages || page < 1 || isNaN(Number(page))
   ) {
-    console.log('wow')
     window.location = `/crucial?page=1`;
   }
 }
