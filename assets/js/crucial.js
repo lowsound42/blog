@@ -74,7 +74,11 @@ const displayTracks = (crucialData) => {
     dataContainer.append(headerContainer)
     dataContainer.append(artwork)
     const content = document.createElement('div')
-    content.innerHTML = window.DOMPurify.sanitize(item.content_html);
+    const cleanHTML = window.DOMPurify.sanitize(item.content_html, {
+      ADD_TAGS: ['iframe'],
+      ADD_ATTR: ['allow', 'allowfullscreen', 'frameborder', 'scrolling', 'src', 'style'],
+    });
+    content.innerHTML = cleanHTML
     dataContainer.append(content)
     container.appendChild(dataContainer)
   }
