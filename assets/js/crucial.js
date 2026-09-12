@@ -63,12 +63,12 @@ const displayTracks = (crucialData) => {
     let header = document.createElement('h3')
     headerContainer.append(author)
     headerContainer.append(header)
-    const dateStr = item.title.slice(18);
+    const dateStr = item.title.replace('Crucial Track for', '');
     const date = new Date(dateStr);
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     const formattedDate = date.toLocaleDateString('en-US', options);
 
-    header.textContent = `${item.title.slice(0, 18)} ${formattedDate}`;
+    header.textContent = `Crucial Track for ${formattedDate}`;
 
     headerContainer.classList.add('crucialHeader')
     dataContainer.append(headerContainer)
