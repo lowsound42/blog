@@ -1,3 +1,17 @@
+const addButtonListener = async (currentPage, type) => {
+  const container = document.getElementById('crucialContainer')
+  container.classList.add('fade-out')
+  await new Promise(r => setTimeout(r, 300))
+  if(type === 'next') currentPage++
+  if(type === 'prev') currentPage--
+  const { data, totalPages } = await getTracks(currentPage)
+  window.history.pushState({ page: currentPage }, "", `${window.location.pathname}?page=${currentPage}`)
+  displayTracks(data)
+  container.classList.remove('fade-out')
+  placeButtons(currentPage, totalPages)
+  window.scrollTo({ top: 200, behavior: 'smooth' })
+}
+
 const placeButtons = (currentPage, totalPages) => {
   const buttonHolder = document.getElementById('pageSelector')
   const pageCountContainer = document.getElementById('pageCount')
@@ -10,29 +24,11 @@ const placeButtons = (currentPage, totalPages) => {
   prevButton.classList.add('crucialButton')
   nextButton.classList.add('crucialButton')
   prevButton.addEventListener('click', async () => {
-    const container = document.getElementById('crucialContainer')
-     container.classList.add('fade-out')
-     await new Promise(r => setTimeout(r, 300))
-     currentPage--
-     const { data, totalPages } = await getTracks(currentPage)
-     window.history.pushState({ page: currentPage }, "", `${window.location.pathname}?page=${currentPage}`)
-     displayTracks(data)
-     container.classList.remove('fade-out')
-     placeButtons(currentPage, totalPages)
-     window.scrollTo({ top: 200, behavior: 'smooth' })
-    })
-    nextButton.addEventListener('click', async () => {
-      const container = document.getElementById('crucialContainer')
-      container.classList.add('fade-out')
-      await new Promise(r => setTimeout(r, 300))
-      currentPage++
-      const { data, totalPages } = await getTracks(currentPage)
-      window.history.pushState({ page: currentPage }, "", `${window.location.pathname}?page=${currentPage}`)
-      displayTracks(data)
-      container.classList.remove('fade-out')
-      placeButtons(currentPage, totalPages)
-      window.scrollTo({ top: 200, behavior: 'smooth' })
-    })
+    addButtonListener(currentPage, 'prev')
+  })
+  nextButton.addEventListener('click', async () => {
+    addButtonListener(currentPage, 'next')
+  })
   const pageCount = document.createElement('span')
   pageCount.innerText = `page ${currentPage} of ${totalPages}`
   buttonHolder.append(prevButton)
@@ -78,7 +74,7 @@ const displayTracks = (crucialData) => {
     dataContainer.append(headerContainer)
     dataContainer.append(artwork)
     const content = document.createElement('div')
-    content.innerHTML = item.content_html
+    content.innerHTML = window.DOMPurify.sanitize(item.content_html);
     dataContainer.append(content)
     container.appendChild(dataContainer)
   }
@@ -101,28 +97,38 @@ const pageChecker = (page, totalPages) => {
   }
 }
 
-export const init = async () => {
-  window.addEventListener('popstate', async (e) => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const page = urlParams.get('page') || 1;
-    const { data, totalPages } = await getTracks(page);
-    pageChecker(page, totalPages)
-    displayTracks(data);
-    placeButtons(page, totalPages);
-    window.scrollTo({ top: 200, behavior: 'smooth' })
-  });
-  if (window.location.pathname.includes('crucial')) {
-    const urlParams = new URLSearchParams(window.location.search);
-    let page = null
-    page = urlParams.get('page')
-    if (!page) {
-      page = 1
-      window.history.replaceState(null,
-                              "", `/crucial?page=${page}`);
-    }
+const pageLoader = async() => {
+  const urlParams = new URLSearchParams(window.location.search);
+  let page = null
+  page = urlParams.get('page')
+  if (!page) {
+    page = 1
+    window.history.replaceState(null,
+                            "", `/crucial?page=${page}`);
+  }
+  try {
     const { data, totalPages } = await getTracks(page)
     pageChecker(page, totalPages)
     displayTracks(data)
     placeButtons(page, totalPages)
+  } catch (e) {
+    const loader = document.getElementById('loading')
+    if(loader) {
+      loader.style.display = 'none'
+    }
+    const info = document.getElementById('crucialInfo')
+    info.classList.remove('hidden')
+    const container = document.getElementById('crucialContainer')
+    container.innerHTML = 'Hmm, the API call failed for some reason...'
+  }
+}
+
+export const init = async () => {
+  if (window.location.pathname.includes('crucial')) {
+    window.addEventListener('popstate', async (e) => {
+      await pageLoader()
+      window.scrollTo({ top: 200, behavior: 'smooth' })
+    });
+    await pageLoader()
   }
 }
