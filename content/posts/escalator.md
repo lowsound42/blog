@@ -1,7 +1,7 @@
 ---
 title: "Escalators"
 date: 2025-08-16
-modified: 2025-08-16
+lastmod: 2025-08-16
 tags: ["thoughts", "blog", "rant", "AI", "Artificial Intelligence", "Programming"]
 draft: false
 author: "Omar"
