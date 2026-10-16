@@ -56,6 +56,7 @@ const displayTracks = (crucialData) => {
     let headerContainer = document.createElement('div')
     let author = document.createElement('img')
     let artwork = document.createElement('img')
+    console.log(item)
     artwork.src = item._song_details.artwork_url;
     author.classList.add('avatar')
     author.src = item.authors[0].avatar
@@ -72,7 +73,7 @@ const displayTracks = (crucialData) => {
 
     headerContainer.classList.add('crucialHeader')
     dataContainer.append(headerContainer)
-    dataContainer.append(artwork)
+    item._song_details.artwork_url !== undefined ? dataContainer.append(artwork) : null
     const content = document.createElement('div')
     const cleanHTML = window.DOMPurify.sanitize(item.content_html, {
       ADD_TAGS: ['iframe'],
