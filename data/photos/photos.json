@@ -54,6 +54,10 @@
   "mvdp": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/mvdp.jpg",
     "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/mvdp.jpg"
+  },
+  "primoz": {
+    "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/primoz.jpg",
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/primoz.jpg"
   }
 
 }
