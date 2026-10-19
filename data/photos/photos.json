@@ -41,23 +41,23 @@
   },
   "wout": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/wout.jpg",
-    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/wout.jpg"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/wout.jpg"
   },
   "bini": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/bini.jpg",
-    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/bini.jpg"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/bini.jpg"
   },
   "bm": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/bm.jpg",
-    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/bm.jpg"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/bn.jpg"
   },
   "mvdp": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/mvdp.jpg",
-    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/mvdp.jpg"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/mvdp.jpg"
   },
   "primoz": {
     "image": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/primoz.jpg",
-    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/primoz.jpg"
+    "thumbnail": "https://lowsound.tor1.cdn.digitaloceanspaces.com/homepage/thumbnails/primoz.jpg"
   }
 
 }
