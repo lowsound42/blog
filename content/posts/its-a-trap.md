@@ -23,7 +23,7 @@ As it got bigger, something else started to happen; it became a source for news 
 
 That place?
 
-Well, apparently 40% of Americans get their news from Facebook and YouTube, [check it out](https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/). (I don't mean to pick on Americans, I'm sure this is representative of a majority of the world. It's just the data I found after a quick search.
+Well, apparently 40% of Americans get their news from Facebook and YouTube, [check it out](https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/). (I don't mean to pick on Americans, I'm sure this is representative of a majority of the world. It's just the data I found after a quick search).
 
 Okay, so people are getting their news and information from Facebook, surely this company will build systems to manage this in a responsible way? Right?
 
