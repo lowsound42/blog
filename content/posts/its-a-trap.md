@@ -17,7 +17,7 @@ Remember when social media didn't feel like the addictive drug it feels like tod
 
 There was a genuinely lovely feeling associated with logging on or in to whatever platform and seeing what was going on. Getting nudged, poked, or seeing an alert pop up weren't the exhausting mental hurdles they seem to be today.
 
-Facebook kind of made sense at the time. My friends posted pictures of the things they wanted to share, the stuff we did together, the stuff I missed out on. It was a place where groups were formed and events were planned. That was kind of it, and it was enough. Or wait, they added games too at some point. Okay, that's fine I guess; some of the games are literally just online gambling which is a bit weird but okay. Oh, also it started showing us stuff from people we didn't know at all and weren't connected to. Hmm, I don't get it, but maybe some people made new friends?
+Facebook kind of made sense at the time. My friends posted pictures of the things they wanted to share, the stuff we did together, the stuff I missed out on. It was a place where groups were formed and events were planned. That was kind of it, and it was enough. Or wait, they added games too at some point. That's fine I guess; some of the games are literally just online gambling which is a bit weird but okay. Oh, also it started showing us stuff from people we didn't know at all and weren't connected to. Hmm, I don't get it, but maybe some people made new friends?
 
 As it got bigger, something else started to happen; it became a source for news and information in a way we never really imagined in the early days. If someone had told me when I first got on there that this is where a significant number of people would get their news one day, I legitimately would not have understood what you meant. The place that my friend posted the pictures he took of us smoking cigarettes outside of school that we had to comment on frantically because he had made them public so everyone could see them and that meant that someone might tell my parents PLEASE TAKE THIS OFF OR MAKE IT PRIVATE YOU FUCKER!?!
 
@@ -25,12 +25,12 @@ That place?
 
 Well, apparently 40% of Americans get their news from Facebook and YouTube, [check it out](https://www.pewresearch.org/journalism/fact-sheet/social-media-and-news-fact-sheet/). (I don't mean to pick on Americans, I'm sure this is representative of a majority of the world. It's just the data I found after a quick search).
 
-Okay, so people are getting their news and information from Facebook, surely this company will build systems to manage this in a responsible way? Right?
+Alright, people are getting their news and information from Facebook now, surely this company will build systems to manage this in a responsible way? Right?
 
 [OH FUCKING HELL](https://www.amnesty.org/en/latest/news/2022/09/myanmar-facebooks-systems-promoted-violence-against-rohingya-meta-owes-reparations-new-report/). Crimes against humanity? Ethnic cleansing? BY THE FUCKING PLATFORM THAT LET YOU POKE YOUR FRIENDS?
 
 ## Okay, we all get it now
-Okay, yeah social media went off the rails. The companies that built these things started building power and in the relentless pursuit of mARkEt SHaRe, they acquired smaller social media firms just as those companies got interesting and fun. The more users on your infernal poke machine, the more eyeballs you could guarantee on an ad; and so advertising became the entire thing. Acquiring more firms became the easiest way to get more users into your 'ecosystem.' And we the people, the people who just wanted to go to parties and share our holiday photos? We became the product. The advertisers and the social media giants traded us like whatever it is that kids trade these days.
+So social media went off the rails. The companies that built these things started building power and in the relentless pursuit of mARkEt SHaRe, they acquired smaller social media firms just as those companies got interesting and fun. The more users on your infernal poke machine, the more eyeballs you could guarantee on an ad; and so advertising became the entire thing. Acquiring more firms became the easiest way to get more users into your 'ecosystem.' And we the people, the people who just wanted to go to parties and share our holiday photos? We became the product. The advertisers and the social media giants traded us like whatever it is that kids trade these days.
 
 The [conspiracy theories](https://pmc.ncbi.nlm.nih.gov/articles/PMC8262430/), the calls to violence, the [naked racism](https://news.berkeley.edu/2025/02/13/study-finds-persistent-spike-in-hate-speech-on-x/), the hatred, all of those became features. That's the stuff that keeps people coming back to the platform.
 
