@@ -56,7 +56,6 @@ const displayTracks = (crucialData) => {
     let headerContainer = document.createElement('div')
     let author = document.createElement('img')
     let artwork = document.createElement('img')
-    console.log(item)
     artwork.src = item._song_details.artwork_url;
     author.classList.add('avatar')
     author.src = item.authors[0].avatar
